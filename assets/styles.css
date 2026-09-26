@@ -331,3 +331,27 @@ details.appendix .appendix-note { color: var(--text-faint); font-size: 13px; mar
   .index-row { grid-template-columns: 1fr; gap: 2px; }
   .index-row .idx-desc { white-space: normal; }
 }
+
+/* ---------- Admin write actions ---------- */
+.conn-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 10px; }
+.conn-row input {
+  flex: 1 1 280px;
+  min-width: 200px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 9px 12px;
+  font-size: 14px;
+}
+.conn-state { font-size: 13px; color: var(--text-dim); display: flex; align-items: center; gap: 8px; }
+.btn.small { padding: 5px 10px; font-size: 12px; font-weight: 600; border-radius: 7px; }
+.btn.ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
+.btn.ghost:hover { border-color: var(--accent); color: var(--accent); filter: none; }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.row-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+.status { font-size: 13px; margin-top: 8px; min-height: 16px; }
+.status.ok { color: var(--accent-2); }
+.status.err { color: var(--danger); }
+table.repos tr.dirty { background: color-mix(in srgb, var(--warn) 10%, transparent); }
+.changed-flag { color: var(--warn); }

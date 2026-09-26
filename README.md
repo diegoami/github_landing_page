@@ -7,7 +7,9 @@ A static portfolio of my open-source projects, published with GitHub Pages.
 - **Admin page** — [`admin.html`](admin.html): my complete repository inventory
   (including private, archived and forked repos). Reachable on the same site but
   **passphrase-protected**: the data ships only as AES-GCM ciphertext and is
-  decrypted in the browser. No local server needed.
+  decrypted in the browser. No local server needed. Once unlocked, you can paste
+  a GitHub token to perform **reversible** actions — change a repo's
+  visibility (public/private) or archive/unarchive it. Deletion is not offered.
 
 ## How it works
 
