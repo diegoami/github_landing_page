@@ -1,0 +1,1566 @@
+{
+  "meta": {
+    "generatedAt": "2026-09-26T14:04:25.295Z",
+    "owner": "diegoami",
+    "totalRepos": 276,
+    "counts": {
+      "public": 55,
+      "private": 30,
+      "archived": 191,
+      "forks": 78,
+      "recommendMakePublic": 11,
+      "published": 44
+    },
+    "sections": [
+      {
+        "id": "featured",
+        "title": "Featured Projects",
+        "blurb": "Hand-picked highlights from the portfolio.",
+        "public": true
+      },
+      {
+        "id": "games",
+        "title": "Games & Interactive",
+        "blurb": "Playable games, game tooling and reimplementations.",
+        "public": true
+      },
+      {
+        "id": "chess",
+        "title": "Chess & Analysis",
+        "blurb": "Chess collections, analysis pipelines and chess apps.",
+        "public": true
+      },
+      {
+        "id": "paradox",
+        "title": "Crusader Kings & Strategy",
+        "blurb": "Save-file parsers, chronicles and mods for Paradox titles.",
+        "public": true
+      },
+      {
+        "id": "ai-data",
+        "title": "AI, ML & Data",
+        "blurb": "Machine learning, NLP, scrapers and data engineering.",
+        "public": true
+      },
+      {
+        "id": "language-learning",
+        "title": "Language Learning",
+        "blurb": "Vocabulary, listening and speech tools.",
+        "public": true
+      },
+      {
+        "id": "devops",
+        "title": "DevOps, Cloud & Kubernetes",
+        "blurb": "Certification prep, containers and cloud infrastructure.",
+        "public": true
+      },
+      {
+        "id": "devtools",
+        "title": "Developer Tooling & Templates",
+        "blurb": "Reusable harnesses, templates and developer utilities.",
+        "public": true
+      },
+      {
+        "id": "web",
+        "title": "Web & Media Tools",
+        "blurb": "Web apps, APIs and small media utilities.",
+        "public": true
+      },
+      {
+        "id": "other",
+        "title": "Other",
+        "blurb": "Uncategorised projects.",
+        "public": true
+      },
+      {
+        "id": "admin-private",
+        "title": "Active but Private",
+        "blurb": "Repositories that stay private (or should).",
+        "public": false
+      },
+      {
+        "id": "admin-archived",
+        "title": "Archived Projects",
+        "blurb": "Retired, superseded or course work.",
+        "public": false
+      },
+      {
+        "id": "admin-forks",
+        "title": "Archived Forks",
+        "blurb": "Upstream repositories kept for reference.",
+        "public": false
+      }
+    ]
+  },
+  "repositories": [
+    {
+      "name": "balloons-JS",
+      "url": "https://github.com/diegoami/balloons-JS",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "A simple HTML 5 game - shoot balloons !",
+      "homepage": "",
+      "language": "JavaScript",
+      "topics": [
+        "portfolio"
+      ],
+      "stars": 0,
+      "pushedAt": "2026-09-24T17:37:06Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Arcade & Simulations",
+      "tags": [
+        "game",
+        "javascript",
+        "ml",
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "A simple HTML5 game — shoot the balloons!",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/balloons-JS",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "balloons-js-releases",
+      "url": "https://github.com/diegoami/balloons-js-releases",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-24T19:06:05Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Arcade & Simulations",
+      "tags": [
+        "portfolio",
+        "release"
+      ],
+      "featured": false,
+      "summary": "Project repository.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/balloons-js-releases",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "briscola-JS",
+      "url": "https://github.com/diegoami/briscola-JS",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "A simple web application allowing to play Briscola online",
+      "homepage": "http://www.amicabile.com/javascript/discola/",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 2,
+      "pushedAt": "2017-04-20T23:42:33Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Card Games",
+      "tags": [
+        "javascript",
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "A simple web application allowing to play Briscola online",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/briscola-JS",
+        "pages": null,
+        "homepage": "http://www.amicabile.com/javascript/discola/"
+      }
+    },
+    {
+      "name": "championship-simulator-JS",
+      "url": "https://github.com/diegoami/championship-simulator-JS",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "A simple web application simulating a round-robin championship",
+      "homepage": "http://www.amicabile.com/javascript/championship/",
+      "language": "PHP",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-06-25T21:31:50Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Arcade & Simulations",
+      "tags": [
+        "php",
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "A simple web application simulating a round-robin championship",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/championship-simulator-JS",
+        "pages": null,
+        "homepage": "http://www.amicabile.com/javascript/championship/"
+      }
+    },
+    {
+      "name": "chessella-Java",
+      "url": "https://github.com/diegoami/chessella-Java",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Source of web application at www.chessella.com - share your chess games",
+      "homepage": "",
+      "language": "Java",
+      "topics": [],
+      "stars": 1,
+      "pushedAt": "2017-08-03T13:23:05Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "chess",
+      "section": "chess",
+      "subsection": "Apps",
+      "tags": [
+        "chess",
+        "game",
+        "java",
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "Chess application in Java.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/chessella-Java",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "chessgamescollection",
+      "url": "https://github.com/diegoami/chessgamescollection",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "HTML",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-25T21:20:40Z",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "chess",
+      "section": "chess",
+      "subsection": "Collections",
+      "tags": [
+        "chess",
+        "game",
+        "html",
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "A browsable collection of my chess games.",
+      "pagesUrl": "https://diegoami.github.io/chessgamescollection/",
+      "links": {
+        "repo": "https://github.com/diegoami/chessgamescollection",
+        "pages": "https://diegoami.github.io/chessgamescollection/",
+        "homepage": null
+      }
+    },
+    {
+      "name": "ck_portrait_generator",
+      "url": "https://github.com/diegoami/ck_portrait_generator",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [
+        "portfolio"
+      ],
+      "stars": 0,
+      "pushedAt": "2026-09-18T01:36:01Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "paradox",
+      "section": "paradox",
+      "subsection": "Assets & Generators",
+      "tags": [
+        "ck3",
+        "portfolio",
+        "python",
+        "release"
+      ],
+      "featured": false,
+      "summary": "Generates Crusader Kings portrait assets.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/ck_portrait_generator",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "ck_wiki",
+      "url": "https://github.com/diegoami/ck_wiki",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-24T22:01:51Z",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "paradox",
+      "section": "paradox",
+      "subsection": "Chronicles & Wikis",
+      "tags": [
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "Project repository.",
+      "pagesUrl": "https://diegoami.github.io/ck_wiki/",
+      "links": {
+        "repo": "https://github.com/diegoami/ck_wiki",
+        "pages": "https://diegoami.github.io/ck_wiki/",
+        "homepage": null
+      }
+    },
+    {
+      "name": "Ck-parser",
+      "url": "https://github.com/diegoami/Ck-parser",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [
+        "portfolio"
+      ],
+      "stars": 0,
+      "pushedAt": "2026-09-25T09:53:00Z",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "featured",
+      "section": "paradox",
+      "subsection": "Save Parsers",
+      "tags": [
+        "portfolio",
+        "python"
+      ],
+      "featured": true,
+      "summary": "Parser for Crusader Kings III save files.",
+      "pagesUrl": "https://diegoami.github.io/Ck-parser/",
+      "links": {
+        "repo": "https://github.com/diegoami/Ck-parser",
+        "pages": "https://diegoami.github.io/Ck-parser/",
+        "homepage": null
+      }
+    },
+    {
+      "name": "ck3-chronicle",
+      "url": "https://github.com/diegoami/ck3-chronicle",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Chronicles of Crusader Kings III playthroughs: a wiki built from your save games. Library, CLI, GitHub edition and desktop app.",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-25T12:39:17Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "featured",
+      "section": "paradox",
+      "subsection": "Chronicles & Wikis",
+      "tags": [
+        "ck3",
+        "game",
+        "portfolio",
+        "python"
+      ],
+      "featured": true,
+      "summary": "Turns Crusader Kings III save games into a wiki-style chronicle. Library, CLI, GitHub edition and desktop app.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/ck3-chronicle",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "ck3-scripts",
+      "url": "https://github.com/diegoami/ck3-scripts",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2021-12-26T19:07:55Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "paradox",
+      "section": "paradox",
+      "subsection": "Playthroughs & Scripts",
+      "tags": [
+        "ck3",
+        "portfolio",
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/ck3-scripts",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "ckad-prep",
+      "url": "https://github.com/diegoami/ckad-prep",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "My CKAD prep: exam tips, 176 kubectl drills, 88 runnable scenarios on a local kind cluster, and two mock exams",
+      "homepage": "",
+      "language": "Python",
+      "topics": [
+        "certification",
+        "ckad",
+        "cncf",
+        "exam-prep",
+        "kind",
+        "kubectl",
+        "kubernetes",
+        "study-guide"
+      ],
+      "stars": 0,
+      "pushedAt": "2026-09-24T08:21:09Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "featured",
+      "section": "devops",
+      "subsection": "CKAD / Kubernetes",
+      "tags": [
+        "kubernetes",
+        "portfolio",
+        "python"
+      ],
+      "featured": true,
+      "summary": "CKAD exam prep: tips, 176 kubectl drills, 88 runnable scenarios on a local kind cluster and two mock exams.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/ckad-prep",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "DA_chessgames",
+      "url": "https://github.com/diegoami/DA_chessgames",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Shell",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-24T22:11:06Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "chess",
+      "section": "chess",
+      "subsection": "Collections",
+      "tags": [
+        "chess",
+        "game",
+        "portfolio",
+        "shell"
+      ],
+      "featured": false,
+      "summary": "Scripts for collecting and processing chess games.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_chessgames",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "DA-youtube-scripts",
+      "url": "https://github.com/diegoami/DA-youtube-scripts",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Youtube scripts collection",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2021-03-25T22:29:54Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "portfolio",
+        "python"
+      ],
+      "featured": false,
+      "summary": "Youtube scripts collection",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA-youtube-scripts",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "Diplado",
+      "url": "https://github.com/diegoami/Diplado",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Diplado - Yet Another DIplomacy 4.3+ Clone (Mount and Blade - Warband)",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 8,
+      "pushedAt": "2019-10-27T00:40:18Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Diplomacy",
+      "tags": [
+        "portfolio",
+        "python"
+      ],
+      "featured": false,
+      "summary": "Diplomacy adjacency/board helper in Python.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/Diplado",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "diplomacy-plus-for-warband",
+      "url": "https://github.com/diegoami/diplomacy-plus-for-warband",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Diplomacy 4.3 for Mount&Blade - Warband with some open source scripts",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 3,
+      "pushedAt": "2019-09-28T16:12:36Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Diplomacy",
+      "tags": [
+        "portfolio",
+        "python"
+      ],
+      "featured": false,
+      "summary": "Diplomacy variant tooling for Mount & Blade Warband.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/diplomacy-plus-for-warband",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "discola-PAS",
+      "url": "https://github.com/diegoami/discola-PAS",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Source game of the Discola/Briscola game in Pascal",
+      "homepage": "",
+      "language": "Pascal",
+      "topics": [
+        "portfolio"
+      ],
+      "stars": 2,
+      "pushedAt": "2026-09-15T12:22:47Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Card Games",
+      "tags": [
+        "game",
+        "pascal",
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "Discola card/board game implementation in Pascal.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/discola-PAS",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "discola-releases",
+      "url": "https://github.com/diegoami/discola-releases",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-22T23:09:58Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Card Games",
+      "tags": [
+        "portfolio",
+        "release"
+      ],
+      "featured": false,
+      "summary": "Project repository.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/discola-releases",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "flashpair-delphi",
+      "url": "https://github.com/diegoami/flashpair-delphi",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "The source in Delphi for a flashcard game",
+      "homepage": "",
+      "language": "Pascal",
+      "topics": [],
+      "stars": 4,
+      "pushedAt": "2017-04-25T15:34:18Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Legacy (Delphi & JS)",
+      "tags": [
+        "game",
+        "pascal",
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "Delphi card game experiment (Flash Pair).",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/flashpair-delphi",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "ftc-proj-delphi5",
+      "url": "https://github.com/diegoami/ftc-proj-delphi5",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Source code for a project in Delphi (Folder Tree Creator)",
+      "homepage": "",
+      "language": "Pascal",
+      "topics": [],
+      "stars": 2,
+      "pushedAt": "2017-05-01T17:46:19Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Legacy (Delphi & JS)",
+      "tags": [
+        "pascal",
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "Delphi 5 project from the FTC era.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/ftc-proj-delphi5",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "geoclick-delphi",
+      "url": "https://github.com/diegoami/geoclick-delphi",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Source of the geoclick Delphi application",
+      "homepage": "",
+      "language": "Pascal",
+      "topics": [],
+      "stars": 4,
+      "pushedAt": "2019-11-14T20:29:42Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Geography Games",
+      "tags": [
+        "pascal",
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "Original Delphi version of Geoclick.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/geoclick-delphi",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "geoclick-JS",
+      "url": "https://github.com/diegoami/geoclick-JS",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Source of http://www.amicabile.com/javascript/geoclick/",
+      "homepage": "http://www.amicabile.com/javascript/geoclick/",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2019-12-18T19:27:24Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Geography Games",
+      "tags": [
+        "javascript",
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "Earlier JavaScript version of the Geoclick geography game.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/geoclick-JS",
+        "pages": null,
+        "homepage": "http://www.amicabile.com/javascript/geoclick/"
+      }
+    },
+    {
+      "name": "geoclick-releases",
+      "url": "https://github.com/diegoami/geoclick-releases",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Downloadable Windows and Android builds of Geoclick, a geography map quiz. Play in the browser: https://geoclick.netlify.app/",
+      "homepage": "",
+      "language": "",
+      "topics": [
+        "portfolio"
+      ],
+      "stars": 0,
+      "pushedAt": "2026-09-26T07:38:45Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Geography Games",
+      "tags": [
+        "portfolio",
+        "release"
+      ],
+      "featured": false,
+      "summary": "Downloadable Windows and Android builds of Geoclick, a geography map quiz. Play in the browser: https://geoclick.netlify.app/",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/geoclick-releases",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "github_landing_page",
+      "url": "https://github.com/diegoami/github_landing_page",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-26T10:43:51Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "devtools",
+      "section": "devtools",
+      "subsection": "Templates & Workflows",
+      "tags": [
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "Project repository.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/github_landing_page",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "harness_prompts",
+      "url": "https://github.com/diegoami/harness_prompts",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-23T01:19:58Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "devtools",
+      "section": "devtools",
+      "subsection": "Templates & Workflows",
+      "tags": [
+        "portfolio",
+        "template"
+      ],
+      "featured": false,
+      "summary": "Prompt library backing the harness workflow.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/harness_prompts",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "harness_template",
+      "url": "https://github.com/diegoami/harness_template",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-26T08:56:26Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "featured",
+      "section": "devtools",
+      "subsection": "Templates & Workflows",
+      "tags": [
+        "javascript",
+        "portfolio",
+        "template"
+      ],
+      "featured": true,
+      "summary": "Reusable agentic engineering workflow template (review process, tooling, docs).",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/harness_template",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "imp_conquest_fixtures",
+      "url": "https://github.com/diegoami/imp_conquest_fixtures",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-20T07:49:53Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Imperial Conquest",
+      "tags": [
+        "portfolio",
+        "python"
+      ],
+      "featured": false,
+      "summary": "Test fixtures extracted from Imperial Conquest 2.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/imp_conquest_fixtures",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "imperial_conquest_2",
+      "url": "https://github.com/diegoami/imperial_conquest_2",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "C#",
+      "topics": [
+        "portfolio"
+      ],
+      "stars": 0,
+      "pushedAt": "2026-09-26T13:42:41Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "featured",
+      "section": "games",
+      "subsection": "Imperial Conquest",
+      "tags": [
+        "csharp",
+        "portfolio"
+      ],
+      "featured": true,
+      "summary": "Open reimplementation in C# of the 1996 strategy game Imperial Conquest 2.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/imperial_conquest_2",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "imperial-conquest-2-research",
+      "url": "https://github.com/diegoami/imperial-conquest-2-research",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Reverse-engineering research on Imperial Conquest 2 (1996): save/DAT format, decompiled formulas, evidence-based reports",
+      "homepage": "",
+      "language": "",
+      "topics": [
+        "portfolio"
+      ],
+      "stars": 0,
+      "pushedAt": "2026-09-25T22:30:20Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Imperial Conquest",
+      "tags": [
+        "portfolio",
+        "release"
+      ],
+      "featured": false,
+      "summary": "Reverse-engineering research on Imperial Conquest 2 (1996): save/DAT format, decompiled formulas, evidence-based reports.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/imperial-conquest-2-research",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "jev_template",
+      "url": "https://github.com/diegoami/jev_template",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-26T12:05:30Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "devtools",
+      "section": "devtools",
+      "subsection": "Templates & Workflows",
+      "tags": [
+        "portfolio",
+        "template"
+      ],
+      "featured": false,
+      "summary": "Project repository.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/jev_template",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "lynxsupercluster_thumbnails",
+      "url": "https://github.com/diegoami/lynxsupercluster_thumbnails",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-05-12T23:39:59Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Data",
+      "tags": [
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "Project repository.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/lynxsupercluster_thumbnails",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "lynxupercluster_thumbnailgenerator",
+      "url": "https://github.com/diegoami/lynxupercluster_thumbnailgenerator",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-04-02T19:34:44Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Data",
+      "tags": [
+        "portfolio",
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/lynxupercluster_thumbnailgenerator",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "malpaco",
+      "url": "https://github.com/diegoami/malpaco",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "GDScript",
+      "topics": [
+        "portfolio"
+      ],
+      "stars": 0,
+      "pushedAt": "2026-09-24T13:57:58Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "featured",
+      "section": "games",
+      "subsection": "Arcade & Simulations",
+      "tags": [
+        "godot",
+        "portfolio"
+      ],
+      "featured": true,
+      "summary": "Small 2D game built with Godot and GDScript.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/malpaco",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "MyWebSite",
+      "url": "https://github.com/diegoami/MyWebSite",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Astro",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-18T01:20:34Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "devtools",
+      "section": "devtools",
+      "subsection": "Websites",
+      "tags": [
+        "astro",
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "Personal website (Astro).",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/MyWebSite",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "newscollection2027",
+      "url": "https://github.com/diegoami/newscollection2027",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [
+        "portfolio"
+      ],
+      "stars": 0,
+      "pushedAt": "2026-09-26T13:09:38Z",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "featured",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "portfolio",
+        "python",
+        "scraping"
+      ],
+      "featured": true,
+      "summary": "Automated news collection pipeline (scraper + published static site).",
+      "pagesUrl": "https://diegoami.github.io/newscollection2027/",
+      "links": {
+        "repo": "https://github.com/diegoami/newscollection2027",
+        "pages": "https://diegoami.github.io/newscollection2027/",
+        "homepage": null
+      }
+    },
+    {
+      "name": "newscollection2027-data",
+      "url": "https://github.com/diegoami/newscollection2027-data",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-26T12:42:43Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "portfolio",
+        "scraping"
+      ],
+      "featured": false,
+      "summary": "Data companion repository for newscollection2027.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/newscollection2027-data",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "oravitsa",
+      "url": "https://github.com/diegoami/oravitsa",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-18T04:37:22Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Card Games",
+      "tags": [
+        "portfolio",
+        "python"
+      ],
+      "featured": false,
+      "summary": "Card game collection (Oravitsa), Python.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/oravitsa",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "pgn-postmortem",
+      "url": "https://github.com/diegoami/pgn-postmortem",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Generate a static, GitHub-browsable postmortem archive from your chess games, with Stockfish-detected mistakes, refutation lines, board diagrams, and opening-theory deviations.",
+      "homepage": "https://diegoami.github.io/pgn-postmortem/",
+      "language": "Python",
+      "topics": [
+        "blunder-detection",
+        "chess",
+        "chess-analysis",
+        "chess-openings",
+        "markdown",
+        "pgn",
+        "portfolio",
+        "python",
+        "python-chess",
+        "stockfish"
+      ],
+      "stars": 0,
+      "pushedAt": "2026-09-26T12:51:39Z",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "featured",
+      "section": "chess",
+      "subsection": "Analysis",
+      "tags": [
+        "chess",
+        "game",
+        "portfolio",
+        "python"
+      ],
+      "featured": true,
+      "summary": "Static, GitHub-browsable chess postmortems: Stockfish-detected mistakes, refutation lines, board diagrams and opening-theory deviations.",
+      "pagesUrl": "https://diegoami.github.io/pgn-postmortem/",
+      "links": {
+        "repo": "https://github.com/diegoami/pgn-postmortem",
+        "pages": "https://diegoami.github.io/pgn-postmortem/",
+        "homepage": "https://diegoami.github.io/pgn-postmortem/"
+      }
+    },
+    {
+      "name": "RE-imperial-conquest-2",
+      "url": "https://github.com/diegoami/RE-imperial-conquest-2",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Reverse-engineering research on Imperial Conquest 2 (1996 Delphi 4X game): file formats, decompiled game logic, and the tooling used to recover them.",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-13T11:13:30Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Imperial Conquest",
+      "tags": [
+        "game",
+        "pascal",
+        "portfolio"
+      ],
+      "featured": false,
+      "summary": "Reverse-engineering research on Imperial Conquest 2 (1996 Delphi 4X game): file formats, decompiled game logic, and the tooling used to recover them.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/RE-imperial-conquest-2",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "Scopetta",
+      "url": "https://github.com/diegoami/Scopetta",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "topics": [
+        "portfolio"
+      ],
+      "stars": 0,
+      "pushedAt": "2026-09-26T11:36:40Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "featured",
+      "section": "games",
+      "subsection": "Card Games",
+      "tags": [
+        "javascript",
+        "portfolio"
+      ],
+      "featured": true,
+      "summary": "Italian card game Scopa, playable in the browser.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/Scopetta",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "scopetta-releases",
+      "url": "https://github.com/diegoami/scopetta-releases",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Scopetta - Android releases (binaries for the private source repo)",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-23T14:27:30Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Card Games",
+      "tags": [
+        "portfolio",
+        "release"
+      ],
+      "featured": false,
+      "summary": "Scopetta - Android releases (binaries for the private source repo)",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/scopetta-releases",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "Srt2html",
+      "url": "https://github.com/diegoami/Srt2html",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "topics": [
+        "portfolio"
+      ],
+      "stars": 0,
+      "pushedAt": "2026-09-23T23:33:26Z",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "featured",
+      "section": "ai-data",
+      "subsection": "Data",
+      "tags": [
+        "javascript",
+        "ml",
+        "portfolio"
+      ],
+      "featured": true,
+      "summary": "Converts SRT subtitle files into styled HTML pages.",
+      "pagesUrl": "https://diegoami.github.io/Srt2html/",
+      "links": {
+        "repo": "https://github.com/diegoami/Srt2html",
+        "pages": "https://diegoami.github.io/Srt2html/",
+        "homepage": null
+      }
+    },
+    {
+      "name": "tressette-releases",
+      "url": "https://github.com/diegoami/tressette-releases",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-24T11:50:17Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Card Games",
+      "tags": [
+        "portfolio",
+        "release"
+      ],
+      "featured": false,
+      "summary": "Project repository.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/tressette-releases",
+        "pages": null,
+        "homepage": null
+      }
+    },
+    {
+      "name": "youtube3",
+      "url": "https://github.com/diegoami/youtube3",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 19,
+      "pushedAt": "2026-09-26T13:42:49Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "visibility": "public",
+      "displaySection": "featured",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "portfolio",
+        "python"
+      ],
+      "featured": true,
+      "summary": "YouTube tooling / experiments in Python.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/youtube3",
+        "pages": null,
+        "homepage": null
+      }
+    }
+  ]
+}

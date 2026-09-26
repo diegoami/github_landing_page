@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>diegoami — Projects & Portfolio</title>
+  <meta name="description" content="A curated overview of open-source projects by diegoami: games, chess tooling, Crusader Kings utilities, AI/data pipelines, DevOps prep and developer tooling." />
+  <meta name="author" content="diegoami" />
+  <meta property="og:title" content="diegoami — Projects & Portfolio" />
+  <meta property="og:description" content="Curated open-source projects: games, chess tooling, Crusader Kings utilities, AI/data pipelines and developer tooling." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script>window.__SITE_MODE__ = "public";</script>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div class="eyebrow">Portfolio</div>
+      <h1>Projects by @diegoami</h1>
+      <p class="lead">
+        A curated selection of things I build: playable games, chess and
+        Crusader&nbsp;Kings tooling, data &amp; AI pipelines, DevOps prep and
+        reusable developer workflows. Every card links to the source and, where
+        it exists, a live version.
+      </p>
+      <div class="stats" id="stats"></div>
+      <div class="stats" id="nav" style="margin-top:10px"></div>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="wrap controls-inner">
+      <input id="search" type="search" placeholder="Search projects, tags, descriptions…" aria-label="Search projects" />
+      <select id="langFilter" aria-label="Filter by language"></select>
+      <select id="tagFilter" aria-label="Filter by tag"></select>
+      <select id="sortFilter" aria-label="Sort">
+        <option value="name">Sort: name</option>
+        <option value="pushed">Sort: recently updated</option>
+        <option value="stars">Sort: stars</option>
+      </select>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <div id="app"></div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>
+        Curated from <a href="https://github.com/diegoami" target="_blank" rel="noopener">github.com/diegoami</a>.
+        Built as a static page — see <a href="README.md">README</a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
