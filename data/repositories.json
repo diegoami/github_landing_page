@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-26T14:04:25.295Z",
+    "generatedAt": "2026-09-26T14:30:11.773Z",
     "owner": "diegoami",
     "totalRepos": 276,
     "counts": {
@@ -9,7 +9,9 @@
       "archived": 191,
       "forks": 78,
       "recommendMakePublic": 11,
-      "published": 44
+      "published": 108,
+      "curated": 44,
+      "legacy": 62
     },
     "sections": [
       {
@@ -94,6 +96,76 @@
   },
   "repositories": [
     {
+      "name": "amaraapi",
+      "url": "https://github.com/diegoami/amaraapi",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-05-22T21:34:38Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/amaraapi",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "APCC",
+      "url": "https://github.com/diegoami/APCC",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "APCC",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2018-06-13T21:07:26Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Data",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "APCC",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/APCC",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
       "name": "balloons-JS",
       "url": "https://github.com/diegoami/balloons-JS",
       "githubPrivate": false,
@@ -110,7 +182,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Arcade & Simulations",
@@ -122,12 +193,17 @@
       ],
       "featured": false,
       "summary": "A simple HTML5 game — shoot the balloons!",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/balloons-JS",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "balloons-js-releases",
@@ -144,7 +220,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Arcade & Simulations",
@@ -154,12 +229,197 @@
       ],
       "featured": false,
       "summary": "Project repository.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/balloons-js-releases",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "bankdomain",
+      "url": "https://github.com/diegoami/bankdomain",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2018-05-14T21:18:48Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "ML Projects",
+      "tags": [
+        "ml"
+      ],
+      "featured": false,
+      "summary": "Project repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/bankdomain",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "bankdomain_GENSIM",
+      "url": "https://github.com/diegoami/bankdomain_GENSIM",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2018-05-03T19:18:53Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "ML Projects",
+      "tags": [
+        "jupyter",
+        "ml",
+        "nlp"
+      ],
+      "featured": false,
+      "summary": "Jupyter Notebook repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/bankdomain_GENSIM",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "bankdomain_PY",
+      "url": "https://github.com/diegoami/bankdomain_PY",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "source of http://www.faqportal.de",
+      "homepage": "http://www.faqportal.de",
+      "language": "HTML",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2022-12-08T01:30:27Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "ML Projects",
+      "tags": [
+        "html",
+        "ml",
+        "release"
+      ],
+      "featured": false,
+      "summary": "source of http://www.faqportal.de",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/bankdomain_PY",
+        "pages": null,
+        "homepage": "http://www.faqportal.de"
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "bitbucket_browse",
+      "url": "https://github.com/diegoami/bitbucket_browse",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-10-29T17:05:44Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "devtools",
+      "section": "devtools",
+      "subsection": "Utilities",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/bitbucket_browse",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "blogspotapi",
+      "url": "https://github.com/diegoami/blogspotapi",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Blogspot API wrapper",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2020-07-05T11:22:12Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "python",
+        "scraping"
+      ],
+      "featured": false,
+      "summary": "Blogspot API wrapper",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/blogspotapi",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "briscola-JS",
@@ -176,7 +436,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Card Games",
@@ -186,12 +445,52 @@
       ],
       "featured": false,
       "summary": "A simple web application allowing to play Briscola online",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/briscola-JS",
         "pages": null,
         "homepage": "http://www.amicabile.com/javascript/discola/"
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "census_heroku",
+      "url": "https://github.com/diegoami/census_heroku",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2022-12-16T16:17:49Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Data",
+      "tags": [
+        "jupyter"
+      ],
+      "featured": false,
+      "summary": "Jupyter Notebook repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/census_heroku",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "championship-simulator-JS",
@@ -208,7 +507,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Arcade & Simulations",
@@ -218,12 +516,17 @@
       ],
       "featured": false,
       "summary": "A simple web application simulating a round-robin championship",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/championship-simulator-JS",
         "pages": null,
         "homepage": "http://www.amicabile.com/javascript/championship/"
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "chessella-Java",
@@ -240,7 +543,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "chess",
       "section": "chess",
       "subsection": "Apps",
@@ -252,12 +554,53 @@
       ],
       "featured": false,
       "summary": "Chess application in Java.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/chessella-Java",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "chessella-Java-RS",
+      "url": "https://github.com/diegoami/chessella-Java-RS",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Source of http://www.chessella.com",
+      "homepage": "http://www.chessella.com",
+      "language": "Java",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-08-27T00:37:21Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "chess",
+      "section": "chess",
+      "subsection": "Apps",
+      "tags": [
+        "chess",
+        "java"
+      ],
+      "featured": false,
+      "summary": "Source of http://www.chessella.com",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/chessella-Java-RS",
+        "pages": null,
+        "homepage": "http://www.chessella.com"
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "chessgamescollection",
@@ -274,7 +617,6 @@
       "defaultBranch": "main",
       "hasPages": true,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "chess",
       "section": "chess",
       "subsection": "Collections",
@@ -286,12 +628,52 @@
       ],
       "featured": false,
       "summary": "A browsable collection of my chess games.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "https://diegoami.github.io/chessgamescollection/",
       "links": {
         "repo": "https://github.com/diegoami/chessgamescollection",
         "pages": "https://diegoami.github.io/chessgamescollection/",
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "Chrome_Exts_Exs",
+      "url": "https://github.com/diegoami/Chrome_Exts_Exs",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "HTML",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-09-18T16:13:19Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "devtools",
+      "section": "devtools",
+      "subsection": "Utilities",
+      "tags": [
+        "html"
+      ],
+      "featured": false,
+      "summary": "HTML repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/Chrome_Exts_Exs",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "ck_portrait_generator",
@@ -310,7 +692,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "paradox",
       "section": "paradox",
       "subsection": "Assets & Generators",
@@ -322,12 +703,17 @@
       ],
       "featured": false,
       "summary": "Generates Crusader Kings portrait assets.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/ck_portrait_generator",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "ck_wiki",
@@ -344,7 +730,6 @@
       "defaultBranch": "main",
       "hasPages": true,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "paradox",
       "section": "paradox",
       "subsection": "Chronicles & Wikis",
@@ -353,12 +738,17 @@
       ],
       "featured": false,
       "summary": "Project repository.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "https://diegoami.github.io/ck_wiki/",
       "links": {
         "repo": "https://github.com/diegoami/ck_wiki",
         "pages": "https://diegoami.github.io/ck_wiki/",
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "Ck-parser",
@@ -377,7 +767,6 @@
       "defaultBranch": "main",
       "hasPages": true,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "featured",
       "section": "paradox",
       "subsection": "Save Parsers",
@@ -387,12 +776,17 @@
       ],
       "featured": true,
       "summary": "Parser for Crusader Kings III save files.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "https://diegoami.github.io/Ck-parser/",
       "links": {
         "repo": "https://github.com/diegoami/Ck-parser",
         "pages": "https://diegoami.github.io/Ck-parser/",
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "ck3-chronicle",
@@ -409,7 +803,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "featured",
       "section": "paradox",
       "subsection": "Chronicles & Wikis",
@@ -421,12 +814,17 @@
       ],
       "featured": true,
       "summary": "Turns Crusader Kings III save games into a wiki-style chronicle. Library, CLI, GitHub edition and desktop app.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/ck3-chronicle",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "ck3-scripts",
@@ -443,7 +841,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "paradox",
       "section": "paradox",
       "subsection": "Playthroughs & Scripts",
@@ -454,12 +851,17 @@
       ],
       "featured": false,
       "summary": "Python repository.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/ck3-scripts",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "ckad-prep",
@@ -485,7 +887,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "featured",
       "section": "devops",
       "subsection": "CKAD / Kubernetes",
@@ -496,12 +897,226 @@
       ],
       "featured": true,
       "summary": "CKAD exam prep: tips, 176 kubectl drills, 88 runnable scenarios on a local kind cluster and two mock exams.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/ckad-prep",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "ckad-questions",
+      "url": "https://github.com/diegoami/ckad-questions",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": true,
+      "description": "A set of exercises and solutions to prepare for the Certified Kubernetes Application Developer exam by Cloud Native Computing Foundation.",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-05-15T02:56:50Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "devops",
+      "section": "devops",
+      "subsection": "CKAD / Kubernetes",
+      "tags": [
+        "kubernetes"
+      ],
+      "featured": false,
+      "summary": "A set of exercises and solutions to prepare for the Certified Kubernetes Application Developer exam by Cloud Native Computing Foundation.",
+      "reason": "Forked upstream repository; no original portfolio value.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/ckad-questions",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_airflow",
+      "url": "https://github.com/diegoami/DA_airflow",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2018-10-01T21:35:47Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "devops",
+      "section": "devops",
+      "subsection": "Data Pipelines",
+      "tags": [
+        "data-pipeline",
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_airflow",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_api_dataset",
+      "url": "https://github.com/diegoami/DA_api_dataset",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Collection of APIs and Datasets for selected topics",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2019-08-11T20:48:15Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Experiments & Datasets",
+      "tags": [],
+      "featured": false,
+      "summary": "Collection of APIs and Datasets for selected topics",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_api_dataset",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_AWS_export",
+      "url": "https://github.com/diegoami/DA_AWS_export",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-09-21T09:17:07Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "devops",
+      "section": "devops",
+      "subsection": "Cloud & IaC",
+      "tags": [
+        "release"
+      ],
+      "featured": false,
+      "summary": "Project repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_AWS_export",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_boundingboxes",
+      "url": "https://github.com/diegoami/DA_boundingboxes",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-04-05T01:08:13Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_boundingboxes",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_chessella_DB",
+      "url": "https://github.com/diegoami/DA_chessella_DB",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2020-02-17T01:38:17Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "chess",
+      "section": "chess",
+      "subsection": "Apps",
+      "tags": [
+        "chess"
+      ],
+      "featured": false,
+      "summary": "Project repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_chessella_DB",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "DA_chessgames",
@@ -518,7 +1133,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "chess",
       "section": "chess",
       "subsection": "Collections",
@@ -530,12 +1144,687 @@
       ],
       "featured": false,
       "summary": "Scripts for collecting and processing chess games.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/DA_chessgames",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "DA_churn",
+      "url": "https://github.com/diegoami/DA_churn",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2022-03-01T17:35:33Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "ML Projects",
+      "tags": [
+        "jupyter",
+        "ml"
+      ],
+      "featured": false,
+      "summary": "Jupyter Notebook repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_churn",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_dataengineer_capstone",
+      "url": "https://github.com/diegoami/DA_dataengineer_capstone",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 1,
+      "pushedAt": "2022-12-08T06:10:00Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "ML Projects",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_dataengineer_capstone",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_DS_Pipelines",
+      "url": "https://github.com/diegoami/DA_DS_Pipelines",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-11-01T15:18:57Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Data",
+      "tags": [
+        "data-pipeline",
+        "jupyter"
+      ],
+      "featured": false,
+      "summary": "Jupyter Notebook repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_DS_Pipelines",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_FAQS",
+      "url": "https://github.com/diegoami/DA_FAQS",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2018-07-10T21:14:16Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "web",
+      "section": "web",
+      "subsection": "Web Apps",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_FAQS",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_fm_analyze",
+      "url": "https://github.com/diegoami/DA_fm_analyze",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-05-14T22:02:08Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Data",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_fm_analyze",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_fm_data",
+      "url": "https://github.com/diegoami/DA_fm_data",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Rich Text Format",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-05-12T23:47:23Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Data",
+      "tags": [],
+      "featured": false,
+      "summary": "Rich Text Format repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_fm_data",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_gapi_chessella",
+      "url": "https://github.com/diegoami/DA_gapi_chessella",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Java",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2019-11-10T15:48:12Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "chess",
+      "section": "chess",
+      "subsection": "Apps",
+      "tags": [
+        "chess",
+        "java"
+      ],
+      "featured": false,
+      "summary": "Java repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_gapi_chessella",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_Hellofresh",
+      "url": "https://github.com/diegoami/DA_Hellofresh",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2018-07-07T20:33:11Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "devops",
+      "section": "devops",
+      "subsection": "Data Pipelines",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_Hellofresh",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_kaggle",
+      "url": "https://github.com/diegoami/DA_kaggle",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2018-07-01T20:58:59Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Data",
+      "tags": [
+        "jupyter"
+      ],
+      "featured": false,
+      "summary": "Jupyter Notebook repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_kaggle",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_ML_Capstone",
+      "url": "https://github.com/diegoami/DA_ML_Capstone",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Automatic splitting of videos in sequences",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2020-11-02T06:23:45Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "ML Projects",
+      "tags": [
+        "jupyter",
+        "ml"
+      ],
+      "featured": false,
+      "summary": "Automatic splitting of videos in sequences",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_ML_Capstone",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_praw_queue",
+      "url": "https://github.com/diegoami/DA_praw_queue",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2020-12-20T02:25:10Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_praw_queue",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_queueapp",
+      "url": "https://github.com/diegoami/DA_queueapp",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2018-07-01T22:40:59Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "web",
+      "section": "web",
+      "subsection": "Web Apps",
+      "tags": [
+        "typescript"
+      ],
+      "featured": false,
+      "summary": "TypeScript repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_queueapp",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_redis_nodejs_Scoreboard",
+      "url": "https://github.com/diegoami/DA_redis_nodejs_Scoreboard",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "A scoreboard in redis and node js",
+      "homepage": "",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-02-12T10:12:08Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "web",
+      "section": "web",
+      "subsection": "Web Apps",
+      "tags": [
+        "javascript"
+      ],
+      "featured": false,
+      "summary": "A scoreboard in redis and node js",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_redis_nodejs_Scoreboard",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_spamdetector_javaspark",
+      "url": "https://github.com/diegoami/DA_spamdetector_javaspark",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Spam classifier made in Java and Spark",
+      "homepage": "",
+      "language": "Shell",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-04-21T20:43:17Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [
+        "shell"
+      ],
+      "featured": false,
+      "summary": "Spam classifier made in Java and Spark",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_spamdetector_javaspark",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_spamdetector_pyspark",
+      "url": "https://github.com/diegoami/DA_spamdetector_pyspark",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Spam detector using Pyspark",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2019-07-12T16:45:17Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Spam detector using Pyspark",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_spamdetector_pyspark",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_split_youtube_frames_s3",
+      "url": "https://github.com/diegoami/DA_split_youtube_frames_s3",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Project to split videos in frames and saves them to S3",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-10-18T02:23:04Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Project to split videos in frames and saves them to S3",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_split_youtube_frames_s3",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_tensorflow_for_letsplay",
+      "url": "https://github.com/diegoami/DA_tensorflow_for_letsplay",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Using tensorflow to identify scenes in youtube let's play videos",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2022-12-08T06:56:12Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "jupyter",
+        "ml"
+      ],
+      "featured": false,
+      "summary": "Using tensorflow to identify scenes in youtube let's play videos",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_tensorflow_for_letsplay",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_Udacity_Sentiment_Analysis",
+      "url": "https://github.com/diegoami/DA_Udacity_Sentiment_Analysis",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2022-03-04T14:48:43Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "ML Projects",
+      "tags": [
+        "jupyter",
+        "ml"
+      ],
+      "featured": false,
+      "summary": "Jupyter Notebook repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_Udacity_Sentiment_Analysis",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DA_yelp_sentiment_analysis",
+      "url": "https://github.com/diegoami/DA_yelp_sentiment_analysis",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2022-12-08T04:57:20Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "ML Projects",
+      "tags": [
+        "ml",
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DA_yelp_sentiment_analysis",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "DA-youtube-scripts",
@@ -552,7 +1841,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "ai-data",
       "section": "ai-data",
       "subsection": "Scraping & Media",
@@ -562,12 +1850,122 @@
       ],
       "featured": false,
       "summary": "Youtube scripts collection",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/DA-youtube-scripts",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "deeplearningvision",
+      "url": "https://github.com/diegoami/deeplearningvision",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-11-25T13:34:08Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Experiments & Datasets",
+      "tags": [
+        "ml"
+      ],
+      "featured": false,
+      "summary": "Project repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/deeplearningvision",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "diego_bot",
+      "url": "https://github.com/diegoami/diego_bot",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2018-04-16T21:06:53Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Data",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/diego_bot",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "diego_bot_rct",
+      "url": "https://github.com/diegoami/diego_bot_rct",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Frontend for the diego-bot",
+      "homepage": "",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2018-04-16T21:40:40Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Data",
+      "tags": [
+        "javascript"
+      ],
+      "featured": false,
+      "summary": "Frontend for the diego-bot",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/diego_bot_rct",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "Diplado",
@@ -584,7 +1982,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Diplomacy",
@@ -594,12 +1991,17 @@
       ],
       "featured": false,
       "summary": "Diplomacy adjacency/board helper in Python.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/Diplado",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "diplomacy-plus-for-warband",
@@ -616,7 +2018,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Diplomacy",
@@ -626,12 +2027,17 @@
       ],
       "featured": false,
       "summary": "Diplomacy variant tooling for Mount & Blade Warband.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/diplomacy-plus-for-warband",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "discola-PAS",
@@ -650,7 +2056,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Card Games",
@@ -661,12 +2066,17 @@
       ],
       "featured": false,
       "summary": "Discola card/board game implementation in Pascal.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/discola-PAS",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "discola-releases",
@@ -683,7 +2093,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Card Games",
@@ -693,12 +2102,190 @@
       ],
       "featured": false,
       "summary": "Project repository.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/discola-releases",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "dsretreat",
+      "url": "https://github.com/diegoami/dsretreat",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-09-20T18:27:18Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "devops",
+      "section": "devops",
+      "subsection": "Containers & Platform",
+      "tags": [
+        "jupyter"
+      ],
+      "featured": false,
+      "summary": "Jupyter Notebook repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/dsretreat",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "DSRetreat_Melbourne_DIOLEM",
+      "url": "https://github.com/diegoami/DSRetreat_Melbourne_DIOLEM",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Project DSRetreat Melbourne Dataset",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-10-07T18:11:43Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "devops",
+      "section": "devops",
+      "subsection": "Containers & Platform",
+      "tags": [
+        "jupyter"
+      ],
+      "featured": false,
+      "summary": "Project DSRetreat Melbourne Dataset",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/DSRetreat_Melbourne_DIOLEM",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "dsretreat-2",
+      "url": "https://github.com/diegoami/dsretreat-2",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-09-16T13:25:15Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "devops",
+      "section": "devops",
+      "subsection": "Containers & Platform",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/dsretreat-2",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "EXT_TimeSeries_Predict",
+      "url": "https://github.com/diegoami/EXT_TimeSeries_Predict",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-10-06T01:16:51Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "devtools",
+      "section": "devtools",
+      "subsection": "Utilities",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/EXT_TimeSeries_Predict",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "fix-public",
+      "url": "https://github.com/diegoami/fix-public",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-23T00:27:59Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [],
+      "featured": false,
+      "summary": "Project repository.",
+      "reason": "Throwaway test repository.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/fix-public",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": false,
+      "hidden": true
     },
     {
       "name": "flashpair-delphi",
@@ -715,7 +2302,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Legacy (Delphi & JS)",
@@ -726,12 +2312,52 @@
       ],
       "featured": false,
       "summary": "Delphi card game experiment (Flash Pair).",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/flashpair-delphi",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "flaskyoutube-heroku",
+      "url": "https://github.com/diegoami/flaskyoutube-heroku",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-07-11T20:08:56Z",
+      "defaultBranch": "flaskyoutube-heroku",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/flaskyoutube-heroku",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "ftc-proj-delphi5",
@@ -748,7 +2374,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Legacy (Delphi & JS)",
@@ -758,12 +2383,52 @@
       ],
       "featured": false,
       "summary": "Delphi 5 project from the FTC era.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/ftc-proj-delphi5",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "genre_classification",
+      "url": "https://github.com/diegoami/genre_classification",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2022-05-23T13:59:18Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "ML Projects",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/genre_classification",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "geoclick-delphi",
@@ -780,7 +2445,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Geography Games",
@@ -790,12 +2454,17 @@
       ],
       "featured": false,
       "summary": "Original Delphi version of Geoclick.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/geoclick-delphi",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "geoclick-JS",
@@ -812,7 +2481,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Geography Games",
@@ -822,12 +2490,17 @@
       ],
       "featured": false,
       "summary": "Earlier JavaScript version of the Geoclick geography game.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/geoclick-JS",
         "pages": null,
         "homepage": "http://www.amicabile.com/javascript/geoclick/"
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "geoclick-releases",
@@ -846,7 +2519,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Geography Games",
@@ -856,12 +2528,17 @@
       ],
       "featured": false,
       "summary": "Downloadable Windows and Android builds of Geoclick, a geography map quiz. Play in the browser: https://geoclick.netlify.app/",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/geoclick-releases",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "github_landing_page",
@@ -878,7 +2555,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "devtools",
       "section": "devtools",
       "subsection": "Templates & Workflows",
@@ -887,12 +2563,17 @@
       ],
       "featured": false,
       "summary": "Project repository.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/github_landing_page",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "harness_prompts",
@@ -909,7 +2590,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "devtools",
       "section": "devtools",
       "subsection": "Templates & Workflows",
@@ -919,12 +2599,17 @@
       ],
       "featured": false,
       "summary": "Prompt library backing the harness workflow.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/harness_prompts",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "harness_template",
@@ -941,7 +2626,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "featured",
       "section": "devtools",
       "subsection": "Templates & Workflows",
@@ -952,12 +2636,17 @@
       ],
       "featured": true,
       "summary": "Reusable agentic engineering workflow template (review process, tooling, docs).",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/harness_template",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "imp_conquest_fixtures",
@@ -974,7 +2663,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Imperial Conquest",
@@ -984,12 +2672,17 @@
       ],
       "featured": false,
       "summary": "Test fixtures extracted from Imperial Conquest 2.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/imp_conquest_fixtures",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "imperial_conquest_2",
@@ -1008,7 +2701,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "featured",
       "section": "games",
       "subsection": "Imperial Conquest",
@@ -1018,12 +2710,17 @@
       ],
       "featured": true,
       "summary": "Open reimplementation in C# of the 1996 strategy game Imperial Conquest 2.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/imperial_conquest_2",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "imperial-conquest-2-research",
@@ -1042,7 +2739,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Imperial Conquest",
@@ -1052,12 +2748,52 @@
       ],
       "featured": false,
       "summary": "Reverse-engineering research on Imperial Conquest 2 (1996): save/DAT format, decompiled formulas, evidence-based reports.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/imperial-conquest-2-research",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "IT-Notes",
+      "url": "https://github.com/diegoami/IT-Notes",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "HTML",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-09-13T16:23:32Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [
+        "html"
+      ],
+      "featured": false,
+      "summary": "HTML repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/IT-Notes",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "jev_template",
@@ -1074,7 +2810,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "devtools",
       "section": "devtools",
       "subsection": "Templates & Workflows",
@@ -1084,12 +2819,122 @@
       ],
       "featured": false,
       "summary": "Project repository.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/jev_template",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "JS_FE_musicblogs",
+      "url": "https://github.com/diegoami/JS_FE_musicblogs",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Source for http://www.europoplyrics.com",
+      "homepage": "http://www.europoplyrics.com",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-01-04T00:42:59Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "javascript"
+      ],
+      "featured": false,
+      "summary": "Source for http://www.europoplyrics.com",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/JS_FE_musicblogs",
+        "pages": null,
+        "homepage": "http://www.europoplyrics.com"
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "JS_musicblogs",
+      "url": "https://github.com/diegoami/JS_musicblogs",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2022-12-07T14:54:13Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "javascript"
+      ],
+      "featured": false,
+      "summary": "JavaScript repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/JS_musicblogs",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "letsplay_updater",
+      "url": "https://github.com/diegoami/letsplay_updater",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-05-12T23:27:47Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/letsplay_updater",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "lynxsupercluster_thumbnails",
@@ -1106,7 +2951,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "ai-data",
       "section": "ai-data",
       "subsection": "Data",
@@ -1115,12 +2959,17 @@
       ],
       "featured": false,
       "summary": "Project repository.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/lynxsupercluster_thumbnails",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "lynxupercluster_thumbnailgenerator",
@@ -1137,7 +2986,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "ai-data",
       "section": "ai-data",
       "subsection": "Data",
@@ -1147,12 +2995,17 @@
       ],
       "featured": false,
       "summary": "Python repository.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/lynxupercluster_thumbnailgenerator",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "malpaco",
@@ -1171,7 +3024,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "featured",
       "section": "games",
       "subsection": "Arcade & Simulations",
@@ -1181,12 +3033,88 @@
       ],
       "featured": true,
       "summary": "Small 2D game built with Godot and GDScript.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/malpaco",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "manage_chessella-PY",
+      "url": "https://github.com/diegoami/manage_chessella-PY",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Scripts to manage the chessella site",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2020-02-29T19:16:51Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "chess",
+      "section": "chess",
+      "subsection": "Apps",
+      "tags": [
+        "chess",
+        "python"
+      ],
+      "featured": false,
+      "summary": "Scripts to manage the chessella site",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/manage_chessella-PY",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "musicblogs-scripts-PY",
+      "url": "https://github.com/diegoami/musicblogs-scripts-PY",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "musicblogs-modules",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2021-06-02T01:02:05Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "musicblogs-modules",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/musicblogs-scripts-PY",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "MyWebSite",
@@ -1203,7 +3131,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "devtools",
       "section": "devtools",
       "subsection": "Websites",
@@ -1213,12 +3140,53 @@
       ],
       "featured": false,
       "summary": "Personal website (Astro).",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/MyWebSite",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "newscollection",
+      "url": "https://github.com/diegoami/newscollection",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Source code of http://www.techcontroversy.com",
+      "homepage": "http://www.techcontroversy.com",
+      "language": "Python",
+      "topics": [],
+      "stars": 8,
+      "pushedAt": "2023-02-15T20:31:48Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "python",
+        "scraping"
+      ],
+      "featured": false,
+      "summary": "Source code of http://www.techcontroversy.com",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/newscollection",
+        "pages": null,
+        "homepage": "http://www.techcontroversy.com"
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "newscollection2027",
@@ -1237,7 +3205,6 @@
       "defaultBranch": "main",
       "hasPages": true,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "featured",
       "section": "ai-data",
       "subsection": "Scraping & Media",
@@ -1248,12 +3215,17 @@
       ],
       "featured": true,
       "summary": "Automated news collection pipeline (scraper + published static site).",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "https://diegoami.github.io/newscollection2027/",
       "links": {
         "repo": "https://github.com/diegoami/newscollection2027",
         "pages": "https://diegoami.github.io/newscollection2027/",
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "newscollection2027-data",
@@ -1270,7 +3242,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "ai-data",
       "section": "ai-data",
       "subsection": "Scraping & Media",
@@ -1280,12 +3251,17 @@
       ],
       "featured": false,
       "summary": "Data companion repository for newscollection2027.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/newscollection2027-data",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "oravitsa",
@@ -1302,7 +3278,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Card Games",
@@ -1312,12 +3287,17 @@
       ],
       "featured": false,
       "summary": "Card game collection (Oravitsa), Python.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/oravitsa",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "pgn-postmortem",
@@ -1345,7 +3325,6 @@
       "defaultBranch": "main",
       "hasPages": true,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "featured",
       "section": "chess",
       "subsection": "Analysis",
@@ -1357,12 +3336,156 @@
       ],
       "featured": true,
       "summary": "Static, GitHub-browsable chess postmortems: Stockfish-detected mistakes, refutation lines, board diagrams and opening-theory deviations.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "https://diegoami.github.io/pgn-postmortem/",
       "links": {
         "repo": "https://github.com/diegoami/pgn-postmortem",
         "pages": "https://diegoami.github.io/pgn-postmortem/",
         "homepage": "https://diegoami.github.io/pgn-postmortem/"
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "public-project",
+      "url": "https://github.com/diegoami/public-project",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-09-23T00:32:13Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [],
+      "featured": false,
+      "summary": "Project repository.",
+      "reason": "Throwaway test repository.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/public-project",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": false,
+      "hidden": true
+    },
+    {
+      "name": "PY-scrapers-technews",
+      "url": "https://github.com/diegoami/PY-scrapers-technews",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Scrapers Technews",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-09-22T14:22:29Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "python",
+        "scraping"
+      ],
+      "featured": false,
+      "summary": "Scrapers Technews",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/PY-scrapers-technews",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "pydownloader",
+      "url": "https://github.com/diegoami/pydownloader",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-04-02T19:38:45Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "devtools",
+      "section": "devtools",
+      "subsection": "Utilities",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/pydownloader",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "Python-Travian-Bot",
+      "url": "https://github.com/diegoami/Python-Travian-Bot",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "A bot to play Travian",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-05-06T22:19:38Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "devtools",
+      "section": "devtools",
+      "subsection": "Utilities",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "A bot to play Travian",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/Python-Travian-Bot",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "RE-imperial-conquest-2",
@@ -1379,7 +3502,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Imperial Conquest",
@@ -1390,12 +3512,88 @@
       ],
       "featured": false,
       "summary": "Reverse-engineering research on Imperial Conquest 2 (1996 Delphi 4X game): file formats, decompiled game logic, and the tooling used to recover them.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/RE-imperial-conquest-2",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "redditspider-Node-JS",
+      "url": "https://github.com/diegoami/redditspider-Node-JS",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "A simple proof of concept - scrape the reddit site for patterns",
+      "homepage": "",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-04-21T00:05:33Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "javascript",
+        "scraping"
+      ],
+      "featured": false,
+      "summary": "A simple proof of concept - scrape the reddit site for patterns",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/redditspider-Node-JS",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "ScalaRank",
+      "url": "https://github.com/diegoami/ScalaRank",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Exercises in Scala for Hackerrank",
+      "homepage": "",
+      "language": "Scala",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-09-02T21:42:59Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [
+        "scala"
+      ],
+      "featured": false,
+      "summary": "Exercises in Scala for Hackerrank",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/ScalaRank",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "Scopetta",
@@ -1414,7 +3612,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "featured",
       "section": "games",
       "subsection": "Card Games",
@@ -1424,12 +3621,17 @@
       ],
       "featured": true,
       "summary": "Italian card game Scopa, playable in the browser.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/Scopetta",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     },
     {
       "name": "scopetta-releases",
@@ -1446,7 +3648,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Card Games",
@@ -1456,12 +3657,85 @@
       ],
       "featured": false,
       "summary": "Scopetta - Android releases (binaries for the private source repo)",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/scopetta-releases",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "ShellWindowObserver",
+      "url": "https://github.com/diegoami/ShellWindowObserver",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Delphi Component to monitor ShellWindows ",
+      "homepage": "",
+      "language": "Pascal",
+      "topics": [],
+      "stars": 3,
+      "pushedAt": "2017-04-20T17:23:24Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Games",
+      "tags": [
+        "pascal"
+      ],
+      "featured": false,
+      "summary": "Windows tool that observes shell window activity.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/ShellWindowObserver",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "solution-SCEA-2007",
+      "url": "https://github.com/diegoami/solution-SCEA-2007",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "My solution for the assignment of SCEA-2 in 2007",
+      "homepage": "",
+      "language": "",
+      "topics": [],
+      "stars": 1,
+      "pushedAt": "2017-05-06T21:53:15Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Data",
+      "tags": [],
+      "featured": false,
+      "summary": "My solution for the assignment of SCEA-2 in 2007",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/solution-SCEA-2007",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "Srt2html",
@@ -1480,7 +3754,6 @@
       "defaultBranch": "main",
       "hasPages": true,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "featured",
       "section": "ai-data",
       "subsection": "Data",
@@ -1491,12 +3764,53 @@
       ],
       "featured": true,
       "summary": "Converts SRT subtitle files into styled HTML pages.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "https://diegoami.github.io/Srt2html/",
       "links": {
         "repo": "https://github.com/diegoami/Srt2html",
         "pages": "https://diegoami.github.io/Srt2html/",
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "techcrunch-posts-scraper",
+      "url": "https://github.com/diegoami/techcrunch-posts-scraper",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Scrape content and metadata from TechCrunch posts",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-09-17T07:21:03Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "ai-data",
+      "section": "ai-data",
+      "subsection": "Scraping & Media",
+      "tags": [
+        "python",
+        "scraping"
+      ],
+      "featured": false,
+      "summary": "Scrape content and metadata from TechCrunch posts",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/techcrunch-posts-scraper",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "tressette-releases",
@@ -1513,7 +3827,6 @@
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "games",
       "section": "games",
       "subsection": "Card Games",
@@ -1523,12 +3836,123 @@
       ],
       "featured": false,
       "summary": "Project repository.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/tressette-releases",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "udacity_deepnn",
+      "url": "https://github.com/diegoami/udacity_deepnn",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2017-08-25T22:07:49Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [
+        "ml",
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/udacity_deepnn",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "Urlybird-SCJD-Java",
+      "url": "https://github.com/diegoami/Urlybird-SCJD-Java",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Sun Certified Java Developer Solution - 2005",
+      "homepage": "",
+      "language": "Java",
+      "topics": [],
+      "stars": 1,
+      "pushedAt": "2017-06-15T18:31:04Z",
+      "defaultBranch": "master",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [
+        "java"
+      ],
+      "featured": false,
+      "summary": "Sun Certified Java Developer Solution - 2005",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/Urlybird-SCJD-Java",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "video_merger",
+      "url": "https://github.com/diegoami/video_merger",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2023-02-05T17:34:01Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "devtools",
+      "section": "devtools",
+      "subsection": "Utilities",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "summary": "Python repository.",
+      "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/video_merger",
+        "pages": null,
+        "homepage": null
+      },
+      "visibility": "public",
+      "curated": false,
+      "legacy": true,
+      "hidden": false
     },
     {
       "name": "youtube3",
@@ -1545,7 +3969,6 @@
       "defaultBranch": "master",
       "hasPages": false,
       "owner": "diegoami",
-      "visibility": "public",
       "displaySection": "featured",
       "section": "ai-data",
       "subsection": "Scraping & Media",
@@ -1555,12 +3978,17 @@
       ],
       "featured": true,
       "summary": "YouTube tooling / experiments in Python.",
+      "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
         "repo": "https://github.com/diegoami/youtube3",
         "pages": null,
         "homepage": null
-      }
+      },
+      "visibility": "public",
+      "curated": true,
+      "legacy": false,
+      "hidden": false
     }
   ]
 }

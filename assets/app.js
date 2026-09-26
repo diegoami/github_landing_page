@@ -126,29 +126,60 @@
     return (meta.sections || []).filter((s) => s.id !== "featured" && (ADMIN || s.public));
   }
 
+  function sectionTitle(meta, id) {
+    const s = (meta.sections || []).find((x) => x.id === id);
+    return s ? s.title : id;
+  }
+
+  // Full index of all public, non-archived repos (incl. legacy), grouped by theme.
+  function renderAppendix(meta, list) {
+    if (!list.length) return "";
+    const order = sectionList(meta).map((s) => s.id);
+    const groups = {};
+    for (const r of list) (groups[r.section] ??= []).push(r);
+    const ids = Object.keys(groups).sort((a, b) => {
+      const ia = order.indexOf(a), ib = order.indexOf(b);
+      return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+    });
+
+    let inner = "";
+    for (const id of ids) {
+      const rows = groups[id]
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map(
+          (r) => `<div class="index-row">
+            <span class="idx-name"><a href="${esc(r.links.repo)}" target="_blank" rel="noopener">${esc(r.name)}</a>${r.legacy ? '<span class="legacy-flag">legacy</span>' : ""}</span>
+            <span class="idx-lang">${esc(r.language || "—")}</span>
+            <span class="idx-desc">${esc(r.description || r.summary || "")}</span>
+            <span class="idx-links">${r.links.pages ? `<a href="${esc(r.links.pages)}" target="_blank" rel="noopener">live</a>` : ""}<a href="${esc(r.links.repo)}" target="_blank" rel="noopener">repo</a></span>
+          </div>`
+        )
+        .join("");
+      inner += `<div class="index-group"><h4>${esc(sectionTitle(meta, id))}</h4><div class="index-rows">${rows}</div></div>`;
+    }
+    return `<details class="appendix" id="all-repositories"><summary>All repositories (${list.length})</summary><p class="appendix-note">Every public, non-archived repository — including older and superseded projects not in the highlights above.</p>${inner}</details>`;
+  }
+
   function render() {
     const root = $("#app");
     const meta = state.meta;
     state.filtered = state.all.filter(matches);
 
-    const featured = ADMIN
-      ? []
-      : sortRepos(state.filtered.filter((r) => r.featured));
-
+    const curated = state.filtered.filter((r) => r.curated);
+    const featured = sortRepos(curated.filter((r) => r.featured));
     const usedSections = sectionList(meta);
     const featuredNames = new Set(featured.map((r) => r.name));
+    const clean = !state.query && !state.tag && !state.lang && state.sort === "name";
 
-    let html = `<div class="result-count" style="margin-bottom:14px">Showing <b>${state.filtered.length}</b> of ${state.all.length} projects</div>`;
+    let html = `<div class="result-count" style="margin-bottom:14px">Showing <b>${curated.length}</b> curated projects · <b>${state.filtered.length}</b> in the full index</div>`;
 
-    if (featured.length && !state.query && !state.tag && !state.lang && state.sort === "name") {
+    if (featured.length && clean) {
       html += `<section class="section"><div class="section-head"><h2>Featured Projects</h2><p>Hand-picked highlights.</p></div><div class="grid featured">${featured.map(card).join("")}</div></section>`;
     }
 
     for (const s of usedSections) {
       const repos = sortRepos(
-        state.filtered.filter(
-          (r) => r.section === s.id && !(featuredNames.has(r.name))
-        )
+        curated.filter((r) => r.section === s.id && !featuredNames.has(r.name))
       );
       if (!repos.length) continue;
 
@@ -156,8 +187,7 @@
       for (const r of repos) (subs[r.subsection || "General"] ??= []).push(r);
 
       let inner = "";
-      const subKeys = Object.keys(subs).sort();
-      for (const k of subKeys) {
+      for (const k of Object.keys(subs).sort()) {
         inner += `<div class="subsection"><h3>${esc(k)}</h3><div class="grid">${subs[k].map(card).join("")}</div></div>`;
       }
 
@@ -170,6 +200,7 @@
       </section>`;
     }
 
+    html += renderAppendix(meta, sortRepos(state.filtered));
     if (!state.filtered.length) html += `<p class="empty">No projects match your filters.</p>`;
     root.innerHTML = html;
 
