@@ -4,6 +4,9 @@ A static portfolio of my open-source projects, published with GitHub Pages.
 
 - **Public page** — [`index.html`](index.html): curated highlights plus a
   collapsed **full index** of every public, non-archived repository.
+- **Beta releases** — [`releases.html`](releases.html): a tester-friendly page
+  listing public `*-releases` repositories with links to their GitHub downloads
+  and release notes.
 - **Admin page** — [`admin.html`](admin.html): my complete repository inventory
   (including private, archived and forked repos). Reachable on the same site but
   **passphrase-protected**: the data ships only as AES-GCM ciphertext and is
@@ -24,6 +27,11 @@ Each project links to:
 - the **live site** (GitHub Pages) when the repo publishes one,
 - the **homepage** when a different URL is configured.
 
+The beta releases page automatically lists public repositories whose names end
+in `-releases`, using the public repository data file. Each entry links to the
+repository's GitHub Releases page, where testers can download available builds
+and read version notes.
+
 ## Data
 
 Both data files are **generated** in a private admin repository, never edited by
@@ -39,6 +47,7 @@ See [`docs/TAXONOMY.md`](docs/TAXONOMY.md) for the section and tag taxonomy.
 ```bash
 python -m http.server 8000
 # open http://localhost:8000/       (public)
+# open http://localhost:8000/releases.html (beta releases)
 # open http://localhost:8000/admin.html  (admin, needs passphrase)
 ```
 

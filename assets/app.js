@@ -217,10 +217,11 @@
   function buildNav(meta) {
     const nav = $("#nav");
     if (!nav) return;
+    const releaseLink = !ADMIN ? `<a class="stat" href="releases.html">Beta software releases</a>` : "";
     const links = sectionList(meta)
       .map((s) => `<a class="stat" href="#sec-${esc(s.id)}">${esc(s.title)}</a>`)
       .join("");
-    nav.innerHTML = links;
+    nav.innerHTML = releaseLink + links;
   }
 
   function fillSelects(meta) {

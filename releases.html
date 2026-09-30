@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beta software releases — diegoami</title>
+  <meta name="description" content="Beta software builds and release notes for projects by diegoami. Browse a project's GitHub releases to download the latest tester build." />
+  <meta name="author" content="diegoami" />
+  <meta property="og:title" content="Beta software releases — diegoami" />
+  <meta property="og:description" content="Beta software builds and release notes for projects by diegoami." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script>window.__SITE_MODE__ = "releases";</script>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <div class="eyebrow">Beta program</div>
+      <h1>Software releases</h1>
+      <p class="lead">
+        Download beta builds and read release notes for software I’m testing.
+        Choose a project to see its available versions and downloadable files.
+      </p>
+      <div class="stats" id="release-stats" aria-live="polite"></div>
+      <div class="stats" style="margin-top:10px">
+        <a class="stat" href="index.html">← Portfolio</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="section" aria-labelledby="release-heading">
+      <div class="section-head">
+        <h2 id="release-heading">Available beta channels</h2>
+        <p>Release pages include build downloads, version details and update notes.</p>
+      </div>
+      <div class="grid" id="releases" aria-live="polite">
+        <p class="empty">Loading release repositories…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>For source code and more projects, visit the <a href="index.html">portfolio</a>.</p>
+    </div>
+  </footer>
+
+  <script src="assets/releases.js"></script>
+</body>
+</html>
