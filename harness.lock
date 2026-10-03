@@ -1,0 +1,20 @@
+# harness.lock: what this repository copied from diegoami/harness_imperial (profile review).
+# A bump: move this file and every file it lists aside, run adopt.mjs at the new commit,
+# then carry your changes to the adapted files (and any other) over to the new copies.
+# Verify:  grep -E '^[0-9a-f]{64}  ' harness.lock | sha256sum -c --quiet
+commit 457159e9fe0aee0d0159dd60e364baf0b7bcb273
+profile review
+copied 2026-10-03
+adapt CLAUDE.md
+fcd54bc84ec85a4567b8ddca5f124f1a4b5096dde56d79604bfa1c9b167cded7  tools/harness/review.mjs
+8b8ba70c1820463240c3a9866616c05092b33b53de4dcd2ebe7f8c0b089969fe  tools/harness/switch-model.mjs
+cebd115bfc71597e1096213f3df01bfc44a4714edb5f536645741b630564407c  tools/harness/lib/opencode.mjs
+41ade10704eb959a79815b38dd4764a95337850058f2f8c81dc3e074dc3e0798  tools/harness/lib/chain.mjs
+63575d2c773898083ae479342c19422603304d54d45211e67779030448b0e664  tools/harness/lib/common.mjs
+7d0ee40ee7706ba9209747b9335c133e15e6443b8eebba311ebb41c15f5d382d  tools/harness/lib/post.mjs
+1298334b7b52bcc72b949a576f33ee1aa0fe162c6693938f8e9cab7de4acf4ce  tools/harness/lib/review-selftest.mjs
+d0822192430d8b2df89906007cefcdab1f4ae28b37253bdf7c516e377ca7e28b  tools/harness/lib/switch.mjs
+8d3098b18a80f3f9c711af6c9fa53eb5cca599f6b41205c28849f23b56bf93db  .opencode/agents/reviewer.md
+5b9f08a1ddb8eb9825aa415686796126eebae7142c2133ebdc661194ea687704  docs/review.md
+dfccb4997d56aca25b0d1012783b6e6c9d95293f748a178e509ef7b3381d757b  docs/environment.md
+fdb84b1876ab4e55ba16f552e5c1fc05b01d1278a7c5740122095bb031d8919a  harness.json
