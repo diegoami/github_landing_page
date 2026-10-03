@@ -1,0 +1,34 @@
+{
+  "worktreeRoot": "../{repo}-work",
+  "models": {
+    "glm-flash": {
+      "id": "zai-coding-plan/glm-5.3-flash",
+      "variant": "high",
+      "family": "glm",
+      "watch": "Back on Z.AI's plan (L35) after going 900 s without a step and ending runs early (L27), and missing a must-fix as a reviewer: look for an idle timeout, exit 0 with no commit, and an approve with no DW evidence (L32)."
+    },
+    "luna": {
+      "id": "openai/gpt-6-luna",
+      "variant": "high",
+      "family": "openai"
+    },
+    "deepseek-flash": {
+      "id": "opencode-go/deepseek-v4.1-flash",
+      "variant": "high",
+      "family": "deepseek"
+    }
+  },
+  "reviewer": {
+    "agent": "reviewer",
+    "chain": [
+      "glm-flash",
+      "luna",
+      "deepseek-flash"
+    ],
+    "claudeFallback": null,
+    "startupTimeoutSec": 180,
+    "idleTimeoutSec": 600,
+    "totalTimeoutSec": 3600,
+    "secondOpinion": "luna"
+  }
+}
