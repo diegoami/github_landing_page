@@ -126,6 +126,14 @@
     return (meta.sections || []).filter((s) => s.id !== "featured" && (ADMIN || s.public));
   }
 
+  // Sections that actually render on the public page: render() skips any section
+  // with no curated, non-featured project, so nav links and the stat use this.
+  function renderedSections(meta) {
+    if (ADMIN) return sectionList(meta);
+    const shown = new Set(state.all.filter((r) => r.curated && !r.featured).map((r) => r.section));
+    return sectionList(meta).filter((s) => shown.has(s.id));
+  }
+
   function sectionTitle(meta, id) {
     const s = (meta.sections || []).find((x) => x.id === id);
     return s ? s.title : id;
@@ -217,11 +225,10 @@
   function buildNav(meta) {
     const nav = $("#nav");
     if (!nav) return;
-    const releaseLink = !ADMIN ? `<a class="stat" href="releases.html">Beta software releases</a>` : "";
-    const links = sectionList(meta)
+    const links = renderedSections(meta)
       .map((s) => `<a class="stat" href="#sec-${esc(s.id)}">${esc(s.title)}</a>`)
       .join("");
-    nav.innerHTML = releaseLink + links;
+    nav.innerHTML = links;
   }
 
   function fillSelects(meta) {
@@ -255,6 +262,7 @@
 
     const c = data.meta.counts || {};
     const stats = $("#stats");
+    const curated = state.all.filter((r) => r.curated);
     if (stats) {
       const items = ADMIN
         ? [
@@ -265,10 +273,10 @@
             ["To make public", c.recommendMakePublic],
           ]
         : [
-            ["Projects", state.all.length],
-            ["Languages", new Set(state.all.map((r) => r.language).filter(Boolean)).size],
-            ["With live site", state.all.filter((r) => r.links.pages).length],
-            ["Sections", sectionList(data.meta).length],
+            ["Curated projects", curated.length],
+            ["Languages", new Set(curated.map((r) => r.language).filter(Boolean)).size],
+            ["With live site", curated.filter((r) => r.links.pages).length],
+            ["Sections", renderedSections(data.meta).length],
           ];
       stats.innerHTML = items.map(([k, v]) => `<span class="stat"><b>${v ?? 0}</b> ${esc(k)}</span>`).join("");
     }

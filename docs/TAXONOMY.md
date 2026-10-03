@@ -4,7 +4,7 @@ The public portfolio is grouped into the following sections. Each project carrie
 
 | Section | What belongs here | Count |
 |---|---|---|
-| Games & Interactive | Playable games, game tooling and reimplementations. | 22 |
+| Games & Interactive | Playable games, game tooling and reimplementations. | 17 |
 | Chess & Analysis | Chess collections, analysis pipelines and chess apps. | 4 |
 | Crusader Kings & Strategy | Save-file parsers, chronicles and mods for Paradox titles. | 5 |
 | AI, ML & Data | Machine learning, NLP, scrapers and data engineering. | 7 |
@@ -29,9 +29,7 @@ The public portfolio is grouped into the following sections. Each project carrie
 - `ml`
 - `pascal`
 - `php`
-- `portfolio`
 - `python`
-- `release`
 - `scraping`
 - `shell`
 - `template`
