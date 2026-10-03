@@ -14,7 +14,8 @@ rules; `docs/environment.md` holds the logins.
 | 3, on failure | DeepSeek V4.1 Flash (`deepseek-flash`) | OpenCode Go, `opencode-go/deepseek-v4.1-flash` |
 | then | the user | no Claude reviewer (`claudeFallback: null`) |
 
-The next model runs only when one produced no review at all; the same failure twice stops the
+There is no `--hard` chain here (`reviewer.hard` is null): a critical PR gets a second opinion
+instead. The next model runs only when one produced no review at all; the same failure twice stops the
 chain (L12). A critical PR's second opinion is Luna, or, when Luna wrote the first review, the
 chain's next model. Each reviewer works read-only in a detached worktree of the PR's head.
 
@@ -28,7 +29,10 @@ chain's next model. Each reviewer works read-only in a detached worktree of the 
    the PR (L34).
 4. Read the outcome:
    - exit 0: the review is posted. `approve`: merge. `approve after named fixes` or `rework`: fix,
-     push, review again. With a second opinion, the stricter verdict counts.
+     push, review again. With a second opinion, the stricter verdict counts. A heavy review (three
+     or more blocking findings, or new ones of the last round's class) changes how the next round
+     works, not who does it: fix the class, sweep the PR's own code for it, list the sweep in the
+     PR body, and change the approach when the class needs it (`CLAUDE.md` rule 5, L38).
    - exit 3: no review, or no second opinion. Tell the user.
    - exit 4: a review posted but not acted on (cut off, unreadable, an approve that skipped a
      Done-when line). Read it on the PR and tell the user.

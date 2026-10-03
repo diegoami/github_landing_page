@@ -29,6 +29,7 @@
     "startupTimeoutSec": 180,
     "idleTimeoutSec": 600,
     "totalTimeoutSec": 3600,
+    "hard": null,
     "secondOpinion": "luna"
   }
 }
