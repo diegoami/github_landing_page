@@ -362,3 +362,6 @@ details.appendix .appendix-note { color: var(--text-faint); font-size: 13px; mar
 .status.err { color: var(--danger); }
 table.repos tr.dirty { background: color-mix(in srgb, var(--warn) 10%, transparent); }
 .changed-flag { color: var(--warn); }
+
+.hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 18px; }
+.hero-actions .btn { display: inline-block; text-decoration: none; }

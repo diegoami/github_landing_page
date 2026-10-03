@@ -29,9 +29,7 @@ The public portfolio is grouped into the following sections. Each project carrie
 - `ml`
 - `pascal`
 - `php`
-- `portfolio`
 - `python`
-- `release`
 - `scraping`
 - `shell`
 - `template`

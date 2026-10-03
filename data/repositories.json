@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-09-26T14:30:11.773Z",
+    "generatedAt": "2026-10-03T21:04:11.563Z",
     "owner": "diegoami",
     "totalRepos": 276,
     "counts": {
@@ -10,7 +10,7 @@
       "forks": 78,
       "recommendMakePublic": 11,
       "published": 108,
-      "curated": 44,
+      "curated": 39,
       "legacy": 62
     },
     "sections": [
@@ -188,8 +188,7 @@
       "tags": [
         "game",
         "javascript",
-        "ml",
-        "portfolio"
+        "ml"
       ],
       "featured": false,
       "summary": "A simple HTML5 game — shoot the balloons!",
@@ -223,10 +222,7 @@
       "displaySection": "games",
       "section": "games",
       "subsection": "Arcade & Simulations",
-      "tags": [
-        "portfolio",
-        "release"
-      ],
+      "tags": [],
       "featured": false,
       "summary": "Project repository.",
       "reason": "Public, original, non-archived project.",
@@ -237,7 +233,7 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
+      "curated": false,
       "legacy": false,
       "hidden": false
     },
@@ -333,8 +329,7 @@
       "subsection": "ML Projects",
       "tags": [
         "html",
-        "ml",
-        "release"
+        "ml"
       ],
       "featured": false,
       "summary": "source of http://www.faqportal.de",
@@ -440,8 +435,7 @@
       "section": "games",
       "subsection": "Card Games",
       "tags": [
-        "javascript",
-        "portfolio"
+        "javascript"
       ],
       "featured": false,
       "summary": "A simple web application allowing to play Briscola online",
@@ -511,8 +505,7 @@
       "section": "games",
       "subsection": "Arcade & Simulations",
       "tags": [
-        "php",
-        "portfolio"
+        "php"
       ],
       "featured": false,
       "summary": "A simple web application simulating a round-robin championship",
@@ -549,8 +542,7 @@
       "tags": [
         "chess",
         "game",
-        "java",
-        "portfolio"
+        "java"
       ],
       "featured": false,
       "summary": "Chess application in Java.",
@@ -623,8 +615,7 @@
       "tags": [
         "chess",
         "game",
-        "html",
-        "portfolio"
+        "html"
       ],
       "featured": false,
       "summary": "A browsable collection of my chess games.",
@@ -697,9 +688,7 @@
       "subsection": "Assets & Generators",
       "tags": [
         "ck3",
-        "portfolio",
-        "python",
-        "release"
+        "python"
       ],
       "featured": false,
       "summary": "Generates Crusader Kings portrait assets.",
@@ -733,11 +722,9 @@
       "displaySection": "paradox",
       "section": "paradox",
       "subsection": "Chronicles & Wikis",
-      "tags": [
-        "portfolio"
-      ],
+      "tags": [],
       "featured": false,
-      "summary": "Project repository.",
+      "summary": "Publishes the Crusader Kings III chronicle wikis built by Ck-parser, with portraits and coats of arms.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "https://diegoami.github.io/ck_wiki/",
       "links": {
@@ -771,7 +758,6 @@
       "section": "paradox",
       "subsection": "Save Parsers",
       "tags": [
-        "portfolio",
         "python"
       ],
       "featured": true,
@@ -809,7 +795,6 @@
       "tags": [
         "ck3",
         "game",
-        "portfolio",
         "python"
       ],
       "featured": true,
@@ -846,11 +831,10 @@
       "subsection": "Playthroughs & Scripts",
       "tags": [
         "ck3",
-        "portfolio",
         "python"
       ],
       "featured": false,
-      "summary": "Python repository.",
+      "summary": "Python scripts to manage a Crusader Kings III playthrough history.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
@@ -892,7 +876,6 @@
       "subsection": "CKAD / Kubernetes",
       "tags": [
         "kubernetes",
-        "portfolio",
         "python"
       ],
       "featured": true,
@@ -1031,9 +1014,7 @@
       "displaySection": "devops",
       "section": "devops",
       "subsection": "Cloud & IaC",
-      "tags": [
-        "release"
-      ],
+      "tags": [],
       "featured": false,
       "summary": "Project repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
@@ -1139,7 +1120,6 @@
       "tags": [
         "chess",
         "game",
-        "portfolio",
         "shell"
       ],
       "featured": false,
@@ -1845,7 +1825,6 @@
       "section": "ai-data",
       "subsection": "Scraping & Media",
       "tags": [
-        "portfolio",
         "python"
       ],
       "featured": false,
@@ -1986,7 +1965,6 @@
       "section": "games",
       "subsection": "Diplomacy",
       "tags": [
-        "portfolio",
         "python"
       ],
       "featured": false,
@@ -2022,7 +2000,6 @@
       "section": "games",
       "subsection": "Diplomacy",
       "tags": [
-        "portfolio",
         "python"
       ],
       "featured": false,
@@ -2061,8 +2038,7 @@
       "subsection": "Card Games",
       "tags": [
         "game",
-        "pascal",
-        "portfolio"
+        "pascal"
       ],
       "featured": false,
       "summary": "Discola card/board game implementation in Pascal.",
@@ -2096,10 +2072,7 @@
       "displaySection": "games",
       "section": "games",
       "subsection": "Card Games",
-      "tags": [
-        "portfolio",
-        "release"
-      ],
+      "tags": [],
       "featured": false,
       "summary": "Project repository.",
       "reason": "Public, original, non-archived project.",
@@ -2110,7 +2083,7 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
+      "curated": false,
       "legacy": false,
       "hidden": false
     },
@@ -2307,8 +2280,7 @@
       "subsection": "Legacy (Delphi & JS)",
       "tags": [
         "game",
-        "pascal",
-        "portfolio"
+        "pascal"
       ],
       "featured": false,
       "summary": "Delphi card game experiment (Flash Pair).",
@@ -2378,8 +2350,7 @@
       "section": "games",
       "subsection": "Legacy (Delphi & JS)",
       "tags": [
-        "pascal",
-        "portfolio"
+        "pascal"
       ],
       "featured": false,
       "summary": "Delphi 5 project from the FTC era.",
@@ -2449,8 +2420,7 @@
       "section": "games",
       "subsection": "Geography Games",
       "tags": [
-        "pascal",
-        "portfolio"
+        "pascal"
       ],
       "featured": false,
       "summary": "Original Delphi version of Geoclick.",
@@ -2485,8 +2455,7 @@
       "section": "games",
       "subsection": "Geography Games",
       "tags": [
-        "javascript",
-        "portfolio"
+        "javascript"
       ],
       "featured": false,
       "summary": "Earlier JavaScript version of the Geoclick geography game.",
@@ -2522,10 +2491,7 @@
       "displaySection": "games",
       "section": "games",
       "subsection": "Geography Games",
-      "tags": [
-        "portfolio",
-        "release"
-      ],
+      "tags": [],
       "featured": false,
       "summary": "Downloadable Windows and Android builds of Geoclick, a geography map quiz. Play in the browser: https://geoclick.netlify.app/",
       "reason": "Public, original, non-archived project.",
@@ -2536,7 +2502,7 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
+      "curated": false,
       "legacy": false,
       "hidden": false
     },
@@ -2558,11 +2524,9 @@
       "displaySection": "devtools",
       "section": "devtools",
       "subsection": "Templates & Workflows",
-      "tags": [
-        "portfolio"
-      ],
+      "tags": [],
       "featured": false,
-      "summary": "Project repository.",
+      "summary": "The static GitHub Pages portfolio you are looking at: plain HTML, CSS and JS, no build step.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
@@ -2594,7 +2558,6 @@
       "section": "devtools",
       "subsection": "Templates & Workflows",
       "tags": [
-        "portfolio",
         "template"
       ],
       "featured": false,
@@ -2631,7 +2594,6 @@
       "subsection": "Templates & Workflows",
       "tags": [
         "javascript",
-        "portfolio",
         "template"
       ],
       "featured": true,
@@ -2667,7 +2629,6 @@
       "section": "games",
       "subsection": "Imperial Conquest",
       "tags": [
-        "portfolio",
         "python"
       ],
       "featured": false,
@@ -2705,8 +2666,7 @@
       "section": "games",
       "subsection": "Imperial Conquest",
       "tags": [
-        "csharp",
-        "portfolio"
+        "csharp"
       ],
       "featured": true,
       "summary": "Open reimplementation in C# of the 1996 strategy game Imperial Conquest 2.",
@@ -2742,10 +2702,7 @@
       "displaySection": "games",
       "section": "games",
       "subsection": "Imperial Conquest",
-      "tags": [
-        "portfolio",
-        "release"
-      ],
+      "tags": [],
       "featured": false,
       "summary": "Reverse-engineering research on Imperial Conquest 2 (1996): save/DAT format, decompiled formulas, evidence-based reports.",
       "reason": "Public, original, non-archived project.",
@@ -2814,7 +2771,6 @@
       "section": "devtools",
       "subsection": "Templates & Workflows",
       "tags": [
-        "portfolio",
         "template"
       ],
       "featured": false,
@@ -2954,11 +2910,9 @@
       "displaySection": "ai-data",
       "section": "ai-data",
       "subsection": "Data",
-      "tags": [
-        "portfolio"
-      ],
+      "tags": [],
       "featured": false,
-      "summary": "Project repository.",
+      "summary": "Generated thumbnail image sets for the thumbnail generator.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
@@ -2990,11 +2944,10 @@
       "section": "ai-data",
       "subsection": "Data",
       "tags": [
-        "portfolio",
         "python"
       ],
       "featured": false,
-      "summary": "Python repository.",
+      "summary": "Python script that turns one image into a series of numbered, resized PNG thumbnails from a YAML config.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
       "links": {
@@ -3028,8 +2981,7 @@
       "section": "games",
       "subsection": "Arcade & Simulations",
       "tags": [
-        "godot",
-        "portfolio"
+        "godot"
       ],
       "featured": true,
       "summary": "Small 2D game built with Godot and GDScript.",
@@ -3135,8 +3087,7 @@
       "section": "devtools",
       "subsection": "Websites",
       "tags": [
-        "astro",
-        "portfolio"
+        "astro"
       ],
       "featured": false,
       "summary": "Personal website (Astro).",
@@ -3209,7 +3160,6 @@
       "section": "ai-data",
       "subsection": "Scraping & Media",
       "tags": [
-        "portfolio",
         "python",
         "scraping"
       ],
@@ -3246,7 +3196,6 @@
       "section": "ai-data",
       "subsection": "Scraping & Media",
       "tags": [
-        "portfolio",
         "scraping"
       ],
       "featured": false,
@@ -3282,7 +3231,6 @@
       "section": "games",
       "subsection": "Card Games",
       "tags": [
-        "portfolio",
         "python"
       ],
       "featured": false,
@@ -3331,7 +3279,6 @@
       "tags": [
         "chess",
         "game",
-        "portfolio",
         "python"
       ],
       "featured": true,
@@ -3507,8 +3454,7 @@
       "subsection": "Imperial Conquest",
       "tags": [
         "game",
-        "pascal",
-        "portfolio"
+        "pascal"
       ],
       "featured": false,
       "summary": "Reverse-engineering research on Imperial Conquest 2 (1996 Delphi 4X game): file formats, decompiled game logic, and the tooling used to recover them.",
@@ -3616,8 +3562,7 @@
       "section": "games",
       "subsection": "Card Games",
       "tags": [
-        "javascript",
-        "portfolio"
+        "javascript"
       ],
       "featured": true,
       "summary": "Italian card game Scopa, playable in the browser.",
@@ -3651,10 +3596,7 @@
       "displaySection": "games",
       "section": "games",
       "subsection": "Card Games",
-      "tags": [
-        "portfolio",
-        "release"
-      ],
+      "tags": [],
       "featured": false,
       "summary": "Scopetta - Android releases (binaries for the private source repo)",
       "reason": "Public, original, non-archived project.",
@@ -3665,7 +3607,7 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
+      "curated": false,
       "legacy": false,
       "hidden": false
     },
@@ -3759,8 +3701,7 @@
       "subsection": "Data",
       "tags": [
         "javascript",
-        "ml",
-        "portfolio"
+        "ml"
       ],
       "featured": true,
       "summary": "Converts SRT subtitle files into styled HTML pages.",
@@ -3830,10 +3771,7 @@
       "displaySection": "games",
       "section": "games",
       "subsection": "Card Games",
-      "tags": [
-        "portfolio",
-        "release"
-      ],
+      "tags": [],
       "featured": false,
       "summary": "Project repository.",
       "reason": "Public, original, non-archived project.",
@@ -3844,7 +3782,7 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
+      "curated": false,
       "legacy": false,
       "hidden": false
     },
@@ -3973,7 +3911,6 @@
       "section": "ai-data",
       "subsection": "Scraping & Media",
       "tags": [
-        "portfolio",
         "python"
       ],
       "featured": true,
