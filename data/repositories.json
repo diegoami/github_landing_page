@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-03T21:04:11.563Z",
+    "generatedAt": "2026-10-03T21:17:34.897Z",
     "owner": "diegoami",
     "totalRepos": 276,
     "counts": {
@@ -117,6 +117,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -126,7 +127,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -152,6 +152,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "APCC",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -161,7 +162,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -191,6 +191,7 @@
         "ml"
       ],
       "featured": false,
+      "curated": true,
       "summary": "A simple HTML5 game — shoot the balloons!",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -200,7 +201,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -224,6 +224,7 @@
       "subsection": "Arcade & Simulations",
       "tags": [],
       "featured": false,
+      "curated": false,
       "summary": "Project repository.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -233,7 +234,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": false,
       "hidden": false
     },
@@ -259,6 +259,7 @@
         "ml"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Project repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -268,7 +269,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -296,6 +296,7 @@
         "nlp"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Jupyter Notebook repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -305,7 +306,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -332,6 +332,7 @@
         "ml"
       ],
       "featured": false,
+      "curated": false,
       "summary": "source of http://www.faqportal.de",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -341,7 +342,6 @@
         "homepage": "http://www.faqportal.de"
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -367,6 +367,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -376,7 +377,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -403,6 +403,7 @@
         "scraping"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Blogspot API wrapper",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -412,7 +413,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -438,6 +438,7 @@
         "javascript"
       ],
       "featured": false,
+      "curated": true,
       "summary": "A simple web application allowing to play Briscola online",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -447,7 +448,6 @@
         "homepage": "http://www.amicabile.com/javascript/discola/"
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -473,6 +473,7 @@
         "jupyter"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Jupyter Notebook repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -482,7 +483,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -508,6 +508,7 @@
         "php"
       ],
       "featured": false,
+      "curated": true,
       "summary": "A simple web application simulating a round-robin championship",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -517,7 +518,6 @@
         "homepage": "http://www.amicabile.com/javascript/championship/"
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -545,6 +545,7 @@
         "java"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Chess application in Java.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -554,7 +555,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -581,6 +581,7 @@
         "java"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Source of http://www.chessella.com",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -590,7 +591,6 @@
         "homepage": "http://www.chessella.com"
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -618,6 +618,7 @@
         "html"
       ],
       "featured": false,
+      "curated": true,
       "summary": "A browsable collection of my chess games.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "https://diegoami.github.io/chessgamescollection/",
@@ -627,7 +628,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -653,6 +653,7 @@
         "html"
       ],
       "featured": false,
+      "curated": false,
       "summary": "HTML repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -662,7 +663,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -691,6 +691,7 @@
         "python"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Generates Crusader Kings portrait assets.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -700,7 +701,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -724,6 +724,7 @@
       "subsection": "Chronicles & Wikis",
       "tags": [],
       "featured": false,
+      "curated": true,
       "summary": "Publishes the Crusader Kings III chronicle wikis built by Ck-parser, with portraits and coats of arms.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "https://diegoami.github.io/ck_wiki/",
@@ -733,7 +734,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -761,6 +761,7 @@
         "python"
       ],
       "featured": true,
+      "curated": true,
       "summary": "Parser for Crusader Kings III save files.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "https://diegoami.github.io/Ck-parser/",
@@ -770,7 +771,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -798,6 +798,7 @@
         "python"
       ],
       "featured": true,
+      "curated": true,
       "summary": "Turns Crusader Kings III save games into a wiki-style chronicle. Library, CLI, GitHub edition and desktop app.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -807,7 +808,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -834,6 +834,7 @@
         "python"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Python scripts to manage a Crusader Kings III playthrough history.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -843,7 +844,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -879,6 +879,7 @@
         "python"
       ],
       "featured": true,
+      "curated": true,
       "summary": "CKAD exam prep: tips, 176 kubectl drills, 88 runnable scenarios on a local kind cluster and two mock exams.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -888,7 +889,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -914,6 +914,7 @@
         "kubernetes"
       ],
       "featured": false,
+      "curated": false,
       "summary": "A set of exercises and solutions to prepare for the Certified Kubernetes Application Developer exam by Cloud Native Computing Foundation.",
       "reason": "Forked upstream repository; no original portfolio value.",
       "pagesUrl": "",
@@ -923,7 +924,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -950,6 +950,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -959,7 +960,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -983,6 +983,7 @@
       "subsection": "Experiments & Datasets",
       "tags": [],
       "featured": false,
+      "curated": false,
       "summary": "Collection of APIs and Datasets for selected topics",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -992,7 +993,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1016,6 +1016,7 @@
       "subsection": "Cloud & IaC",
       "tags": [],
       "featured": false,
+      "curated": false,
       "summary": "Project repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1025,7 +1026,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1051,6 +1051,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1060,7 +1061,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1086,6 +1086,7 @@
         "chess"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Project repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1095,7 +1096,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1123,6 +1123,7 @@
         "shell"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Scripts for collecting and processing chess games.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -1132,7 +1133,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -1159,6 +1159,7 @@
         "ml"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Jupyter Notebook repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1168,7 +1169,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1194,6 +1194,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1203,7 +1204,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1230,6 +1230,7 @@
         "jupyter"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Jupyter Notebook repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1239,7 +1240,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1265,6 +1265,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1274,7 +1275,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1300,6 +1300,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1309,7 +1310,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1333,6 +1333,7 @@
       "subsection": "Data",
       "tags": [],
       "featured": false,
+      "curated": false,
       "summary": "Rich Text Format repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1342,7 +1343,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1369,6 +1369,7 @@
         "java"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Java repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1378,7 +1379,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1404,6 +1404,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1413,7 +1414,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1439,6 +1439,7 @@
         "jupyter"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Jupyter Notebook repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1448,7 +1449,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1475,6 +1475,7 @@
         "ml"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Automatic splitting of videos in sequences",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1484,7 +1485,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1510,6 +1510,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1519,7 +1520,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1545,6 +1545,7 @@
         "typescript"
       ],
       "featured": false,
+      "curated": false,
       "summary": "TypeScript repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1554,7 +1555,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1580,6 +1580,7 @@
         "javascript"
       ],
       "featured": false,
+      "curated": false,
       "summary": "A scoreboard in redis and node js",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1589,7 +1590,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1615,6 +1615,7 @@
         "shell"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Spam classifier made in Java and Spark",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1624,7 +1625,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1650,6 +1650,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Spam detector using Pyspark",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1659,7 +1660,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1685,6 +1685,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Project to split videos in frames and saves them to S3",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1694,7 +1695,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1721,6 +1721,7 @@
         "ml"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Using tensorflow to identify scenes in youtube let's play videos",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1730,7 +1731,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1757,6 +1757,7 @@
         "ml"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Jupyter Notebook repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1766,7 +1767,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1793,6 +1793,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1802,7 +1803,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1828,6 +1828,7 @@
         "python"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Youtube scripts collection",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -1837,7 +1838,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -1863,6 +1863,7 @@
         "ml"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Project repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1872,7 +1873,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1898,6 +1898,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1907,7 +1908,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1933,6 +1933,7 @@
         "javascript"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Frontend for the diego-bot",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -1942,7 +1943,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -1968,6 +1968,7 @@
         "python"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Diplomacy adjacency/board helper in Python.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -1977,7 +1978,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2003,6 +2003,7 @@
         "python"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Diplomacy variant tooling for Mount & Blade Warband.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2012,7 +2013,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2041,6 +2041,7 @@
         "pascal"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Discola card/board game implementation in Pascal.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2050,7 +2051,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2074,6 +2074,7 @@
       "subsection": "Card Games",
       "tags": [],
       "featured": false,
+      "curated": false,
       "summary": "Project repository.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2083,7 +2084,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": false,
       "hidden": false
     },
@@ -2109,6 +2109,7 @@
         "jupyter"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Jupyter Notebook repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -2118,7 +2119,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -2144,6 +2144,7 @@
         "jupyter"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Project DSRetreat Melbourne Dataset",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -2153,7 +2154,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -2179,6 +2179,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -2188,7 +2189,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -2214,6 +2214,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -2223,7 +2224,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -2247,6 +2247,7 @@
       "subsection": "Uncategorised",
       "tags": [],
       "featured": false,
+      "curated": false,
       "summary": "Project repository.",
       "reason": "Throwaway test repository.",
       "pagesUrl": "",
@@ -2256,7 +2257,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": false,
       "hidden": true
     },
@@ -2283,6 +2283,7 @@
         "pascal"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Delphi card game experiment (Flash Pair).",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2292,7 +2293,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2318,6 +2318,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -2327,7 +2328,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -2353,6 +2353,7 @@
         "pascal"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Delphi 5 project from the FTC era.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2362,7 +2363,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2388,6 +2388,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -2397,7 +2398,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -2423,6 +2423,7 @@
         "pascal"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Original Delphi version of Geoclick.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2432,7 +2433,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2458,6 +2458,7 @@
         "javascript"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Earlier JavaScript version of the Geoclick geography game.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2467,7 +2468,6 @@
         "homepage": "http://www.amicabile.com/javascript/geoclick/"
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2493,6 +2493,7 @@
       "subsection": "Geography Games",
       "tags": [],
       "featured": false,
+      "curated": false,
       "summary": "Downloadable Windows and Android builds of Geoclick, a geography map quiz. Play in the browser: https://geoclick.netlify.app/",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2502,7 +2503,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": false,
       "hidden": false
     },
@@ -2526,6 +2526,7 @@
       "subsection": "Templates & Workflows",
       "tags": [],
       "featured": false,
+      "curated": true,
       "summary": "The static GitHub Pages portfolio you are looking at: plain HTML, CSS and JS, no build step.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2535,7 +2536,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2561,6 +2561,7 @@
         "template"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Prompt library backing the harness workflow.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2570,7 +2571,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2597,6 +2597,7 @@
         "template"
       ],
       "featured": true,
+      "curated": true,
       "summary": "Reusable agentic engineering workflow template (review process, tooling, docs).",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2606,7 +2607,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2632,6 +2632,7 @@
         "python"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Test fixtures extracted from Imperial Conquest 2.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2641,7 +2642,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2669,6 +2669,7 @@
         "csharp"
       ],
       "featured": true,
+      "curated": true,
       "summary": "Open reimplementation in C# of the 1996 strategy game Imperial Conquest 2.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2678,7 +2679,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2704,6 +2704,7 @@
       "subsection": "Imperial Conquest",
       "tags": [],
       "featured": false,
+      "curated": true,
       "summary": "Reverse-engineering research on Imperial Conquest 2 (1996): save/DAT format, decompiled formulas, evidence-based reports.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2713,7 +2714,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2739,6 +2739,7 @@
         "html"
       ],
       "featured": false,
+      "curated": false,
       "summary": "HTML repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -2748,7 +2749,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -2774,6 +2774,7 @@
         "template"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Project repository.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2783,7 +2784,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2809,6 +2809,7 @@
         "javascript"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Source for http://www.europoplyrics.com",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -2818,7 +2819,6 @@
         "homepage": "http://www.europoplyrics.com"
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -2844,6 +2844,7 @@
         "javascript"
       ],
       "featured": false,
+      "curated": false,
       "summary": "JavaScript repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -2853,7 +2854,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -2879,6 +2879,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -2888,7 +2889,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -2912,6 +2912,7 @@
       "subsection": "Data",
       "tags": [],
       "featured": false,
+      "curated": true,
       "summary": "Generated thumbnail image sets for the thumbnail generator.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2921,7 +2922,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2947,6 +2947,7 @@
         "python"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Python script that turns one image into a series of numbered, resized PNG thumbnails from a YAML config.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2956,7 +2957,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -2984,6 +2984,7 @@
         "godot"
       ],
       "featured": true,
+      "curated": true,
       "summary": "Small 2D game built with Godot and GDScript.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -2993,7 +2994,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -3020,6 +3020,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Scripts to manage the chessella site",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3029,7 +3030,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3055,6 +3055,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "musicblogs-modules",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3064,7 +3065,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3090,6 +3090,7 @@
         "astro"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Personal website (Astro).",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -3099,7 +3100,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -3126,6 +3126,7 @@
         "scraping"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Source code of http://www.techcontroversy.com",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3135,7 +3136,6 @@
         "homepage": "http://www.techcontroversy.com"
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3164,6 +3164,7 @@
         "scraping"
       ],
       "featured": true,
+      "curated": true,
       "summary": "Automated news collection pipeline (scraper + published static site).",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "https://diegoami.github.io/newscollection2027/",
@@ -3173,7 +3174,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -3199,6 +3199,7 @@
         "scraping"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Data companion repository for newscollection2027.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -3208,7 +3209,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -3234,6 +3234,7 @@
         "python"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Card game collection (Oravitsa), Python.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -3243,7 +3244,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -3282,6 +3282,7 @@
         "python"
       ],
       "featured": true,
+      "curated": true,
       "summary": "Static, GitHub-browsable chess postmortems: Stockfish-detected mistakes, refutation lines, board diagrams and opening-theory deviations.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "https://diegoami.github.io/pgn-postmortem/",
@@ -3291,7 +3292,6 @@
         "homepage": "https://diegoami.github.io/pgn-postmortem/"
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -3315,6 +3315,7 @@
       "subsection": "Uncategorised",
       "tags": [],
       "featured": false,
+      "curated": false,
       "summary": "Project repository.",
       "reason": "Throwaway test repository.",
       "pagesUrl": "",
@@ -3324,7 +3325,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": false,
       "hidden": true
     },
@@ -3351,6 +3351,7 @@
         "scraping"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Scrapers Technews",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3360,7 +3361,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3386,6 +3386,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3395,7 +3396,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3421,6 +3421,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "A bot to play Travian",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3430,7 +3431,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3457,6 +3457,7 @@
         "pascal"
       ],
       "featured": false,
+      "curated": true,
       "summary": "Reverse-engineering research on Imperial Conquest 2 (1996 Delphi 4X game): file formats, decompiled game logic, and the tooling used to recover them.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -3466,7 +3467,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -3493,6 +3493,7 @@
         "scraping"
       ],
       "featured": false,
+      "curated": false,
       "summary": "A simple proof of concept - scrape the reddit site for patterns",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3502,7 +3503,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3528,6 +3528,7 @@
         "scala"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Exercises in Scala for Hackerrank",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3537,7 +3538,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3565,6 +3565,7 @@
         "javascript"
       ],
       "featured": true,
+      "curated": true,
       "summary": "Italian card game Scopa, playable in the browser.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -3574,7 +3575,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -3598,6 +3598,7 @@
       "subsection": "Card Games",
       "tags": [],
       "featured": false,
+      "curated": false,
       "summary": "Scopetta - Android releases (binaries for the private source repo)",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -3607,7 +3608,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": false,
       "hidden": false
     },
@@ -3633,6 +3633,7 @@
         "pascal"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Windows tool that observes shell window activity.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3642,7 +3643,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3666,6 +3666,7 @@
       "subsection": "Data",
       "tags": [],
       "featured": false,
+      "curated": false,
       "summary": "My solution for the assignment of SCEA-2 in 2007",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3675,7 +3676,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3704,6 +3704,7 @@
         "ml"
       ],
       "featured": true,
+      "curated": true,
       "summary": "Converts SRT subtitle files into styled HTML pages.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "https://diegoami.github.io/Srt2html/",
@@ -3713,7 +3714,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     },
@@ -3740,6 +3740,7 @@
         "scraping"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Scrape content and metadata from TechCrunch posts",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3749,7 +3750,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3773,6 +3773,7 @@
       "subsection": "Card Games",
       "tags": [],
       "featured": false,
+      "curated": false,
       "summary": "Project repository.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -3782,7 +3783,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": false,
       "hidden": false
     },
@@ -3809,6 +3809,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3818,7 +3819,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3844,6 +3844,7 @@
         "java"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Sun Certified Java Developer Solution - 2005",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3853,7 +3854,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3879,6 +3879,7 @@
         "python"
       ],
       "featured": false,
+      "curated": false,
       "summary": "Python repository.",
       "reason": "Legacy coursework / superseded experiment; recommended for archiving.",
       "pagesUrl": "",
@@ -3888,7 +3889,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": false,
       "legacy": true,
       "hidden": false
     },
@@ -3914,6 +3914,7 @@
         "python"
       ],
       "featured": true,
+      "curated": true,
       "summary": "YouTube tooling / experiments in Python.",
       "reason": "Public, original, non-archived project.",
       "pagesUrl": "",
@@ -3923,7 +3924,6 @@
         "homepage": null
       },
       "visibility": "public",
-      "curated": true,
       "legacy": false,
       "hidden": false
     }
