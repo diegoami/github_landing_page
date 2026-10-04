@@ -2,7 +2,7 @@
 # A bump: move this file and every file it lists aside, run adopt.mjs at the new commit,
 # then carry your changes to the adapted files (and any other) over to the new copies.
 # Verify:  grep -E '^[0-9a-f]{64}  ' harness.lock | sha256sum -c --quiet
-commit ace92fc9699176c70e898206d7982661fb924172
+commit 3af53940c6b9dc092e71bf919882c018a31d3c04
 profile review
 copied 2026-10-04
 adapt CLAUDE.md
@@ -15,6 +15,6 @@ b805800c2e945a2b924ce4e13bfba684f624acf045193f63003ae0276be853ac  tools/harness/
 1298334b7b52bcc72b949a576f33ee1aa0fe162c6693938f8e9cab7de4acf4ce  tools/harness/lib/review-selftest.mjs
 07d110855c842088500aa775e506197b287cfbc725709b09242171bdfe1372a2  tools/harness/lib/switch.mjs
 9d0ed40ffb127d21ac782de4f854b89a2ec08782a1517539b67c70f16163c5d0  .opencode/agents/reviewer.md
-c6756b8ca36154d59ae5f0e7c8096bf4e04c5a06de8ce79c0fbcefc231ab68cb  docs/review.md
+df1f907081ab042bb7d284348b33411b696449e6162a4499718c0edc1321bfa3  docs/review.md
 dfccb4997d56aca25b0d1012783b6e6c9d95293f748a178e509ef7b3381d757b  docs/environment.md
 c370e578ce21c02be7bde9f91b41ec1859b8ea2cd806b6d643b53855134fa275  harness.json
