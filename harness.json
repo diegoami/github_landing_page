@@ -30,6 +30,7 @@
     "idleTimeoutSec": 600,
     "totalTimeoutSec": 3600,
     "hard": null,
+    "sol": null,
     "secondOpinion": "luna"
   }
 }
