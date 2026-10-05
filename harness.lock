@@ -2,15 +2,15 @@
 # A bump: move this file and every file it lists aside, run adopt.mjs at the new commit,
 # then carry your changes to the adapted files (and any other) over to the new copies.
 # Verify:  grep -E '^[0-9a-f]{64}  ' harness.lock | sha256sum -c --quiet
-commit bb46e1452ee321311a28b1fa7ac0f0b809ccfe53
+commit 39e553bcc90c17b4ddd4236427ce606d058afaec
 profile review
 copied 2026-10-05
 adapt CLAUDE.md
-c43356d698aff9028789ada4688d776d013d10aa38660c9b6d5308e396f39b87  tools/harness/review.mjs
+d37f07603a1b2d72fbd4083eadaa9064d1c774c8c06f759e02dfa68f32709696  tools/harness/review.mjs
 8b8ba70c1820463240c3a9866616c05092b33b53de4dcd2ebe7f8c0b089969fe  tools/harness/switch-model.mjs
 b805800c2e945a2b924ce4e13bfba684f624acf045193f63003ae0276be853ac  tools/harness/lib/opencode.mjs
 41ade10704eb959a79815b38dd4764a95337850058f2f8c81dc3e074dc3e0798  tools/harness/lib/chain.mjs
-5f2db7d583089ea302ae2a263ae7afec8b0b111a4e2a520b1a3aa408de0fd2f9  tools/harness/lib/jail.mjs
+29dee3fa82d4153d394111b0cd3c2d26c3d3f4e398a0652370071ac22998480e  tools/harness/lib/jail.mjs
 cca3141569cecdf12176d8fe9ed5170cb6ef5013d689e2851afeaa1a0f920c77  tools/harness/lib/common.mjs
 24ab8b86b1d62c7f757a5d21bc2d84c038a05207e9f716b06346b359331d3e8b  tools/harness/lib/quota.mjs
 7d0ee40ee7706ba9209747b9335c133e15e6443b8eebba311ebb41c15f5d382d  tools/harness/lib/post.mjs
@@ -18,5 +18,5 @@ cca3141569cecdf12176d8fe9ed5170cb6ef5013d689e2851afeaa1a0f920c77  tools/harness/
 07d110855c842088500aa775e506197b287cfbc725709b09242171bdfe1372a2  tools/harness/lib/switch.mjs
 9d0ed40ffb127d21ac782de4f854b89a2ec08782a1517539b67c70f16163c5d0  .opencode/agents/reviewer.md
 8a567084b347ebadf8a42df92c9fd76aa72f3024ea560e40bb0f8e3390eecebc  docs/review.md
-7b705f0e96c5f02c595e682018b60d0b27bdd987b23857cdc8d8ca9222046503  docs/environment.md
+ed9245dadd97169a8389493d2633f5169ab7ac381efb2638949fa60b20e42df7  docs/environment.md
 fa1ff8efb49cae83e816f8bbdc06a805ad0bdf9dd95b1c445332fa50a071ca31  harness.json
