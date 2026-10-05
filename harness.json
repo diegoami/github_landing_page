@@ -8,7 +8,7 @@
       "watch": "Back on Z.AI's plan (L35) after going 900 s without a step and ending runs early (L27), and missing a must-fix as a reviewer: look for an idle timeout, exit 0 with no commit, and an approve with no DW evidence (L32)."
     },
     "luna": {
-      "id": "openai/gpt-6-luna",
+      "id": "openai/gpt-5.6-luna",
       "variant": "high",
       "family": "openai"
     },
