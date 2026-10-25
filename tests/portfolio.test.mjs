@@ -32,6 +32,7 @@ test("invalid config fails visibly rather than silently misclassifying projects"
     assert.throws(() => applyPortfolio([], { version: 1, projects: { example: { status } } }));
   }
   for (const settings of [{ curated: "false" }, { summary: 3 }, { featured: 1 }, { typo: true },
+    { tags: "game" }, { tags: null }, { tags: {} }, { tags: [1] }, { tags: [" "] },
     { liveUrl: "javascript:alert(1)" }, { downloadUrl: "/relative" }, { repositoryUrl: "https://user:pass@example.com" }, null, []]) {
     assert.throws(() => applyPortfolio([], { version: 1, projects: { example: settings } }));
   }
@@ -89,7 +90,7 @@ async function renderSite(portfolio, responseOK = true) {
 test("featured and ordinary cards render once in their assigned groups; filters combine", async () => {
   const [a, b, c] = inventory.repositories.filter((r) => r.curated);
   const site = await renderSite({ version: 1, projects: {
-    [a.name]: { status: "mature", featured: true, summary: "Unique portfolio copy <script>alert(1)</script>" },
+    [a.name]: { status: "mature", featured: true, summary: "Unique portfolio copy <script>alert(1)</script>", tags: ["custom-topic"] },
     [b.name]: { status: "wip" },
     [c.name]: { status: "demo" },
   } });
@@ -101,6 +102,11 @@ test("featured and ordinary cards render once in their assigned groups; filters 
   }
   assert.ok(html.includes("&lt;script&gt;"));
   assert.ok(!html.includes("<script>"));
+  assert.ok(site.elements.get("tagFilter").innerHTML.includes("custom-topic"));
+  site.change("tagFilter", "custom-topic");
+  assert.ok(site.html().includes(`data-name="${a.name}"`));
+  assert.ok(!site.html().includes(`data-name="${b.name}"`));
+  site.change("tagFilter", "");
   site.change("search", "Unique portfolio copy", "input");
   assert.ok(site.html().includes(`data-name="${a.name}"`), "featured cards remain visible in searches");
   assert.ok(!site.html().includes(`data-name="${b.name}"`));

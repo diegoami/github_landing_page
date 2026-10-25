@@ -174,7 +174,9 @@ import { CATEGORIES, applyPortfolio } from "./portfolio.mjs";
       // Keep featured projects in their status category, including during searches.
       const ordered = [...repos.filter((r) => r.featured), ...repos.filter((r) => !r.featured)];
       const themes = [...new Set(ordered.map((r) => r.section))];
-      const inner = themes.map((id) => `<div class="subsection"><h3>${esc(sectionTitle(meta, id))}</h3><div class="grid">${ordered.filter((r) => r.section === id).map(card).join("")}</div></div>`).join("");
+      const inner = ["mature", "tools"].includes(category.id)
+        ? `<div class="grid">${ordered.map(card).join("")}</div>`
+        : themes.map((id) => `<div class="subsection"><h3>${esc(sectionTitle(meta, id))}</h3><div class="grid">${ordered.filter((r) => r.section === id).map(card).join("")}</div></div>`).join("");
       html += `<section class="section status-section status-${category.id}" id="sec-${category.id}">
         <div class="section-head">
           <h2>${category.title} <span class="count">${repos.length}</span></h2>

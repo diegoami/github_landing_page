@@ -4,7 +4,8 @@ A static portfolio of my open-source projects, published with GitHub Pages.
 
 - **Public page** — [`index.html`](index.html): projects grouped into **Mature
   projects**, **Work in progress**, **Demos**, **Libraries & tools** and **Unclassified**, with subject
-  headings inside each group and a collapsed **project index**. Only explicitly
+  headings in WIP and demo groups and a collapsed **project index**. Mature
+  projects and Libraries & tools each use one grid without subdivisions. Only explicitly
   selected projects are listed. Featured cards stay within their status group.
 - **Beta releases** — [`releases.html`](releases.html): a tester-friendly page
   listing public `*-releases` repositories with links to their GitHub downloads
@@ -57,6 +58,7 @@ generated inventory. Find a repository by its exact, case-sensitive name:
   "summary": "Play Italian Scopa in your browser. Includes the rules and scoring.",
   "curated": true,
   "featured": true,
+  "tags": ["card-game", "scopa", "browser-game"],
   "liveUrl": "https://scopetta.netlify.app/",
   "downloadUrl": "https://github.com/diegoami/Scopetta/releases/latest"
 }
@@ -79,6 +81,11 @@ searchable. It is plain text, not HTML or Markdown. `curated: true` gives the
 project a card; `false` keeps it in the full index only. `featured: true` adds a
 badge and puts the card first within its subject group. It needs
 `curated: true` to appear as a card.
+
+`tags` is an optional array of nonempty strings. It replaces the generated tags
+and controls the card badges, tag filter and search. Omit it to keep the generated
+tags, or use `[]` to show no tags. Prefer descriptive tags such as `card-game`,
+`geography`, `subtitles` or `developer-tools`; language has its own filter too.
 
 `visible: true` includes a project on the public page. `false` hides it completely,
 including from search, counts, filters and the project index. Omitted `visible`

@@ -12,8 +12,10 @@ public summaries; see the [configuration guide](../README.md#configure-the-portf
 | `tools` | Reusable libraries and practical utilities. |
 | `unclassified` | No status assigned yet; the fallback for new repositories. |
 
-Subject sections remain secondary headings inside each status group. Language
-and domain tags provide independent filters, alongside status and search.
+Mature projects and Libraries & tools each use a single grid without subject
+subheadings. Other groups retain subject headings. Language and domain tags
+provide independent filters, alongside status and search. Override `tags` in
+`config/portfolio.json` to maintain the public tags without editing generated data.
 
 | Subject | What belongs here |
 |---|---|

@@ -8,7 +8,12 @@
       "featured": false,
       "liveUrl": "https://baloncelli.netlify.app/",
       "downloadUrl": "https://github.com/diegoami/balloons-JS/releases/latest",
-      "visible": true
+      "visible": true,
+      "tags": [
+        "arcade",
+        "browser-game",
+        "android"
+      ]
     },
     "balloons-js-releases": {
       "status": "unclassified",
@@ -78,7 +83,13 @@
       "summary": "Turns Crusader Kings III save games into a wiki-style chronicle. Library, CLI, GitHub edition and desktop app.",
       "curated": true,
       "featured": true,
-      "visible": true
+      "visible": true,
+      "tags": [
+        "ck3",
+        "save-parser",
+        "wiki",
+        "python"
+      ]
     },
     "ck3-scripts": {
       "status": "unclassified",
@@ -234,7 +245,12 @@
       "featured": false,
       "liveUrl": "https://discola.netlify.app/",
       "downloadUrl": "https://github.com/diegoami/discola-web/releases/latest",
-      "visible": true
+      "visible": true,
+      "tags": [
+        "card-game",
+        "briscola",
+        "browser-game"
+      ]
     },
     "dsretreat": {
       "status": "unclassified",
@@ -285,7 +301,12 @@
       "featured": true,
       "liveUrl": "https://geoclick.netlify.app/",
       "downloadUrl": "https://github.com/diegoami/geoclick-releases/releases/latest",
-      "visible": true
+      "visible": true,
+      "tags": [
+        "geography",
+        "quiz",
+        "browser-game"
+      ]
     },
     "github_landing_page": {
       "status": "unclassified",
@@ -334,7 +355,12 @@
       "summary": "Open reimplementation in C# of the 1996 strategy game Imperial Conquest 2.",
       "curated": true,
       "featured": true,
-      "visible": true
+      "visible": true,
+      "tags": [
+        "strategy-game",
+        "reimplementation",
+        "csharp"
+      ]
     },
     "imperial-conquest-2-research": {
       "status": "unclassified",
@@ -391,7 +417,12 @@
       "curated": true,
       "featured": true,
       "liveUrl": "https://diegoami.github.io/newscollection2027/",
-      "visible": true
+      "visible": true,
+      "tags": [
+        "news",
+        "scraping",
+        "python"
+      ]
     },
     "newscollection2027-data": {
       "status": "unclassified",
@@ -412,7 +443,13 @@
       "summary": "Read-only, local, dependency-free (Python standard library) browser for every OpenCode session stored on your machine.",
       "curated": true,
       "featured": false,
-      "visible": true
+      "visible": true,
+      "tags": [
+        "opencode",
+        "developer-tools",
+        "session-history",
+        "python"
+      ]
     },
     "oravitsa": {
       "status": "demo",
@@ -420,14 +457,25 @@
       "curated": true,
       "featured": false,
       "language": "GDScript",
-      "visible": true
+      "visible": true,
+      "tags": [
+        "godot",
+        "exploration",
+        "prototype"
+      ]
     },
     "pgn-postmortem": {
       "status": "tools",
       "summary": "Static, GitHub-browsable chess postmortems: Stockfish-detected mistakes, refutation lines, board diagrams and opening-theory deviations.",
       "curated": true,
       "featured": true,
-      "visible": true
+      "visible": true,
+      "tags": [
+        "chess",
+        "analysis",
+        "stockfish",
+        "python"
+      ]
     },
     "public-project": {
       "status": "unclassified",
@@ -450,7 +498,12 @@
       "featured": true,
       "liveUrl": "https://scopetta.netlify.app/",
       "downloadUrl": "https://github.com/diegoami/Scopetta/releases/latest",
-      "visible": true
+      "visible": true,
+      "tags": [
+        "card-game",
+        "scopa",
+        "browser-game"
+      ]
     },
     "scopetta-releases": {
       "status": "unclassified",
@@ -471,7 +524,12 @@
       "summary": "Converts SRT subtitle files into styled HTML pages.",
       "curated": true,
       "featured": true,
-      "visible": true
+      "visible": true,
+      "tags": [
+        "subtitles",
+        "html",
+        "conversion"
+      ]
     },
     "Tressette": {
       "status": "mature",
@@ -480,7 +538,12 @@
       "featured": false,
       "liveUrl": "https://tresettette.netlify.app/",
       "downloadUrl": "https://github.com/diegoami/Tressette/releases/latest",
-      "visible": true
+      "visible": true,
+      "tags": [
+        "card-game",
+        "tressette",
+        "browser-game"
+      ]
     },
     "tressette-releases": {
       "status": "unclassified",
@@ -501,7 +564,12 @@
       "summary": "YouTube tooling / experiments in Python.",
       "curated": true,
       "featured": true,
-      "visible": true
+      "visible": true,
+      "tags": [
+        "youtube",
+        "media",
+        "python"
+      ]
     },
     "goal2": {
       "status": "wip",
@@ -511,7 +579,12 @@
       "section": "games",
       "curated": true,
       "featured": false,
-      "visible": true
+      "visible": true,
+      "tags": [
+        "football",
+        "reimplementation",
+        "python"
+      ]
     },
     "malpaco": {
       "status": "wip",
@@ -521,7 +594,11 @@
       "section": "games",
       "curated": true,
       "featured": false,
-      "visible": true
+      "visible": true,
+      "tags": [
+        "strategy-game",
+        "typescript"
+      ]
     },
     "cerea-vice": {
       "status": "demo",
@@ -531,7 +608,12 @@
       "section": "games",
       "curated": true,
       "featured": false,
-      "visible": true
+      "visible": true,
+      "tags": [
+        "driving",
+        "navigation",
+        "prototype"
+      ]
     }
   }
 }
