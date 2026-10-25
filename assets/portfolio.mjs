@@ -4,6 +4,7 @@ export const CATEGORIES = [
   { id: "tools", title: "Libraries & tools", blurb: "Reusable libraries and practical utilities." },
   { id: "wip", title: "Work in progress", blurb: "Projects still being built and improved." },
   { id: "demo", title: "Demos", blurb: "Prototypes, experiments and demonstrations." },
+  { id: "documentation", title: "Documentation & learning", blurb: "Study guides, practice exercises and reference material." },
   { id: "unclassified", title: "Unclassified", blurb: "Projects whose status has not been assigned yet." },
 ];
 
@@ -20,7 +21,7 @@ export function applyPortfolio(repositories, config) {
   }
   const fields = {
     status: "string", summary: "string", curated: "boolean", featured: "boolean", visible: "boolean",
-    liveUrl: "string", downloadUrl: "string", repositoryUrl: "string",
+    liveUrl: "string", liveLabel: "string", downloadUrl: "string", repositoryUrl: "string",
     language: "string", section: "string", tags: "object", extraLinks: "object", standalone: "boolean",
   };
   for (const [name, settings] of Object.entries(config.projects)) {

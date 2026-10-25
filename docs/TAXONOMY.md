@@ -10,9 +10,10 @@ public summaries; see the [configuration guide](../README.md#configure-the-portf
 | `wip` | Work in progress. |
 | `demo` | Prototypes, experiments and demonstrations. |
 | `tools` | Reusable libraries and practical utilities. |
+| `documentation` | Study guides, exercises and reference material. |
 | `unclassified` | No status assigned yet; the fallback for new repositories. |
 
-Mature projects and Libraries & tools each use a single grid without subject
+Mature projects, Libraries & tools and Documentation & learning each use a single grid without subject
 subheadings. Other groups retain subject headings. Language and domain tags
 provide independent filters, alongside status and search. Override `tags` in
 `config/portfolio.json` to maintain the public tags without editing generated data.

@@ -3,9 +3,10 @@
 A static portfolio of my open-source projects, published with GitHub Pages.
 
 - **Public page** — [`index.html`](index.html): projects grouped into **Mature
-  projects**, **Libraries & tools**, **Work in progress**, **Demos** and **Unclassified**, with subject
+  projects**, **Libraries & tools**, **Work in progress**, **Demos**,
+  **Documentation & learning** and **Unclassified**, with subject
   headings in WIP and demo groups and a collapsed **project index**. Mature
-  projects and Libraries & tools each use one grid without subdivisions. Only explicitly
+  projects, Libraries & tools and Documentation & learning each use one grid without subdivisions. Only explicitly
   selected projects are listed. Featured cards stay within their status group.
 - **Beta releases** — [`releases.html`](releases.html): a tester-friendly page
   listing public `*-releases` repositories with links to their GitHub downloads
@@ -70,11 +71,14 @@ Valid statuses:
 - `wip` — work in progress.
 - `demo` — a prototype, experiment or demonstration.
 - `tools` — a reusable library or practical utility.
+- `documentation` — study guides, exercises and reference material.
 - `unclassified` — status not yet chosen (the default).
 
 `liveUrl` sets the **Open app** link; without it, the generated Pages URL or
 homepage is used. `downloadUrl` adds a **Downloads** link. Both must be absolute
 HTTP(S) URLs.
+Use `liveLabel` to override the primary link text, for example
+`"Read example chronicle"` instead of `"Open app"`.
 
 `extraLinks` adds labelled links to a card and its index entry, for example:
 
