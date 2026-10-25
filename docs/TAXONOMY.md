@@ -1,18 +1,31 @@
 # Taxonomy
 
-The public portfolio is grouped into the following sections. Each project carries language and domain tags used by the filters.
+The public portfolio groups projects by status first. Edit
+[`config/portfolio.json`](../config/portfolio.json) to choose a status and write
+public summaries; see the [configuration guide](../README.md#configure-the-portfolio).
 
-| Section | What belongs here | Count |
-|---|---|---|
-| Games & Interactive | Playable games, game tooling and reimplementations. | 20 |
-| Chess & Analysis | Chess collections, analysis pipelines and chess apps. | 3 |
-| Crusader Kings & Strategy | Save-file parsers, chronicles and mods for Paradox titles. | 5 |
-| AI, ML & Data | Machine learning, NLP, scrapers and data engineering. | 7 |
-| Language Learning | Vocabulary, listening and speech tools. | 0 |
-| DevOps, Cloud & Kubernetes | Certification prep, containers and cloud infrastructure. | 1 |
-| Developer Tooling & Templates | Reusable harnesses, templates and developer utilities. | 6 |
-| Web & Media Tools | Web apps, APIs and small media utilities. | 0 |
-| Other | Uncategorised projects. | 0 |
+| Status | Meaning |
+|---|---|
+| `mature` | Mature projects, ready to use. |
+| `wip` | Work in progress. |
+| `demo` | Prototypes, experiments and demonstrations. |
+| `tools` | Reusable libraries and practical utilities. |
+| `unclassified` | No status assigned yet; the fallback for new repositories. |
+
+Subject sections remain secondary headings inside each status group. Language
+and domain tags provide independent filters, alongside status and search.
+
+| Subject | What belongs here |
+|---|---|
+| Games & Interactive | Playable games, game tooling and reimplementations. |
+| Chess & Analysis | Chess collections, analysis pipelines and chess apps. |
+| Crusader Kings & Strategy | Save-file parsers, chronicles and mods for Paradox titles. |
+| AI, ML & Data | Machine learning, NLP, scrapers and data engineering. |
+| Language Learning | Vocabulary, listening and speech tools. |
+| DevOps, Cloud & Kubernetes | Certification prep, containers and cloud infrastructure. |
+| Developer Tooling & Templates | Reusable harnesses, templates and developer utilities. |
+| Web & Media Tools | Web apps, APIs and small media utilities. |
+| Other | Uncategorised projects. |
 
 ## Tags
 

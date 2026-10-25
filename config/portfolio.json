@@ -1,0 +1,537 @@
+{
+  "version": 1,
+  "projects": {
+    "balloons-JS": {
+      "status": "mature",
+      "summary": "Baloncelli: a balloon-popping arcade game for the browser and Android.",
+      "curated": true,
+      "featured": false,
+      "liveUrl": "https://baloncelli.netlify.app/",
+      "downloadUrl": "https://github.com/diegoami/balloons-JS/releases/latest",
+      "visible": true
+    },
+    "balloons-js-releases": {
+      "status": "unclassified",
+      "summary": "Baloncelli - Android downloads. Source code: https://github.com/diegoami/balloons-JS",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "bankdomain": {
+      "status": "unclassified",
+      "summary": "Project repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "boar_life": {
+      "status": "unclassified",
+      "summary": "Godot/GDScript game jam experiment.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "briscola-JS": {
+      "status": "unclassified",
+      "summary": "A simple web application allowing to play Briscola online",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "championship-simulator-JS": {
+      "status": "unclassified",
+      "summary": "A simple web application simulating a round-robin championship",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "chessgamescollection": {
+      "status": "unclassified",
+      "summary": "A browsable collection of my chess games.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "ck_portrait_generator": {
+      "status": "unclassified",
+      "summary": "Generates Crusader Kings portrait assets.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "ck_wiki": {
+      "status": "unclassified",
+      "summary": "Publishes the Crusader Kings III chronicle wikis built by Ck-parser, with portraits and coats of arms.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "Ck-parser": {
+      "status": "unclassified",
+      "summary": "Parser for Crusader Kings III save files.",
+      "curated": true,
+      "featured": true,
+      "visible": false
+    },
+    "ck3-chronicle": {
+      "status": "tools",
+      "summary": "Turns Crusader Kings III save games into a wiki-style chronicle. Library, CLI, GitHub edition and desktop app.",
+      "curated": true,
+      "featured": true,
+      "visible": true
+    },
+    "ck3-scripts": {
+      "status": "unclassified",
+      "summary": "Python scripts to manage a Crusader Kings III playthrough history.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "ckad-prep": {
+      "status": "unclassified",
+      "summary": "CKAD exam prep: tips, 176 kubectl drills, 88 runnable scenarios on a local kind cluster and two mock exams.",
+      "curated": true,
+      "featured": true,
+      "visible": false
+    },
+    "ckad-questions": {
+      "status": "unclassified",
+      "summary": "A set of exercises and solutions to prepare for the Certified Kubernetes Application Developer exam by Cloud Native Computing Foundation.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "DA_boundingboxes": {
+      "status": "unclassified",
+      "summary": "Python repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "DA_chessgames": {
+      "status": "unclassified",
+      "summary": "Scripts for collecting and processing chess games.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "DA_dataengineer_capstone": {
+      "status": "unclassified",
+      "summary": "Python repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "DA_DS_Pipelines": {
+      "status": "unclassified",
+      "summary": "Jupyter Notebook repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "DA_FAQS": {
+      "status": "unclassified",
+      "summary": "Python repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "DA_kaggle": {
+      "status": "unclassified",
+      "summary": "Jupyter Notebook repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "DA_ML_Capstone": {
+      "status": "unclassified",
+      "summary": "Automatic splitting of videos in sequences",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "DA_queueapp": {
+      "status": "unclassified",
+      "summary": "TypeScript repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "DA_split_youtube_frames_s3": {
+      "status": "unclassified",
+      "summary": "Project to split videos in frames and saves them to S3",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "DA_tensorflow_for_letsplay": {
+      "status": "unclassified",
+      "summary": "Using tensorflow to identify scenes in youtube let's play videos",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "DA_yelp_sentiment_analysis": {
+      "status": "unclassified",
+      "summary": "Python repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "DA-youtube-scripts": {
+      "status": "unclassified",
+      "summary": "Youtube scripts collection",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "diego_bot": {
+      "status": "unclassified",
+      "summary": "Python repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "diego_bot_rct": {
+      "status": "unclassified",
+      "summary": "Frontend for the diego-bot",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "Diplado": {
+      "status": "unclassified",
+      "summary": "Diplomacy adjacency/board helper in Python.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "diplomacy-plus-for-warband": {
+      "status": "unclassified",
+      "summary": "Diplomacy variant tooling for Mount & Blade Warband.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "discola-PAS": {
+      "status": "unclassified",
+      "summary": "Discola card/board game implementation in Pascal.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "discola-releases": {
+      "status": "unclassified",
+      "summary": "Discola - Android downloads and rules. Source code: https://github.com/diegoami/discola-web",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "discola-web": {
+      "status": "mature",
+      "summary": "Play two-player Briscola in your browser, a web port of the original Discola game.",
+      "curated": true,
+      "featured": false,
+      "liveUrl": "https://discola.netlify.app/",
+      "downloadUrl": "https://github.com/diegoami/discola-web/releases/latest",
+      "visible": true
+    },
+    "dsretreat": {
+      "status": "unclassified",
+      "summary": "Jupyter Notebook repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "EXT_TimeSeries_Predict": {
+      "status": "unclassified",
+      "summary": "Python repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "flashpair-delphi": {
+      "status": "unclassified",
+      "summary": "Delphi card game experiment (Flash Pair).",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "ftc-proj-delphi5": {
+      "status": "unclassified",
+      "summary": "Delphi 5 project from the FTC era.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "game-archaeologist": {
+      "status": "unclassified",
+      "summary": "A method for evidence-backed behavioural specifications of old computer and arcade games: controlled experiments on the original, independently reviewed findings.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "geoclick-releases": {
+      "status": "unclassified",
+      "summary": "Geoclick - Windows and Android downloads. Play in the browser: https://geoclick.netlify.app/ - Source code: https://github.com/diegoami/Geoclick2027",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "Geoclick2027": {
+      "status": "mature",
+      "summary": "A geography map quiz: test how well you know places around the world.",
+      "curated": true,
+      "featured": true,
+      "liveUrl": "https://geoclick.netlify.app/",
+      "downloadUrl": "https://github.com/diegoami/geoclick-releases/releases/latest",
+      "visible": true
+    },
+    "github_landing_page": {
+      "status": "unclassified",
+      "summary": "The static GitHub Pages portfolio you are looking at: plain HTML, CSS and JS, no build step.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "harness_imperial": {
+      "status": "unclassified",
+      "summary": "A small harness for building software with Claude Code and OpenCode together: Claude plans and reviews, OpenCode implements through one watched runner.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "harness_prompts": {
+      "status": "unclassified",
+      "summary": "Prompt library backing the harness workflow.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "harness_template": {
+      "status": "unclassified",
+      "summary": "Reusable agentic engineering workflow template (review process, tooling, docs).",
+      "curated": true,
+      "featured": true,
+      "visible": false
+    },
+    "ic2-conquest": {
+      "status": "unclassified",
+      "summary": "A bot that plays the original Imperial Conquest 2 headless under Wine, searching for map-dominating strategies and recording what each mechanic does.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "imp_conquest_fixtures": {
+      "status": "unclassified",
+      "summary": "Test fixtures extracted from Imperial Conquest 2.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "imperial_conquest_2": {
+      "status": "wip",
+      "summary": "Open reimplementation in C# of the 1996 strategy game Imperial Conquest 2.",
+      "curated": true,
+      "featured": true,
+      "visible": true
+    },
+    "imperial-conquest-2-research": {
+      "status": "unclassified",
+      "summary": "Reverse-engineering research on Imperial Conquest 2 (1996): save/DAT format, decompiled formulas, evidence-based reports.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "itil4": {
+      "status": "unclassified",
+      "summary": "Python repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "JS_FE_musicblogs": {
+      "status": "unclassified",
+      "summary": "Source for http://www.europoplyrics.com",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "JS_musicblogs": {
+      "status": "unclassified",
+      "summary": "JavaScript repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "lynxsupercluster_thumbnails": {
+      "status": "unclassified",
+      "summary": "Generated thumbnail image sets for the thumbnail generator.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "lynxupercluster_thumbnailgenerator": {
+      "status": "unclassified",
+      "summary": "Python script that turns one image into a series of numbered, resized PNG thumbnails from a YAML config.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "MyWebSite": {
+      "status": "unclassified",
+      "summary": "Personal website (Astro).",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "newscollection2027": {
+      "status": "mature",
+      "summary": "Collects technology news and groups coverage of the same story across different outlets.",
+      "curated": true,
+      "featured": true,
+      "liveUrl": "https://diegoami.github.io/newscollection2027/",
+      "visible": true
+    },
+    "newscollection2027-data": {
+      "status": "unclassified",
+      "summary": "Data companion repository for newscollection2027.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "opencode-mcp-tool": {
+      "status": "unclassified",
+      "summary": "Project repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "opencode-session-browser": {
+      "status": "tools",
+      "summary": "Read-only, local, dependency-free (Python standard library) browser for every OpenCode session stored on your machine.",
+      "curated": true,
+      "featured": false,
+      "visible": true
+    },
+    "oravitsa": {
+      "status": "demo",
+      "summary": "A cosy 2D forest exploration prototype with foraging, wildlife and a painted world.",
+      "curated": true,
+      "featured": false,
+      "language": "GDScript",
+      "visible": true
+    },
+    "pgn-postmortem": {
+      "status": "tools",
+      "summary": "Static, GitHub-browsable chess postmortems: Stockfish-detected mistakes, refutation lines, board diagrams and opening-theory deviations.",
+      "curated": true,
+      "featured": true,
+      "visible": true
+    },
+    "public-project": {
+      "status": "unclassified",
+      "summary": "Project repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "RE-imperial-conquest-2": {
+      "status": "unclassified",
+      "summary": "Reverse-engineering research on Imperial Conquest 2 (1996 Delphi 4X game): file formats, decompiled game logic, and the tooling used to recover them.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "Scopetta": {
+      "status": "mature",
+      "summary": "Play Italian Scopa in your browser.",
+      "curated": true,
+      "featured": true,
+      "liveUrl": "https://scopetta.netlify.app/",
+      "downloadUrl": "https://github.com/diegoami/Scopetta/releases/latest",
+      "visible": true
+    },
+    "scopetta-releases": {
+      "status": "unclassified",
+      "summary": "Scopetta - Android downloads. Source code: https://github.com/diegoami/Scopetta",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "ShellWindowObserver": {
+      "status": "unclassified",
+      "summary": "Windows tool that observes shell window activity.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "Srt2html": {
+      "status": "tools",
+      "summary": "Converts SRT subtitle files into styled HTML pages.",
+      "curated": true,
+      "featured": true,
+      "visible": true
+    },
+    "Tressette": {
+      "status": "mature",
+      "summary": "Play two-player Tressette in your browser with a choice of card decks.",
+      "curated": true,
+      "featured": false,
+      "liveUrl": "https://tresettette.netlify.app/",
+      "downloadUrl": "https://github.com/diegoami/Tressette/releases/latest",
+      "visible": true
+    },
+    "tressette-releases": {
+      "status": "unclassified",
+      "summary": "Tressette - Android downloads and rules. Source code: https://github.com/diegoami/Tressette",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "video_merger": {
+      "status": "unclassified",
+      "summary": "Python repository.",
+      "curated": false,
+      "featured": false,
+      "visible": false
+    },
+    "youtube3": {
+      "status": "tools",
+      "summary": "YouTube tooling / experiments in Python.",
+      "curated": true,
+      "featured": true,
+      "visible": true
+    },
+    "goal2": {
+      "status": "wip",
+      "summary": "A faithful rebuild of Goal (1993), alongside a World Cup bot.",
+      "repositoryUrl": "https://github.com/diegoami/goal2",
+      "language": "Python",
+      "section": "games",
+      "curated": true,
+      "featured": false,
+      "visible": true
+    },
+    "malpaco": {
+      "status": "wip",
+      "summary": "An island-conquest strategy game inspired by Isle Wars Pro, built in TypeScript.",
+      "repositoryUrl": "https://github.com/diegoami/malpaco",
+      "language": "TypeScript",
+      "section": "games",
+      "curated": true,
+      "featured": false,
+      "visible": true
+    },
+    "cerea-vice": {
+      "status": "demo",
+      "summary": "A driving and navigation prototype set in Cerea, Italy, with a second fictional harbor district.",
+      "repositoryUrl": "https://github.com/diegoami/cerea-vice",
+      "language": "TypeScript",
+      "section": "games",
+      "curated": true,
+      "featured": false,
+      "visible": true
+    }
+  }
+}
