@@ -15,12 +15,13 @@ export function applyPortfolio(repositories, config) {
   const fields = {
     status: "string", summary: "string", curated: "boolean", featured: "boolean", visible: "boolean",
     liveUrl: "string", downloadUrl: "string", repositoryUrl: "string",
-    language: "string", section: "string",
+    language: "string", section: "string", tags: "object",
   };
   for (const [name, settings] of Object.entries(config.projects)) {
     if (!object(settings)) throw new Error(`Portfolio settings for ${name} must be an object.`);
     for (const [key, value] of Object.entries(settings)) {
-      if (!Object.hasOwn(fields, key) || typeof value !== fields[key]) {
+      if (!Object.hasOwn(fields, key) || typeof value !== fields[key] ||
+          (key === "tags" && (!Array.isArray(value) || value.some((tag) => typeof tag !== "string" || !tag.trim())))) {
         throw new Error(`Invalid portfolio field ${name}.${key}. See README.md for supported fields.`);
       }
       if (["liveUrl", "downloadUrl", "repositoryUrl"].includes(key)) {
