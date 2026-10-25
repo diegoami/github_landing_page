@@ -126,6 +126,11 @@ preview below. Commit changes and merge them to `main` to publish through the
 existing GitHub Pages deployment. The encrypted admin page still manages GitHub
 visibility and archiving; portfolio content is configured in this file.
 
+When changing JavaScript or adding configuration fields, update the `v` query
+in both the `index.html` app script URL and the `assets/app.js` portfolio import
+to a new matching release value. GitHub Pages caches scripts for ten minutes;
+these URLs prevent a cached validator from rejecting freshly loaded settings.
+
 ## Local preview
 
 ```bash
