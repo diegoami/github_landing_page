@@ -1,4 +1,4 @@
-import { CATEGORIES, applyPortfolio } from "./portfolio.mjs";
+import { CATEGORIES, applyPortfolio } from "./portfolio.mjs?v=20261025-tags";
 
 (() => {
   "use strict";
