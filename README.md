@@ -3,7 +3,7 @@
 A static portfolio of my open-source projects, published with GitHub Pages.
 
 - **Public page** — [`index.html`](index.html): projects grouped into **Mature
-  projects**, **Work in progress**, **Demos**, **Libraries & tools** and **Unclassified**, with subject
+  projects**, **Libraries & tools**, **Work in progress**, **Demos** and **Unclassified**, with subject
   headings in WIP and demo groups and a collapsed **project index**. Mature
   projects and Libraries & tools each use one grid without subdivisions. Only explicitly
   selected projects are listed. Featured cards stay within their status group.
@@ -76,6 +76,16 @@ Valid statuses:
 homepage is used. `downloadUrl` adds a **Downloads** link. Both must be absolute
 HTTP(S) URLs.
 
+`extraLinks` adds labelled links to a card and its index entry, for example:
+
+```json
+"extraLinks": [
+  { "label": "My chess games", "url": "https://diegoami.github.io/chessgamescollection/" }
+]
+```
+
+Each link needs a nonempty `label` and an absolute HTTP(S) `url`.
+
 `summary` is the public text shown on the card and in the full index, and is
 searchable. It is plain text, not HTML or Markdown. `curated: true` gives the
 project a card; `false` keeps it in the full index only. `featured: true` adds a
@@ -115,7 +125,10 @@ entry with an explicit `repositoryUrl`, a `summary`, and a `status`. For example
 ID (subject IDs come from `data/repositories.json`, such as `games` or `devtools`).
 Supplemental projects default to curated cards, no highlighting, no tags and the
 Other subject. They merge with the generated entry once the inventory includes
-them. Unknown names without `repositoryUrl` are ignored. `repositoryUrl` also
+them. To describe a project without a public repository, use `standalone: true`
+instead of `repositoryUrl`; its name and description appear without a source
+link. Use a public-facing name as the entry key and include only public copy.
+Unknown names without `repositoryUrl` or `standalone: true` are ignored. `repositoryUrl` also
 overrides the repository link for existing entries. These settings control the
 portfolio only; they do not change repository visibility on GitHub.
 

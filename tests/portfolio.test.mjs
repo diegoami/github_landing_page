@@ -33,6 +33,8 @@ test("invalid config fails visibly rather than silently misclassifying projects"
   }
   for (const settings of [{ curated: "false" }, { summary: 3 }, { featured: 1 }, { typo: true },
     { tags: "game" }, { tags: null }, { tags: {} }, { tags: [1] }, { tags: [" "] },
+    { extraLinks: {} }, { extraLinks: [null] }, { extraLinks: [{ label: "" , url: "https://example.com" }] },
+    { extraLinks: [{ label: "Unsafe", url: "javascript:alert(1)" }] }, { standalone: "true" },
     { liveUrl: "javascript:alert(1)" }, { downloadUrl: "/relative" }, { repositoryUrl: "https://user:pass@example.com" }, null, []]) {
     assert.throws(() => applyPortfolio([], { version: 1, projects: { example: settings } }));
   }
@@ -150,4 +152,17 @@ test("missing or malformed configuration displays an actionable error", async ()
   assert.ok(missing.html().includes("Could not load config/portfolio.json (404)"));
   const malformed = await renderSite({ version: 1, projects: { example: { status: "typo" } } });
   assert.ok(malformed.html().includes("Invalid status for example"));
+});
+
+test("standalone tools have no fabricated repository links and extra links appear in cards and index", async () => {
+  const site = await renderSite({ version: 1, projects: {
+    "Example tool": { standalone: true, status: "tools", summary: "Public description" },
+    "pgn-postmortem": { status: "tools", extraLinks: [{ label: "My chess games", url: "https://diegoami.github.io/chessgamescollection/" }] },
+  } });
+  const card = site.html().match(/<article[^>]*data-name="Example tool"[\s\S]*?<\/article>/)[0];
+  assert.ok(card.includes("Public description"));
+  assert.ok(card.includes("<h4>Example tool</h4>"));
+  assert.ok(!card.includes('href=""'));
+  assert.ok(!card.includes(">Repository</a>"));
+  assert.equal(site.html().split(">My chess games</a>").length - 1, 2);
 });

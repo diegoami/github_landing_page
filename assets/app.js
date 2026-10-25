@@ -1,4 +1,4 @@
-import { CATEGORIES, applyPortfolio } from "./portfolio.mjs?v=20261025-tags";
+import { CATEGORIES, applyPortfolio } from "./portfolio.mjs?v=20261025-links";
 
 (() => {
   "use strict";
@@ -55,10 +55,18 @@ import { CATEGORIES, applyPortfolio } from "./portfolio.mjs?v=20261025-tags";
     const live = r.liveUrl || r.links.pages || r.links.homepage;
     if (live) out.push(`<a class="live" href="${esc(live)}" target="_blank" rel="noopener">Open app ↗</a>`);
     if (r.downloadUrl) out.push(`<a href="${esc(r.downloadUrl)}" target="_blank" rel="noopener">Downloads</a>`);
-    out.push(`<a href="${esc(r.repositoryUrl || r.links.repo)}" target="_blank" rel="noopener">Repository</a>`);
+    if (r.repositoryUrl || r.links.repo)
+      out.push(`<a href="${esc(r.repositoryUrl || r.links.repo)}" target="_blank" rel="noopener">Repository</a>`);
     if (r.links.homepage && r.links.homepage !== live)
       out.push(`<a href="${esc(r.links.homepage)}" target="_blank" rel="noopener">Homepage</a>`);
-    return `<div class="links">${out.join("")}</div>`;
+    for (const link of r.extraLinks || [])
+      out.push(`<a href="${esc(link.url)}" target="_blank" rel="noopener">${esc(link.label)}</a>`);
+    return out.length ? `<div class="links">${out.join("")}</div>` : "";
+  }
+
+  function projectName(r) {
+    const repo = r.repositoryUrl || r.links.repo;
+    return repo ? `<a href="${esc(repo)}" target="_blank" rel="noopener">${esc(r.name)}</a>` : esc(r.name);
   }
 
   function card(r) {
@@ -84,7 +92,7 @@ import { CATEGORIES, applyPortfolio } from "./portfolio.mjs?v=20261025-tags";
     return `
       <article class="${cls.join(" ")}" data-name="${esc(r.name)}">
         <div class="card-top">
-          <h4><a href="${esc(r.repositoryUrl || r.links.repo)}" target="_blank" rel="noopener">${esc(r.name)}</a></h4>
+          <h4>${projectName(r)}</h4>
           ${badges(r)}
         </div>
         <p class="summary">${esc(r.summary)}</p>
@@ -147,10 +155,10 @@ import { CATEGORIES, applyPortfolio } from "./portfolio.mjs?v=20261025-tags";
         .sort((a, b) => a.name.localeCompare(b.name))
         .map(
           (r) => `<div class="index-row">
-            <span class="idx-name"><a href="${esc(r.repositoryUrl || r.links.repo)}" target="_blank" rel="noopener">${esc(r.name)}</a>${r.legacy ? '<span class="legacy-flag">legacy</span>' : ""}</span>
+            <span class="idx-name">${projectName(r)}${r.legacy ? '<span class="legacy-flag">legacy</span>' : ""}</span>
             <span class="idx-lang">${esc(r.language || "—")}</span>
             <span class="idx-desc">${esc(r.summary ?? r.description ?? "")}</span>
-            <span class="idx-links">${r.liveUrl || r.links.pages || r.links.homepage ? `<a href="${esc(r.liveUrl || r.links.pages || r.links.homepage)}" target="_blank" rel="noopener">open</a>` : ""}<a href="${esc(r.repositoryUrl || r.links.repo)}" target="_blank" rel="noopener">repo</a></span>
+            ${links(r)}
           </div>`
         )
         .join("");

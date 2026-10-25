@@ -482,6 +482,12 @@
         "analysis",
         "stockfish",
         "python"
+      ],
+      "extraLinks": [
+        {
+          "label": "My chess games",
+          "url": "https://diegoami.github.io/chessgamescollection/"
+        }
       ]
     },
     "public-project": {
@@ -620,6 +626,22 @@
         "driving",
         "navigation",
         "prototype"
+      ]
+    },
+    "Quota tracker": {
+      "standalone": true,
+      "status": "tools",
+      "visible": true,
+      "curated": true,
+      "featured": false,
+      "summary": "Monitor AI-provider usage, remaining subscription quotas and reset times in one place.",
+      "language": "Python",
+      "section": "devtools",
+      "tags": [
+        "developer-tools",
+        "ai",
+        "usage-tracking",
+        "python"
       ]
     }
   }

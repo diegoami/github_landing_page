@@ -1,33 +1,40 @@
 // Hand-maintained presentation settings overlay the generated public inventory.
 export const CATEGORIES = [
   { id: "mature", title: "Mature projects", blurb: "Established projects, ready to use and still maintained." },
+  { id: "tools", title: "Libraries & tools", blurb: "Reusable libraries and practical utilities." },
   { id: "wip", title: "Work in progress", blurb: "Projects still being built and improved." },
   { id: "demo", title: "Demos", blurb: "Prototypes, experiments and demonstrations." },
-  { id: "tools", title: "Libraries & tools", blurb: "Reusable libraries and practical utilities." },
   { id: "unclassified", title: "Unclassified", blurb: "Projects whose status has not been assigned yet." },
 ];
 
 export function applyPortfolio(repositories, config) {
   const object = (value) => value !== null && typeof value === "object" && !Array.isArray(value);
+  const validUrl = (value) => {
+    try {
+      const url = new URL(value);
+      return ["https:", "http:"].includes(url.protocol) && !url.username && !url.password;
+    } catch { return false; }
+  };
   if (!object(config) || config.version !== 1 || !object(config.projects)) {
     throw new Error("config/portfolio.json must contain version: 1 and a projects object.");
   }
   const fields = {
     status: "string", summary: "string", curated: "boolean", featured: "boolean", visible: "boolean",
     liveUrl: "string", downloadUrl: "string", repositoryUrl: "string",
-    language: "string", section: "string", tags: "object",
+    language: "string", section: "string", tags: "object", extraLinks: "object", standalone: "boolean",
   };
   for (const [name, settings] of Object.entries(config.projects)) {
     if (!object(settings)) throw new Error(`Portfolio settings for ${name} must be an object.`);
     for (const [key, value] of Object.entries(settings)) {
       if (!Object.hasOwn(fields, key) || typeof value !== fields[key] ||
-          (key === "tags" && (!Array.isArray(value) || value.some((tag) => typeof tag !== "string" || !tag.trim())))) {
+          (key === "tags" && (!Array.isArray(value) || value.some((tag) => typeof tag !== "string" || !tag.trim()))) ||
+          (key === "extraLinks" && (!Array.isArray(value) || value.some((link) => !object(link) ||
+            Object.keys(link).some((field) => !["label", "url"].includes(field)) ||
+            typeof link.label !== "string" || !link.label.trim() || typeof link.url !== "string" || !validUrl(link.url))))) {
         throw new Error(`Invalid portfolio field ${name}.${key}. See README.md for supported fields.`);
       }
       if (["liveUrl", "downloadUrl", "repositoryUrl"].includes(key)) {
-        let url;
-        try { url = new URL(value); } catch { /* report the field below */ }
-        if (!url || !["https:", "http:"].includes(url.protocol) || url.username || url.password) {
+        if (!validUrl(value)) {
           throw new Error(`Invalid URL in ${name}.${key}: use an absolute HTTP(S) URL without credentials.`);
         }
       }
@@ -37,11 +44,11 @@ export function applyPortfolio(repositories, config) {
     }
     if (settings.status === "") throw new Error(`Status for ${name} must not be empty.`);
   }
-  // A repositoryUrl explicitly opts a public project into the portfolio even if
-  // the generated inventory has not caught up yet. Unknown names alone do not.
+  // Explicit supplemental projects may have a public repository link, or be
+  // standalone descriptions (e.g. a tool with no public source repository).
   const names = new Set(repositories.map((repo) => repo.name));
   const additional = Object.entries(config.projects)
-    .filter(([name, settings]) => !names.has(name) && settings.repositoryUrl)
+    .filter(([name, settings]) => !names.has(name) && (settings.repositoryUrl || settings.standalone))
     .map(([name]) => ({ name, curated: true, featured: false, summary: "", language: "",
       section: "other", tags: [], stars: 0, links: {} }));
   return [...repositories, ...additional].map((repo) => ({
