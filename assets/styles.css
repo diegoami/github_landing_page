@@ -56,7 +56,7 @@ a:hover { text-decoration: underline; }
     radial-gradient(1100px 340px at 15% -20%, rgba(110, 168, 254, 0.16), transparent 60%),
     radial-gradient(900px 300px at 100% 0%, rgba(126, 231, 135, 0.10), transparent 55%);
 }
-.hero-inner { padding: 56px 0 40px; }
+.hero-inner { padding: 56px 20px 40px; }
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -131,6 +131,17 @@ main { padding: 32px 0 64px; }
   border: 1px solid var(--border); border-radius: 999px; padding: 2px 9px;
 }
 .section-head p { margin: 0; color: var(--text-dim); font-size: 14px; }
+.status-section { border-top: 3px solid var(--border); padding-top: 20px; }
+.status-section.status-mature { border-color: var(--accent-2); }
+.status-section.status-wip { border-color: var(--warn); }
+.status-section.status-demo { border-color: var(--accent); }
+.status-section.status-tools { border-color: var(--accent); }
+.badge.status-mature { color: var(--accent-2); }
+.badge.status-wip { color: var(--warn); }
+.badge.status-demo { color: var(--accent); }
+.badge.status-tools { color: var(--accent); }
+.links a.live { font-weight: 700; }
+.status-section .card-top { flex-direction: column; }
 
 .subsection { margin: 0 0 26px; }
 .subsection h3 {
@@ -332,7 +343,8 @@ details.appendix .appendix-note { color: var(--text-faint); font-size: 13px; mar
 .index-row .legacy-flag { color: var(--warn); font-size: 10.5px; font-weight: 700; text-transform: uppercase; margin-left: 8px; }
 
 @media (max-width: 560px) {
-  .hero-inner { padding: 40px 0 30px; }
+  .hero-inner { padding: 40px 20px 30px; }
+  .controls { position: static; }
   .grid { grid-template-columns: 1fr; }
   .result-count { width: 100%; margin-left: 0; }
   .index-row { grid-template-columns: 1fr; gap: 2px; }

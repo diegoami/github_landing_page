@@ -1,13 +1,12 @@
-/* Portfolio renderer for diegoami's repositories.
- * Shared by the public page and the private admin page; the only difference
- * is window.__SITE_MODE__ ("public" | "admin") and which data file is loaded.
- */
+import { CATEGORIES, applyPortfolio } from "./portfolio.mjs";
+
 (() => {
   "use strict";
 
   const MODE = window.__SITE_MODE__ === "admin" ? "admin" : "public";
   const ADMIN = MODE === "admin";
   const DATA_URL = "data/repositories.json";
+  const CONFIG_URL = "config/portfolio.json";
 
   const LANG_COLORS = {
     Python: "#3572A5", JavaScript: "#f1e05a", TypeScript: "#3178c6", "C#": "#178600",
@@ -23,7 +22,7 @@
   const esc = (s) =>
     String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-  const state = { all: [], filtered: [], query: "", tag: "", lang: "", vis: "all", sort: "name" };
+  const state = { all: [], filtered: [], query: "", tag: "", lang: "", vis: "all", status: "", sort: "name" };
 
   function fmtDate(iso) {
     if (!iso) return "";
@@ -39,7 +38,7 @@
   }
 
   function badges(r) {
-    const b = [];
+    const b = [`<span class="badge status-${esc(r.status)}">${esc(CATEGORIES.find((c) => c.id === r.status).title)}</span>`];
     if (ADMIN) {
       if (r.recommendMakePublic) b.push(`<span class="badge make-public">Make public</span>`);
       if (r.githubPrivate) b.push(`<span class="badge private">Private</span>`);
@@ -52,9 +51,12 @@
   }
 
   function links(r) {
-    const out = [`<a href="${esc(r.links.repo)}" target="_blank" rel="noopener">Repository</a>`];
-    if (r.links.pages) out.push(`<a class="live" href="${esc(r.links.pages)}" target="_blank" rel="noopener">Live site</a>`);
-    if (r.links.homepage && r.links.homepage !== r.links.pages)
+    const out = [];
+    const live = r.liveUrl || r.links.pages || r.links.homepage;
+    if (live) out.push(`<a class="live" href="${esc(live)}" target="_blank" rel="noopener">Open app ↗</a>`);
+    if (r.downloadUrl) out.push(`<a href="${esc(r.downloadUrl)}" target="_blank" rel="noopener">Downloads</a>`);
+    out.push(`<a href="${esc(r.repositoryUrl || r.links.repo)}" target="_blank" rel="noopener">Repository</a>`);
+    if (r.links.homepage && r.links.homepage !== live)
       out.push(`<a href="${esc(r.links.homepage)}" target="_blank" rel="noopener">Homepage</a>`);
     return `<div class="links">${out.join("")}</div>`;
   }
@@ -82,7 +84,7 @@
     return `
       <article class="${cls.join(" ")}" data-name="${esc(r.name)}">
         <div class="card-top">
-          <h4><a href="${esc(r.links.repo)}" target="_blank" rel="noopener">${esc(r.name)}</a></h4>
+          <h4><a href="${esc(r.repositoryUrl || r.links.repo)}" target="_blank" rel="noopener">${esc(r.name)}</a></h4>
           ${badges(r)}
         </div>
         <p class="summary">${esc(r.summary)}</p>
@@ -101,6 +103,7 @@
         .toLowerCase();
       if (!hay.includes(q)) return false;
     }
+    if (state.status && r.status !== state.status) return false;
     if (state.tag && !(r.tags || []).includes(state.tag)) return false;
     if (state.lang && r.language !== state.lang) return false;
     if (ADMIN && state.vis !== "all") {
@@ -122,29 +125,17 @@
     return [...list].sort(by[state.sort] || by.name);
   }
 
-  function sectionList(meta) {
-    return (meta.sections || []).filter((s) => s.id !== "featured" && (ADMIN || s.public));
-  }
-
-  // Sections that actually render on the public page: render() skips any section
-  // with no curated, non-featured project, so nav links and the stat use this.
-  function renderedSections(meta) {
-    if (ADMIN) return sectionList(meta);
-    const shown = new Set(state.all.filter((r) => r.curated && !r.featured).map((r) => r.section));
-    return sectionList(meta).filter((s) => shown.has(s.id));
-  }
-
   function sectionTitle(meta, id) {
     const s = (meta.sections || []).find((x) => x.id === id);
     return s ? s.title : id;
   }
 
-  // Full index of all public, non-archived repos (incl. legacy), grouped by theme.
-  function renderAppendix(meta, list) {
+  // Full index of all public, non-archived repos (incl. legacy), grouped by status.
+  function renderAppendix(list) {
     if (!list.length) return "";
-    const order = sectionList(meta).map((s) => s.id);
+    const order = CATEGORIES.map((s) => s.id);
     const groups = {};
-    for (const r of list) (groups[r.section] ??= []).push(r);
+    for (const r of list) (groups[r.status] ??= []).push(r);
     const ids = Object.keys(groups).sort((a, b) => {
       const ia = order.indexOf(a), ib = order.indexOf(b);
       return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
@@ -156,16 +147,16 @@
         .sort((a, b) => a.name.localeCompare(b.name))
         .map(
           (r) => `<div class="index-row">
-            <span class="idx-name"><a href="${esc(r.links.repo)}" target="_blank" rel="noopener">${esc(r.name)}</a>${r.legacy ? '<span class="legacy-flag">legacy</span>' : ""}</span>
+            <span class="idx-name"><a href="${esc(r.repositoryUrl || r.links.repo)}" target="_blank" rel="noopener">${esc(r.name)}</a>${r.legacy ? '<span class="legacy-flag">legacy</span>' : ""}</span>
             <span class="idx-lang">${esc(r.language || "—")}</span>
-            <span class="idx-desc">${esc(r.description || r.summary || "")}</span>
-            <span class="idx-links">${r.links.pages ? `<a href="${esc(r.links.pages)}" target="_blank" rel="noopener">live</a>` : ""}<a href="${esc(r.links.repo)}" target="_blank" rel="noopener">repo</a></span>
+            <span class="idx-desc">${esc(r.summary ?? r.description ?? "")}</span>
+            <span class="idx-links">${r.liveUrl || r.links.pages || r.links.homepage ? `<a href="${esc(r.liveUrl || r.links.pages || r.links.homepage)}" target="_blank" rel="noopener">open</a>` : ""}<a href="${esc(r.repositoryUrl || r.links.repo)}" target="_blank" rel="noopener">repo</a></span>
           </div>`
         )
         .join("");
-      inner += `<div class="index-group"><h4>${esc(sectionTitle(meta, id))}</h4><div class="index-rows">${rows}</div></div>`;
+      inner += `<div class="index-group"><h4>${esc(CATEGORIES.find((c) => c.id === id).title)}</h4><div class="index-rows">${rows}</div></div>`;
     }
-    return `<details class="appendix" id="all-repositories"><summary>All repositories (${list.length})</summary><p class="appendix-note">Every public, non-archived repository — including older and superseded projects not in the highlights above.</p>${inner}</details>`;
+    return `<details class="appendix" id="all-repositories"><summary>Project index (${list.length})</summary><p class="appendix-note">All listed projects, including those without a card above.</p>${inner}</details>`;
   }
 
   function render() {
@@ -174,44 +165,30 @@
     state.filtered = state.all.filter(matches);
 
     const curated = state.filtered.filter((r) => r.curated);
-    const featured = sortRepos(curated.filter((r) => r.featured));
-    const usedSections = sectionList(meta);
-    const featuredNames = new Set(featured.map((r) => r.name));
-    const clean = !state.query && !state.tag && !state.lang && state.sort === "name";
+    let html = `<div class="result-count" style="margin-bottom:14px" role="status">Showing <b>${curated.length}</b> curated projects · <b>${state.filtered.length}</b> in the project index</div>`;
 
-    let html = `<div class="result-count" style="margin-bottom:14px">Showing <b>${curated.length}</b> curated projects · <b>${state.filtered.length}</b> in the full index</div>`;
-
-    if (featured.length && clean) {
-      html += `<section class="section"><div class="section-head"><h2>Featured Projects</h2><p>Hand-picked highlights.</p></div><div class="grid featured">${featured.map(card).join("")}</div></section>`;
-    }
-
-    for (const s of usedSections) {
-      const repos = sortRepos(
-        curated.filter((r) => r.section === s.id && !featuredNames.has(r.name))
-      );
-      if (!repos.length) continue;
-
-      const subs = {};
-      for (const r of repos) (subs[r.subsection || "General"] ??= []).push(r);
-
-      let inner = "";
-      for (const k of Object.keys(subs).sort()) {
-        inner += `<div class="subsection"><h3>${esc(k)}</h3><div class="grid">${subs[k].map(card).join("")}</div></div>`;
-      }
-
-      html += `<section class="section" id="sec-${esc(s.id)}">
+    for (const category of CATEGORIES) {
+      if (state.status && category.id !== state.status) continue;
+      const repos = sortRepos(curated.filter((r) => r.status === category.id));
+      if (!repos.length && (!state.status || state.query || state.tag || state.lang)) continue;
+      // Keep featured projects in their status category, including during searches.
+      const ordered = [...repos.filter((r) => r.featured), ...repos.filter((r) => !r.featured)];
+      const themes = [...new Set(ordered.map((r) => r.section))];
+      const inner = themes.map((id) => `<div class="subsection"><h3>${esc(sectionTitle(meta, id))}</h3><div class="grid">${ordered.filter((r) => r.section === id).map(card).join("")}</div></div>`).join("");
+      html += `<section class="section status-section status-${category.id}" id="sec-${category.id}">
         <div class="section-head">
-          <h2>${esc(s.title)} <span class="count">${repos.length}</span></h2>
-          <p>${esc(s.blurb || "")}</p>
+          <h2>${category.title} <span class="count">${repos.length}</span></h2>
+          <p>${category.blurb}</p>
         </div>
-        ${inner}
+        ${inner || '<p class="empty">No curated projects assigned to this category yet.</p>'}
       </section>`;
     }
 
-    html += renderAppendix(meta, sortRepos(state.filtered));
+    html += renderAppendix(sortRepos(state.filtered));
     if (!state.filtered.length) html += `<p class="empty">No projects match your filters.</p>`;
     root.innerHTML = html;
 
+    buildNav();
     document.querySelectorAll(".tag").forEach((el) =>
       el.addEventListener("click", () => {
         state.tag = el.dataset.tag === state.tag ? "" : el.dataset.tag;
@@ -222,18 +199,19 @@
     );
   }
 
-  function buildNav(meta) {
+  function buildNav() {
     const nav = $("#nav");
     if (!nav) return;
-    const links = renderedSections(meta)
+    const links = CATEGORIES.filter((s) => document.getElementById(`sec-${s.id}`))
       .map((s) => `<a class="stat" href="#sec-${esc(s.id)}">${esc(s.title)}</a>`)
       .join("");
     nav.innerHTML = links;
   }
 
-  function fillSelects(meta) {
+  function fillSelects() {
     const langs = [...new Set(state.all.map((r) => r.language).filter(Boolean))].sort();
     const tags = [...new Set(state.all.flatMap((r) => r.tags || []))].sort();
+    $("#statusFilter").innerHTML = `<option value="">All statuses</option>` + CATEGORIES.map((c) => `<option value="${c.id}">${c.title}</option>`).join("");
     const langSel = $("#langFilter");
     const tagSel = $("#tagFilter");
     if (langSel) langSel.innerHTML = `<option value="">All languages</option>` + langs.map((l) => `<option value="${esc(l)}">${esc(l)}</option>`).join("");
@@ -244,6 +222,7 @@
     $("#search").addEventListener("input", (e) => { state.query = e.target.value.trim(); render(); });
     $("#langFilter").addEventListener("change", (e) => { state.lang = e.target.value; render(); });
     $("#tagFilter").addEventListener("change", (e) => { state.tag = e.target.value; render(); });
+    $("#statusFilter").addEventListener("change", (e) => { state.status = e.target.value; render(); });
     const sortSel = $("#sortFilter");
     if (sortSel) sortSel.addEventListener("change", (e) => { state.sort = e.target.value; render(); });
     const visSel = $("#visFilter");
@@ -258,7 +237,9 @@
     }
     const data = await res.json();
     state.meta = data.meta;
-    state.all = data.repositories;
+    const configRes = await fetch(CONFIG_URL, { cache: "no-store" });
+    if (!configRes.ok) throw new Error(`Could not load ${CONFIG_URL} (${configRes.status}).`);
+    state.all = applyPortfolio(data.repositories, await configRes.json()).filter((repo) => repo.visible);
 
     const c = data.meta.counts || {};
     const stats = $("#stats");
@@ -275,14 +256,13 @@
         : [
             ["Curated projects", curated.length],
             ["Languages", new Set(curated.map((r) => r.language).filter(Boolean)).size],
-            ["With live site", curated.filter((r) => r.links.pages).length],
-            ["Sections", renderedSections(data.meta).length],
+            ["With live site", curated.filter((r) => r.liveUrl || r.links.pages || r.links.homepage).length],
+            ["Categories", CATEGORIES.filter((category) => curated.some((repo) => repo.status === category.id)).length],
           ];
       stats.innerHTML = items.map(([k, v]) => `<span class="stat"><b>${v ?? 0}</b> ${esc(k)}</span>`).join("");
     }
 
-    fillSelects(data.meta);
-    buildNav(data.meta);
+    fillSelects();
     wire();
     render();
   }

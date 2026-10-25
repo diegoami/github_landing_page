@@ -18,23 +18,23 @@
       <div class="eyebrow">Portfolio</div>
       <h1>Projects by @diegoami</h1>
       <p class="lead">
-        A curated selection of things I build: playable games, chess and
-        Crusader&nbsp;Kings tooling, data &amp; AI pipelines, DevOps prep and
-        reusable developer workflows. Every card links to the source and, where
-        it exists, a live version.
+        Explore mature projects, work in progress, demos, libraries and tools: games, chess and
+        Crusader&nbsp;Kings tools, data &amp; AI pipelines and developer workflows.
+        Browse by status, or filter by language and tag.
       </p>
       <div class="hero-actions">
         <a class="btn" href="https://github.com/diegoami" target="_blank" rel="noopener">GitHub profile</a>
         <a class="btn ghost" href="releases.html">Beta software releases</a>
       </div>
       <div class="stats" id="stats"></div>
-      <div class="stats" id="nav" style="margin-top:10px"></div>
+      <nav class="stats" id="nav" style="margin-top:10px" aria-label="Project categories"></nav>
     </div>
   </header>
 
   <div class="controls">
     <div class="wrap controls-inner">
       <input id="search" type="search" placeholder="Search projects, tags, descriptions…" aria-label="Search projects" />
+      <select id="statusFilter" aria-label="Filter by project status"></select>
       <select id="langFilter" aria-label="Filter by language"></select>
       <select id="tagFilter" aria-label="Filter by tag"></select>
       <select id="sortFilter" aria-label="Sort">
@@ -58,6 +58,6 @@
     </div>
   </footer>
 
-  <script src="assets/app.js"></script>
+  <script type="module" src="assets/app.js"></script>
 </body>
 </html>
