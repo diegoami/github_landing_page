@@ -1,4 +1,4 @@
-import { CATEGORIES, applyPortfolio } from "./portfolio.mjs?v=20261025-links";
+import { CATEGORIES, applyPortfolio } from "./portfolio.mjs?v=20261025-learning";
 
 (() => {
   "use strict";
@@ -53,7 +53,7 @@ import { CATEGORIES, applyPortfolio } from "./portfolio.mjs?v=20261025-links";
   function links(r) {
     const out = [];
     const live = r.liveUrl || r.links.pages || r.links.homepage;
-    if (live) out.push(`<a class="live" href="${esc(live)}" target="_blank" rel="noopener">Open app ↗</a>`);
+    if (live) out.push(`<a class="live" href="${esc(live)}" target="_blank" rel="noopener">${esc(r.liveLabel || "Open app")} ↗</a>`);
     if (r.downloadUrl) out.push(`<a href="${esc(r.downloadUrl)}" target="_blank" rel="noopener">Downloads</a>`);
     if (r.repositoryUrl || r.links.repo)
       out.push(`<a href="${esc(r.repositoryUrl || r.links.repo)}" target="_blank" rel="noopener">Repository</a>`);
@@ -182,7 +182,7 @@ import { CATEGORIES, applyPortfolio } from "./portfolio.mjs?v=20261025-links";
       // Keep featured projects in their status category, including during searches.
       const ordered = [...repos.filter((r) => r.featured), ...repos.filter((r) => !r.featured)];
       const themes = [...new Set(ordered.map((r) => r.section))];
-      const inner = ["mature", "tools"].includes(category.id)
+      const inner = ["mature", "tools", "documentation"].includes(category.id)
         ? `<div class="grid">${ordered.map(card).join("")}</div>`
         : themes.map((id) => `<div class="subsection"><h3>${esc(sectionTitle(meta, id))}</h3><div class="grid">${ordered.filter((r) => r.section === id).map(card).join("")}</div></div>`).join("");
       html += `<section class="section status-section status-${category.id}" id="sec-${category.id}">
