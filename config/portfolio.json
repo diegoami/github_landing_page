@@ -657,6 +657,22 @@
         "usage-tracking",
         "python"
       ]
+    },
+    "voice-teacher": {
+      "status": "demo",
+      "summary": "A spoken-lesson engine for reactivating a language learnt earlier: guided voice lessons with recall practice, coverage tracking and a weak-point queue. Proofs of concept, not yet a product.",
+      "repositoryUrl": "https://github.com/diegoami/voice-teacher",
+      "language": "Python",
+      "section": "language-learning",
+      "curated": true,
+      "featured": false,
+      "visible": true,
+      "tags": [
+        "language-learning",
+        "voice",
+        "prototype",
+        "python"
+      ]
     }
   }
 }
