@@ -1,0 +1,89 @@
+[
+  {
+    "slug": "cerea-vice",
+    "title": "Cerea Vice — taxi driver’s guide",
+    "kind": "Illustrated player guide",
+    "summary": "Start a shift, choose fares, learn the streets with a paper atlas and keep a saved shift.",
+    "sourceRepo": "cerea-vice",
+    "sourceRef": "52ad8e08360bd17552f5aab782c6fbca9c170fd4",
+    "sourcePath": "TAXI.md",
+    "playUrl": "https://diegoami.github.io/cerea-vice/",
+    "notice": "Desktop keyboard or controller play is recommended. These screenshots show the Cerea Centro browser build; other districts can have different geography and atlas pages.",
+    "imageMap": {
+      "images/briefing.png": "images/briefing.png",
+      "images/driving.png": "images/driving.png",
+      "images/atlas.png": "images/atlas.png",
+      "images/fares.png": "images/fares.png",
+      "images/save.png": "images/save.png"
+    }
+  },
+  {
+    "slug": "oravitsa",
+    "title": "Oravitsa — browser field guide",
+    "kind": "Illustrated browser guide",
+    "summary": "Explore Mossbank woods, gather food, interact with wildlife and find the map, Help and manual save controls.",
+    "sourceRepo": "oravitsa",
+    "sourceRef": "58c23f61b96fff082abed2e919e5cdf6f3c74ed0",
+    "sourcePath": "README.md",
+    "playUrl": "https://diegoami.github.io/oravitsa/",
+    "notice": "This guide follows the published forest prototype. It can differ from later development builds.",
+    "imageMap": {
+      "images/forest.png": "images/forest.png",
+      "images/help.png": "images/help.png",
+      "images/map.png": "images/map.png",
+      "images/pause.png": "images/pause.png"
+    }
+  },
+  {
+    "slug": "goal2",
+    "title": "Goal2 — illustrated interface design",
+    "kind": "Design reference",
+    "summary": "A screen-by-screen design for managing a country, preparing the team and following a match.",
+    "sourceRepo": "goal2",
+    "sourceRef": "e50e517478d3d01b7bb96bc17566d800216d6c32",
+    "sourcePath": "docs/design/ui-2026-11/README.md",
+    "imageMap": {
+      "images/s01-import.png": "images/s01-import.png",
+      "images/s02-start.png": "images/s02-start.png",
+      "images/s03-new-game.png": "images/s03-new-game.png",
+      "images/s04-country.png": "images/s04-country.png",
+      "images/s05-bulletin.png": "images/s05-bulletin.png",
+      "images/s06-hub.png": "images/s06-hub.png",
+      "images/s07-team-info.png": "images/s07-team-info.png",
+      "images/s08-squad.png": "images/s08-squad.png",
+      "images/s09-player-tactics.png": "images/s09-player-tactics.png",
+      "images/s10-team-tactics.png": "images/s10-team-tactics.png",
+      "images/s11-fixtures.png": "images/s11-fixtures.png",
+      "images/s12-tournament.png": "images/s12-tournament.png",
+      "images/s13-history.png": "images/s13-history.png",
+      "images/s14-round.png": "images/s14-round.png",
+      "images/s15-match-menu.png": "images/s15-match-menu.png",
+      "images/s16-captain.png": "images/s16-captain.png",
+      "images/s17-pitch.png": "images/s17-pitch.png",
+      "images/s18-match-stop.png": "images/s18-match-stop.png",
+      "images/s19-bench.png": "images/s19-bench.png",
+      "images/s20-board.png": "images/s20-board.png",
+      "images/s21-save-quit.png": "images/s21-save-quit.png",
+      "images/s22-help.png": "images/s22-help.png"
+    },
+    "notice": "Design reference: these illustrations describe the intended interface. The current implementation may differ; the source project documents runnable functionality."
+  },
+  {
+    "slug": "imperial-conquest-2",
+    "title": "Imperial Conquest 2 — illustrated manual",
+    "kind": "Versioned manual · v0.6.2",
+    "summary": "Installation, strategic turns, battles, diplomacy and saves for the documented v0.6.2 native build.",
+    "sourceRepo": "imperial_conquest_2",
+    "sourceRef": "36ab15ec80beabd16bea0f64bab54adf16e34e32",
+    "sourcePath": "docs/investigations/v062-user-manual.md",
+    "imageMap": {
+      "v062-usability/new-game.png": "images/new-game.png",
+      "v062-usability/strategic-screen.png": "images/strategic-screen.png",
+      "v062-usability/recruit.png": "images/recruit.png",
+      "v062-usability/tactical-battle.png": "images/tactical-battle.png",
+      "v062-usability/battle-ended.png": "images/battle-ended.png",
+      "v062-usability/diplomacy.png": "images/diplomacy.png"
+    },
+    "notice": "This manual and its screenshots document v0.6.2. Later builds can have different screens and controls."
+  }
+]

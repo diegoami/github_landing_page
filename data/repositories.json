@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generatedAt": "2026-11-03T15:45:24.560Z",
+    "generatedAt": "2026-11-03T17:19:48.457Z",
     "owner": "diegoami",
-    "totalRepos": 290,
+    "totalRepos": 292,
     "counts": {
-      "public": 56,
+      "public": 58,
       "private": 40,
       "archived": 194,
       "forks": 79,
       "recommendMakePublic": 7,
-      "published": 72,
-      "curated": 44,
+      "published": 74,
+      "curated": 46,
       "legacy": 21
     },
     "sections": [
@@ -267,6 +267,41 @@
         "repo": "https://github.com/diegoami/briscola-JS",
         "pages": null,
         "homepage": "http://www.amicabile.com/javascript/discola/"
+      },
+      "visibility": "public",
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "cerea-vice",
+      "url": "https://github.com/diegoami/cerea-vice",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "https://diegoami.github.io/cerea-vice/",
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-11-03T17:15:09Z",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [
+        "typescript"
+      ],
+      "featured": false,
+      "curated": true,
+      "summary": "TypeScript repository.",
+      "reason": "Public, original, non-archived project.",
+      "pagesUrl": "https://diegoami.github.io/cerea-vice/",
+      "links": {
+        "repo": "https://github.com/diegoami/cerea-vice",
+        "pages": "https://diegoami.github.io/cerea-vice/",
+        "homepage": "https://diegoami.github.io/cerea-vice/"
       },
       "visibility": "public",
       "legacy": false,
@@ -1492,6 +1527,41 @@
       "hidden": false
     },
     {
+      "name": "goal2",
+      "url": "https://github.com/diegoami/goal2",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "Faithful rebuild of goal (version 2), New Era Software 1993, and the World Cup bot — built from goal2-archaeology's evidence",
+      "homepage": "https://diegoami.github.io/home/guides/goal2/",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-11-03T17:09:51Z",
+      "defaultBranch": "main",
+      "hasPages": false,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [
+        "python"
+      ],
+      "featured": false,
+      "curated": true,
+      "summary": "Faithful rebuild of goal (version 2), New Era Software 1993, and the World Cup bot — built from goal2-archaeology's evidence",
+      "reason": "Public, original, non-archived project.",
+      "pagesUrl": "",
+      "links": {
+        "repo": "https://github.com/diegoami/goal2",
+        "pages": null,
+        "homepage": "https://diegoami.github.io/home/guides/goal2/"
+      },
+      "visibility": "public",
+      "legacy": false,
+      "hidden": false
+    },
+    {
       "name": "harness_imperial",
       "url": "https://github.com/diegoami/harness_imperial",
       "githubPrivate": false,
@@ -1710,13 +1780,13 @@
       "githubArchived": false,
       "isFork": false,
       "description": "",
-      "homepage": "",
+      "homepage": "https://diegoami.github.io/home/guides/imperial-conquest-2/",
       "language": "C#",
       "topics": [
         "portfolio"
       ],
       "stars": 0,
-      "pushedAt": "2026-10-03T22:49:16Z",
+      "pushedAt": "2026-11-03T11:55:57Z",
       "defaultBranch": "main",
       "hasPages": false,
       "owner": "diegoami",
@@ -1734,7 +1804,7 @@
       "links": {
         "repo": "https://github.com/diegoami/imperial_conquest_2",
         "pages": null,
-        "homepage": null
+        "homepage": "https://diegoami.github.io/home/guides/imperial-conquest-2/"
       },
       "visibility": "public",
       "legacy": false,
@@ -2239,29 +2309,29 @@
       "githubArchived": false,
       "isFork": false,
       "description": "",
-      "homepage": "",
-      "language": "Python",
+      "homepage": "https://diegoami.github.io/oravitsa/",
+      "language": "GDScript",
       "topics": [],
       "stars": 0,
-      "pushedAt": "2026-09-18T04:37:22Z",
+      "pushedAt": "2026-11-03T01:16:59Z",
       "defaultBranch": "main",
-      "hasPages": false,
+      "hasPages": true,
       "owner": "diegoami",
       "displaySection": "games",
       "section": "games",
-      "subsection": "Card Games",
+      "subsection": "Games",
       "tags": [
-        "python"
+        "godot"
       ],
       "featured": false,
       "curated": true,
-      "summary": "Card game collection (Oravitsa), Python.",
+      "summary": "A forest exploration and foraging game prototype.",
       "reason": "Public, original, non-archived project.",
-      "pagesUrl": "",
+      "pagesUrl": "https://diegoami.github.io/oravitsa/",
       "links": {
         "repo": "https://github.com/diegoami/oravitsa",
-        "pages": null,
-        "homepage": null
+        "pages": "https://diegoami.github.io/oravitsa/",
+        "homepage": "https://diegoami.github.io/oravitsa/"
       },
       "visibility": "public",
       "legacy": false,

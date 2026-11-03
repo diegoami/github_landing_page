@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Oravitsa — browser field guide — diegoami</title><meta name="description" content="Explore Mossbank woods, gather food, interact with wildlife and find the map, Help and manual save controls."><link rel="stylesheet" href="../guide.css"></head>
+<body><header class="hero"><div class="wrap"><a class="back" href="../../">← All projects</a><p class="eyebrow">Illustrated browser guide</p><h1>Oravitsa — browser field guide</h1><p class="lead">Explore Mossbank woods, gather food, interact with wildlife and find the map, Help and manual save controls.</p><div class="actions"><a class="primary" href="https://diegoami.github.io/oravitsa/">Play in your browser</a><a href="https://github.com/diegoami/oravitsa/blob/58c23f61b96fff082abed2e919e5cdf6f3c74ed0/README.md">Source reference</a><a href="https://github.com/diegoami/oravitsa">Project</a></div><aside class="notice">This guide follows the published forest prototype. It can differ from later development builds.</aside></div></header>
+<main class="wrap"><nav class="contents" aria-label="On this page"><details><summary>Contents · 7 sections</summary><ol><li class="level-2"><a href="#enter-mossbank-woods">Enter Mossbank woods</a></li><li class="level-2"><a href="#gather-and-watch">Gather and watch</a></li><li class="level-2"><a href="#four-skills-one-selected-target">Four skills, one selected target</a></li><li class="level-2"><a href="#keep-help-close">Keep Help close</a></li><li class="level-2"><a href="#map-and-orientation">Map and orientation</a></li><li class="level-2"><a href="#pause-save-and-load">Pause, save and load</a></li><li class="level-2"><a href="#about-this-guide">About this guide</a></li></ol></details></nav><article class="prose"><h2 id="enter-mossbank-woods">Enter Mossbank woods</h2>
+<p>Choose <strong>Enter the forest</strong> on the browser start screen. You begin beside the forester&#39;s cottage. The game is an exploration and foraging prototype: follow paths, cross waterways using bridges, gather food and see what is living nearby.</p>
+<figure><a href="images/forest.png" target="_blank" rel="noopener"><img src="images/forest.png" loading="lazy" alt="Oravitsa beside the forester&#39;s cottage: the forest, skill bar and foraging bag"></a><figcaption>Oravitsa beside the forester&#39;s cottage: the forest, skill bar and foraging bag <a href="images/forest.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<p>Use <strong>WASD or the arrow keys</strong> to walk. Water, trunks, large rocks and walls block the way. Your view follows you; paths and bridges help you find a way through. <strong>Shift</strong> sprints, at a higher hunger cost.</p>
+<h2 id="gather-and-watch">Gather and watch</h2>
+<p>Walk over accessible food to collect it with keyboard/touch controls; on a controller, use <strong>A / Cross</strong> nearby. The foraging bag shows berries, mushrooms and raw meat. Food and wildlife are part of the world, so approach them and watch their behavior rather than expecting every location to be a fixed pickup.</p>
+<p>Left-click an animal to select it. Empty ground clears the selection. The selected target and its range affect whether a skill can be used.</p>
+<h2 id="four-skills-one-selected-target">Four skills, one selected target</h2>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>Default key</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Shoo</td>
+<td>Space</td>
+<td>Scares the selected animal away temporarily</td>
+</tr>
+<tr>
+<td>Sling</td>
+<td>Right mouse button or F</td>
+<td>Throws a stone at the selected target and can stun it</td>
+</tr>
+<tr>
+<td>Slow</td>
+<td>E</td>
+<td>Slows the selected animal</td>
+</tr>
+<tr>
+<td>Cure</td>
+<td>R</td>
+<td>Ends Oravitsa’s stun or panic and heals nearby pets</td>
+</tr>
+</tbody></table>
+<p>The visible skill bar and Help show the current controls. The sling&#39;s ordinary wildlife interaction is non-lethal. Hares are the exception: the game&#39;s rules allow collecting a stunned hare for raw meat. Do not assume every stunned creature can be collected.</p>
+<h2 id="keep-help-close">Keep Help close</h2>
+<p>Press <strong>H</strong> to open the in-game instructions and press it again to hide them. They include the current skill keys, interaction keys, Save/Load buttons and sound levels.</p>
+<figure><a href="images/help.png" target="_blank" rel="noopener"><img src="images/help.png" loading="lazy" alt="The actual in-game Help panel and its Save, Load and sound controls"></a><figcaption>The actual in-game Help panel and its Save, Load and sound controls <a href="images/help.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<p>On a standard controller, use the left stick to walk and the right stick to select a target. The published source documents <strong>LT / L2</strong> for Shoo, <strong>RT / R2</strong> for Sling, <strong>LB / L1</strong> for Slow, <strong>RB / R1</strong> for Cure, and <strong>A / Cross</strong> to pick up.</p>
+<h2 id="map-and-orientation">Map and orientation</h2>
+<p>Press <strong>M</strong> to cycle through the local map, the larger explored-world map, and hidden. The local map appears beside the forest view. The larger map records discovered landmarks such as hamlets and caves, so it can be sparse early in a run. Use both alongside the world itself as you explore.</p>
+<figure><a href="images/map.png" target="_blank" rel="noopener"><img src="images/map.png" loading="lazy" alt="The local map beside the forest view in a fresh browser game"></a><figcaption>The local map beside the forest view in a fresh browser game <a href="images/map.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h2 id="pause-save-and-load">Pause, save and load</h2>
+<p>Press <strong>P</strong> or <strong>Escape</strong> to pause; use <strong>Resume</strong> or <strong>P</strong> to return. Saving is separate: <strong>K</strong> saves the game and <strong>L</strong> loads it, and the same buttons are available in Help.</p>
+<p>There is <strong>one manual save slot and no autosave</strong>. Saves belong to this browser/device. Use the game&#39;s explicit Save action before leaving; a new browser or clearing site data does not bring the old slot along.</p>
+<figure><a href="images/pause.png" target="_blank" rel="noopener"><img src="images/pause.png" loading="lazy" alt="The pause overlay, with the game held until Resume"></a><figcaption>The pause overlay, with the game held until Resume <a href="images/pause.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h2 id="about-this-guide">About this guide</h2>
+<p>This field guide describes the public browser demo and its displayed controls. The published source receipt names clean source <code>58c23f61b96fff082abed2e919e5cdf6f3c74ed0</code>; the screenshots were captured from that public game. The project&#39;s broader design and development can continue beyond this guide&#39;s version.</p>
+
+</article></main>
+<footer class="wrap"><p>Based on the linked project reference at source <code>58c23f61b96f</code>. The illustrations keep their stated version and context.</p><a href="../../">Back to the project portfolio</a></footer></body></html>
