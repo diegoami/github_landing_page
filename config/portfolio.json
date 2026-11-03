@@ -322,13 +322,6 @@
         "browser-game"
       ]
     },
-    "github_landing_page": {
-      "status": "unclassified",
-      "summary": "The static GitHub Pages portfolio you are looking at: plain HTML, CSS and JS, no build step.",
-      "curated": true,
-      "featured": false,
-      "visible": false
-    },
     "harness_imperial": {
       "status": "unclassified",
       "summary": "A small harness for building software with Claude Code and OpenCode together: Claude plans and reviews, OpenCode implements through one watched runner.",
@@ -671,6 +664,45 @@
         "voice",
         "prototype",
         "python"
+      ]
+    },
+    "home": {
+      "status": "unclassified",
+      "summary": "The home page for my projects and playable web apps.",
+      "curated": true,
+      "featured": false,
+      "visible": false
+    },
+    "knowclick": {
+      "status": "wip",
+      "summary": "Knowclick: technical knowledge by memory and practice, with pluggable subject packs.",
+      "repositoryUrl": "https://github.com/diegoami/knowclick",
+      "liveUrl": "https://diegoami.github.io/knowclick/",
+      "language": "TypeScript",
+      "section": "devops",
+      "visible": true,
+      "curated": true,
+      "featured": false,
+      "tags": [
+        "learning",
+        "quiz",
+        "certification"
+      ]
+    },
+    "LangClick2027": {
+      "status": "wip",
+      "summary": "Langclick: language-learning boards, lessons and quizzes, with browser-local progress.",
+      "repositoryUrl": "https://github.com/diegoami/LangClick2027",
+      "liveUrl": "https://diegoami.github.io/LangClick2027/",
+      "language": "TypeScript",
+      "section": "language-learning",
+      "visible": true,
+      "curated": true,
+      "featured": false,
+      "tags": [
+        "language-learning",
+        "quiz",
+        "svelte"
       ]
     }
   }

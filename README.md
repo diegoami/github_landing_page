@@ -1,9 +1,9 @@
-# github_landing_page
+# home
 
 A static portfolio of my open-source projects, published with GitHub Pages.
 
 - **Public page** — [`index.html`](index.html): projects grouped into **Mature
-  projects**, **Libraries & tools**, **Work in progress**, **Demos**,
+  projects**, **Work in progress**, **Libraries & tools**, **Demos**,
   **Documentation & learning** and **Unclassified**, with subject
   headings in WIP and demo groups and a collapsed **project index**. Mature
   projects, Libraries & tools and Documentation & learning each use one grid without subdivisions. Only explicitly
@@ -164,3 +164,5 @@ deployed site needs none.)
 
 Serve the repository root from GitHub Pages (Settings → Pages → branch `main`,
 `/root`). `.nojekyll` is present so files are served as-is.
+
+The portfolio is published at [diegoami.github.io/home](https://diegoami.github.io/home/).

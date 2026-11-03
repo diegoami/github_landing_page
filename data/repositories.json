@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generatedAt": "2026-11-03T14:55:19.981Z",
+    "generatedAt": "2026-11-03T15:38:08.158Z",
     "owner": "diegoami",
-    "totalRepos": 288,
+    "totalRepos": 290,
     "counts": {
-      "public": 53,
+      "public": 55,
       "private": 41,
       "archived": 194,
       "forks": 79,
       "recommendMakePublic": 7,
-      "published": 69,
-      "curated": 41,
+      "published": 71,
+      "curated": 43,
       "legacy": 21
     },
     "sections": [
@@ -1492,41 +1492,6 @@
       "hidden": false
     },
     {
-      "name": "github_landing_page",
-      "url": "https://github.com/diegoami/github_landing_page",
-      "githubPrivate": false,
-      "githubArchived": false,
-      "isFork": false,
-      "description": "",
-      "homepage": "",
-      "language": "JavaScript",
-      "topics": [],
-      "stars": 0,
-      "pushedAt": "2026-10-03T21:48:27Z",
-      "defaultBranch": "main",
-      "hasPages": true,
-      "owner": "diegoami",
-      "displaySection": "devtools",
-      "section": "devtools",
-      "subsection": "Templates & Workflows",
-      "tags": [
-        "javascript"
-      ],
-      "featured": false,
-      "curated": true,
-      "summary": "The static GitHub Pages portfolio you are looking at: plain HTML, CSS and JS, no build step.",
-      "reason": "Public, original, non-archived project.",
-      "pagesUrl": "https://diegoami.github.io/github_landing_page/",
-      "links": {
-        "repo": "https://github.com/diegoami/github_landing_page",
-        "pages": "https://diegoami.github.io/github_landing_page/",
-        "homepage": null
-      },
-      "visibility": "public",
-      "legacy": false,
-      "hidden": false
-    },
-    {
       "name": "harness_imperial",
       "url": "https://github.com/diegoami/harness_imperial",
       "githubPrivate": false,
@@ -1628,6 +1593,41 @@
         "repo": "https://github.com/diegoami/harness_template",
         "pages": null,
         "homepage": null
+      },
+      "visibility": "public",
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "home",
+      "url": "https://github.com/diegoami/home",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "https://diegoami.github.io/home/",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-11-03T14:58:55Z",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [
+        "javascript"
+      ],
+      "featured": false,
+      "curated": true,
+      "summary": "The static GitHub Pages portfolio you are looking at: plain HTML, CSS and JS, no build step.",
+      "reason": "Public, original, non-archived project.",
+      "pagesUrl": "https://diegoami.github.io/home/",
+      "links": {
+        "repo": "https://github.com/diegoami/home",
+        "pages": "https://diegoami.github.io/home/",
+        "homepage": "https://diegoami.github.io/home/"
       },
       "visibility": "public",
       "legacy": false,
@@ -1880,6 +1880,76 @@
       },
       "visibility": "public",
       "legacy": true,
+      "hidden": false
+    },
+    {
+      "name": "knowclick",
+      "url": "https://github.com/diegoami/knowclick",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "https://diegoami.github.io/knowclick/",
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-11-03T15:30:15Z",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [
+        "typescript"
+      ],
+      "featured": false,
+      "curated": true,
+      "summary": "TypeScript repository.",
+      "reason": "Public, original, non-archived project.",
+      "pagesUrl": "https://diegoami.github.io/knowclick/",
+      "links": {
+        "repo": "https://github.com/diegoami/knowclick",
+        "pages": "https://diegoami.github.io/knowclick/",
+        "homepage": "https://diegoami.github.io/knowclick/"
+      },
+      "visibility": "public",
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "LangClick2027",
+      "url": "https://github.com/diegoami/LangClick2027",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "",
+      "homepage": "https://diegoami.github.io/LangClick2027/",
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-11-03T15:30:17Z",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "owner": "diegoami",
+      "displaySection": "other",
+      "section": "other",
+      "subsection": "Uncategorised",
+      "tags": [
+        "typescript"
+      ],
+      "featured": false,
+      "curated": true,
+      "summary": "TypeScript repository.",
+      "reason": "Public, original, non-archived project.",
+      "pagesUrl": "https://diegoami.github.io/LangClick2027/",
+      "links": {
+        "repo": "https://github.com/diegoami/LangClick2027",
+        "pages": "https://diegoami.github.io/LangClick2027/",
+        "homepage": "https://diegoami.github.io/LangClick2027/"
+      },
+      "visibility": "public",
+      "legacy": false,
       "hidden": false
     },
     {

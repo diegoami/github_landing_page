@@ -1,4 +1,4 @@
-# github_landing_page
+# home
 
 A static GitHub Pages portfolio of these open-source projects: plain HTML, CSS and JS, no build
 step (`README.md`). The main session plans and implements; reviews cover milestones, not every PR

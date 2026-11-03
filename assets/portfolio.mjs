@@ -1,8 +1,8 @@
 // Hand-maintained presentation settings overlay the generated public inventory.
 export const CATEGORIES = [
   { id: "mature", title: "Mature projects", blurb: "Established projects, ready to use and still maintained." },
-  { id: "tools", title: "Libraries & tools", blurb: "Reusable libraries and practical utilities." },
   { id: "wip", title: "Work in progress", blurb: "Projects still being built and improved." },
+  { id: "tools", title: "Libraries & tools", blurb: "Reusable libraries and practical utilities." },
   { id: "demo", title: "Demos", blurb: "Prototypes, experiments and demonstrations." },
   { id: "documentation", title: "Documentation & learning", blurb: "Study guides, practice exercises and reference material." },
   { id: "unclassified", title: "Unclassified", blurb: "Projects whose status has not been assigned yet." },
