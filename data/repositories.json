@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-03T14:11:05.558Z",
+    "generatedAt": "2026-11-03T14:55:19.981Z",
     "owner": "diegoami",
     "totalRepos": 288,
     "counts": {
@@ -1462,14 +1462,14 @@
       "githubPrivate": false,
       "githubArchived": false,
       "isFork": false,
-      "description": "Geoclick, a geography map quiz. Source code. Windows and Android downloads: https://github.com/diegoami/geoclick-releases",
-      "homepage": "",
+      "description": "Geoclick, a geography map quiz. Source code. Windows and Android downloads.",
+      "homepage": "https://diegoami.github.io/Geoclick2027/",
       "language": "TypeScript",
       "topics": [],
       "stars": 0,
-      "pushedAt": "2026-10-03T22:45:56Z",
+      "pushedAt": "2026-11-03T14:53:15Z",
       "defaultBranch": "main",
-      "hasPages": false,
+      "hasPages": true,
       "owner": "diegoami",
       "displaySection": "featured",
       "section": "games",
@@ -1479,13 +1479,13 @@
       ],
       "featured": true,
       "curated": true,
-      "summary": "Geography guessing game rebuilt in TypeScript. (Currently private — recommended to publish.)",
+      "summary": "Geography learning game with guided tours, map quizzes and browser-local progress.",
       "reason": "Portfolio-worthy; recommended to make public.",
-      "pagesUrl": "",
+      "pagesUrl": "https://diegoami.github.io/Geoclick2027/",
       "links": {
         "repo": "https://github.com/diegoami/Geoclick2027",
-        "pages": null,
-        "homepage": null
+        "pages": "https://diegoami.github.io/Geoclick2027/",
+        "homepage": "https://diegoami.github.io/Geoclick2027/"
       },
       "visibility": "public",
       "legacy": false,
