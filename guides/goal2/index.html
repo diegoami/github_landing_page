@@ -1,0 +1,1128 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Goal2 — illustrated interface design — diegoami</title><meta name="description" content="A screen-by-screen design for managing a country, preparing the team and following a match."><link rel="stylesheet" href="../guide.css"></head>
+<body><header class="hero"><div class="wrap"><a class="back" href="../../">← All projects</a><p class="eyebrow">Design reference</p><h1>Goal2 — illustrated interface design</h1><p class="lead">A screen-by-screen design for managing a country, preparing the team and following a match.</p><div class="actions"><a href="https://github.com/diegoami/goal2/blob/e50e517478d3d01b7bb96bc17566d800216d6c32/docs/design/ui-2026-11/README.md">Source reference</a><a href="https://github.com/diegoami/goal2">Project</a></div><aside class="notice">Design reference: these illustrations describe the intended interface. The current implementation may differ; the source project documents runnable functionality.</aside></div></header>
+<main class="wrap"><nav class="contents" aria-label="On this page"><details><summary>Contents · 28 sections</summary><ol><li class="level-2"><a href="#1-the-players-journey">1. The player&#39;s journey</a></li><li class="level-2"><a href="#2-every-screen">2. Every screen</a></li><li class="level-3"><a href="#s01-import-your-data">S01 Import your data</a></li><li class="level-3"><a href="#s02-start">S02 Start</a></li><li class="level-3"><a href="#s03-new-game-how-many-managers">S03 New game: how many managers</a></li><li class="level-3"><a href="#s04-country-and-managers-name">S04 Country and manager&#39;s name</a></li><li class="level-3"><a href="#s05-bulletin">S05 Bulletin</a></li><li class="level-3"><a href="#s06-managers-desk">S06 Manager&#39;s desk</a></li><li class="level-3"><a href="#s07-team-info">S07 Team info</a></li><li class="level-3"><a href="#s08-squad-and-pool">S08 Squad and pool</a></li><li class="level-3"><a href="#s09-player-tactics">S09 Player tactics</a></li><li class="level-3"><a href="#s10-team-tactics">S10 Team tactics</a></li><li class="level-3"><a href="#s11-fixtures">S11 Fixtures</a></li><li class="level-3"><a href="#s12-tournament">S12 Tournament</a></li><li class="level-3"><a href="#s13-history">S13 History</a></li><li class="level-3"><a href="#s14-round-results">S14 Round results</a></li><li class="level-3"><a href="#s15-match-menu">S15 Match menu</a></li><li class="level-3"><a href="#s16-choose-a-player-captain-taker-penalty-order">S16 Choose a player: captain, taker, penalty order</a></li><li class="level-3"><a href="#s17-pitch">S17 Pitch</a></li><li class="level-3"><a href="#s18-match-stop">S18 Match stop</a></li><li class="level-3"><a href="#s19-bench">S19 Bench</a></li><li class="level-3"><a href="#s20-match-board">S20 Match board</a></li><li class="level-3"><a href="#s21-save-quit-load-a-goal-or-a-summary">S21 Save, quit, load a goal or a summary</a></li><li class="level-3"><a href="#s22-help">S22 Help</a></li><li class="level-2"><a href="#3-rules-for-the-whole-ui">3. Rules for the whole UI</a></li><li class="level-2"><a href="#4-what-todays-window-keeps-changes-and-drops">4. What today&#39;s window keeps, changes and drops</a></li><li class="level-2"><a href="#5-the-mapping-of-every-original-screen">5. The mapping of every original screen</a></li><li class="level-2"><a href="#6-decisions-owner-2026-11-03">6. Decisions (owner, 2026-11-03)</a></li></ol></details></nav><article class="prose"><p>This is the design of goal2&#39;s interface, made before anything is rebuilt (design phase #524, task T157, issue
+#526). It starts from the original: its flow screen by screen, as one uninterrupted sitting shows it
+(<a href="https://github.com/diegoami/goal2/blob/e50e517478d3d01b7bb96bc17566d800216d6c32/docs/original-game/playthrough.md">playthrough</a>, run <code>T156-R1</code>), and the other chapters of
+<a href="https://github.com/diegoami/goal2/blob/e50e517478d3d01b7bb96bc17566d800216d6c32/docs/original-game/README.md">docs/original-game</a>. Today&#39;s window is used only in <a href="#4-what-todays-window-keeps-changes-and-drops">section 4</a>,
+to say what it keeps, changes and drops. [designed: owner, 2026-11-02, #523, #524]</p>
+<p>The design follows the original exactly: its <strong>decisions, information, layout and keys</strong>, in the same order.
+It departs only where a DOS limit forced the original&#39;s way or where the owner hit a problem in the playtest
+(#523), and each departure is tagged <code>[designed]</code> with its reason (<a href="#3-rules-for-the-whole-ui">the rule</a>). The
+look is the original&#39;s: its own palette and a blocky VGA-style font, on a modern, readable layout. It chooses no toolkit
+and no technology; that is T158. [designed: owner, 2026-11-03, <a href="https://github.com/diegoami/goal2/issues/526#issuecomment-6590816260">owner decisions, 2026-11-03, #526</a>]</p>
+<p>Contents:</p>
+<ol>
+<li><a href="#1-the-players-journey">The player&#39;s journey</a></li>
+<li><a href="#2-every-screen">Every screen</a>, S01 to S22, each with its mockup</li>
+<li><a href="#3-rules-for-the-whole-ui">Rules for the whole UI</a></li>
+<li><a href="#4-what-todays-window-keeps-changes-and-drops">What today&#39;s window keeps, changes and drops</a></li>
+<li><a href="#5-the-mapping-of-every-original-screen">The mapping of every original screen</a></li>
+<li><a href="#6-decisions-owner-2026-11-03">Decisions (owner, 2026-11-03)</a></li>
+</ol>
+<p><strong>The mockups</strong> are static pages at desktop size (1440×900), written by
+<a href="https://github.com/diegoami/goal2/blob/e50e517478d3d01b7bb96bc17566d800216d6c32/docs/design/ui-2026-11/mockups/build.py">mockups/build.py</a> into <code>mockups/*.html</code> with <a href="https://github.com/diegoami/goal2/blob/e50e517478d3d01b7bb96bc17566d800216d6c32/docs/design/ui-2026-11/mockups/style.css">mockups/style.css</a>, and
+rendered to <code>images/</code>. Their colours are read from the captures by <a href="https://github.com/diegoami/goal2/blob/e50e517478d3d01b7bb96bc17566d800216d6c32/docs/design/ui-2026-11/palette.py">palette.py</a> and their font is
+vendored in <a href="https://github.com/diegoami/goal2/blob/e50e517478d3d01b7bb96bc17566d800216d6c32/docs/design/ui-2026-11/mockups/fonts/PROVENANCE.md">mockups/fonts/</a>. They are pictures of the design, not app code. Their names, scores and fixtures are those
+of run T156-R1 so that each can be read beside the capture it replaces; skill values and a few figures are
+illustrative. Regenerate with <code>python3 docs/design/ui-2026-11/mockups/build.py --render &lt;chrome binary&gt;</code>.
+[designed: T157]</p>
+<p><strong>The mapping check.</strong> <a href="https://github.com/diegoami/goal2/blob/e50e517478d3d01b7bb96bc17566d800216d6c32/docs/design/ui-2026-11/check_mapping.py">check_mapping.py</a> reads every classified screen of the
+<a href="https://github.com/diegoami/goal2/blob/e50e517478d3d01b7bb96bc17566d800216d6c32/docs/original-game/screen-inventory.md">screen inventory</a> and every original image embedded in the chapters
+(the playthrough&#39;s included), and checks that the table in <a href="#5-the-mapping-of-every-original-screen">section 5</a>
+maps each to a new screen or drops it with a reason. It also checks that every new screen has its section here
+and an embedded mockup. <code>python3 docs/design/ui-2026-11/check_mapping.py</code> exits 0 only when nothing is missing.
+[designed: T157]</p>
+<p>Evidence notation is the original-game chapters&#39; own: <code>T156-R1 step N</code> is a step of the uninterrupted run,
+<code>E031 Cnn</code> a claim of the observed-claims register, <code>E015-r… state S</code> and <code>M244-… step S</code> other captures.
+[designed] marks a choice of this design. [confirmed: docs/original-game/README.md]</p>
+<h2 id="1-the-players-journey">1. The player&#39;s journey</h2>
+<p>From the first start to a played season, the player meets these screens in this order. Each step names the
+original screen it replaces, from T156-R1 unless said otherwise. [designed: T157]</p>
+<pre><code class="language-mermaid">flowchart TD
+  imp[S01 Import your data, first start only] --&gt; start[S02 Start: continue, load or new]
+  start --&gt;|N new game| count[S03 How many managers]
+  start --&gt;|Enter continue, or Y and a save| desk
+  count --&gt;|Enter| country[S04 Country and manager&#39;s name]
+  country --&gt;|Enter, name, Enter| news[S05 Bulletin]
+  news --&gt;|Enter| desk[S06 Manager&#39;s desk]
+  desk --&gt;|team info| team[S07 Team info]
+  desk --&gt;|Space select squad| squad[S08 Squad and pool]
+  squad --&gt;|T| ptac[S09 Player tactics]
+  desk --&gt;|T| ttac[S10 Team tactics]
+  desk --&gt;|fixture list| fix[S11 Fixtures]
+  desk --&gt;|tournament| tour[S12 Tournament]
+  desk --&gt;|history| hist[S13 History]
+  desk --&gt;|F7 / F10 / F3 / F4| save[S21 Save, quit, load goal or summary]
+  desk --&gt;|F1| help[S22 Help]
+  desk ==&gt;|Enter play next game| round[S14 Round results]
+  round ==&gt;|Enter| menu[S15 Match menu]
+  menu --&gt;|players| bench[S19 Bench]
+  menu ==&gt;|Enter play| captain[S16 Choose captain]
+  captain ==&gt;|Enter or C| pitch[S17 Pitch]
+  pitch --&gt;|stops: goal, injury, set piece| stop[S18 Match stop]
+  stop --&gt; pitch
+  stop --&gt;|any key, your player injured| menu
+  pitch --&gt;|half time, full time| board[S20 Match board]
+  board --&gt;|Enter| menu
+  menu ==&gt;|exit after full time| board
+  board ==&gt;|Enter| news
+  news ==&gt;|Enter| desk
+</code></pre>
+<p>The thick arrows are the match day: <em>play next game</em> on the desk, then Enter through the round, the match menu
+(<em>play</em>) and the captain to kick-off. Your own matches are watched; nothing asks whether to watch them unless the
+original asks. [confirmed: T156-R1 steps 36–45, 262–266; designed: owner decision 1, #526]</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Original screen (capture)</th>
+<th>Decision in the original</th>
+<th>goal2 screen</th>
+<th>Same decision?</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>—</td>
+<td>—</td>
+<td>S01 Import</td>
+<td><strong>goal2 adds it</strong>: the data files are imported once, on the first start, because no original file ships with goal2 (CLAUDE.md rule 14; T153).</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Title, load a saved game? (step 0)</td>
+<td>Y load / N new</td>
+<td>S02 Start</td>
+<td>Same Y and N; <strong>departs</strong> [owner decision 4]: <em>Continue</em> (Enter) for the last save, and a list of saves by free names instead of typing a file name.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Load name (step 243) / file not found</td>
+<td>which save; retry</td>
+<td>S02 Start</td>
+<td>Same, as a list; a save that fails says why, with Y try again / N back.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>How many players (step 1), HANG ON A TICK (step 2)</td>
+<td>1–6 managers</td>
+<td>S03 New game</td>
+<td>Same, hot seat. <strong>Departs</strong> [owner decision 9]: one optional field for the starting year, the PC clock&#39;s year by default as the original takes it (NG-9).</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Country browser (steps 3–5)</td>
+<td>which country</td>
+<td>S04 Country</td>
+<td>Same, with the card and the list together.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Name entry (steps 6–10)</td>
+<td>manager&#39;s name</td>
+<td>S04 Country</td>
+<td>Same, on the same screen, as in the original (an overlay of the browser).</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Bulletins (steps 11–12)</td>
+<td>read the news</td>
+<td>S05 Bulletin</td>
+<td>Same.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Hub (step 13)</td>
+<td>what to do next</td>
+<td>S06 Desk</td>
+<td>Same: the landing page with all six options visible, <em>play next game</em> among them, the cursor on <em>team info</em>, the same F-keys.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Squad and pool (steps 14–29)</td>
+<td>who is in the twenty</td>
+<td>S08 Squad</td>
+<td>Same keys and the same two-Enter exchange.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Player tactics (step 30)</td>
+<td>one player&#39;s tactics</td>
+<td>S09 Player tactics</td>
+<td>Same.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Team tactics (steps 33–34)</td>
+<td>the team&#39;s tactics</td>
+<td>S10 Team tactics</td>
+<td>Same.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Round results so far (step 41)</td>
+<td>— (read)</td>
+<td>S14 Round</td>
+<td>Same.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Match menu (step 42)</td>
+<td>inspect, change, play</td>
+<td>S15 Match menu</td>
+<td>Same; <em>play</em> names what follows (&quot;choose your captain&quot;).</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Captain card (steps 43–45)</td>
+<td>the captain</td>
+<td>S16 Captain</td>
+<td>Same keys; <strong>changed</strong>: the screen says that kick-off waits for this choice (#523).</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Pitch (steps 45–118)</td>
+<td>speed, display, result, bench</td>
+<td>S17 Pitch</td>
+<td>Same keys; the pitch is in the main window.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Taker cards (steps 46, 56)</td>
+<td>taker, or C</td>
+<td>S16 (same stop, other title)</td>
+<td>Same, including the timeout.</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Substitution opportunity (step 67)</td>
+<td>go to the bench</td>
+<td>S18 Match stop</td>
+<td>Same.</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Bench (steps 74–81, 124–132)</td>
+<td>substitutions</td>
+<td>S19 Bench</td>
+<td>Same keys; the bench says its mode (request or make now) and the step of the exchange.</td>
+</tr>
+<tr>
+<td>18</td>
+<td>Half-time / full-time board (steps 119, 192)</td>
+<td>— (read)</td>
+<td>S20 Board</td>
+<td>Same.</td>
+</tr>
+<tr>
+<td>19</td>
+<td>Replay and save-goal questions (steps 175–178)</td>
+<td>replay? save? name</td>
+<td>S18 Match stop</td>
+<td>Same three questions, in one box.</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Full-time menu, exit (steps 193–198)</td>
+<td>stats; exit</td>
+<td>S15 Match menu</td>
+<td>Same.</td>
+</tr>
+<tr>
+<td>21</td>
+<td>Save the summary? name (steps 198–199)</td>
+<td>save? name</td>
+<td>S20 Board, S21 name box</td>
+<td>Same.</td>
+</tr>
+<tr>
+<td>22</td>
+<td>Bulletin (step 200), hub (step 201)</td>
+<td>—</td>
+<td>S05, S06</td>
+<td>Same.</td>
+</tr>
+<tr>
+<td>23</td>
+<td>Fixture list, tournament (steps 224–231)</td>
+<td>which matches to watch; standings</td>
+<td>S11, S12</td>
+<td>Same.</td>
+</tr>
+<tr>
+<td>24</td>
+<td>F7 save, F10 quit (steps 233–241)</td>
+<td>name; quit? save?</td>
+<td>S21</td>
+<td>Same.</td>
+</tr>
+<tr>
+<td>25</td>
+<td>Reload (steps 242–244)</td>
+<td>which save</td>
+<td>S02</td>
+<td>Same, as in rows 1–2.</td>
+</tr>
+<tr>
+<td>26</td>
+<td>F3 saved goal (steps 245–256)</td>
+<td>which goal</td>
+<td>S21 name box, S15, S17</td>
+<td>Same.</td>
+</tr>
+<tr>
+<td>27</td>
+<td>Round two: results, menu, captain C, R quick result (steps 262–313)</td>
+<td>quick result</td>
+<td>S14, S15, S16, S17, S20</td>
+<td>Same; R on the pitch, as in the original.</td>
+</tr>
+<tr>
+<td>28</td>
+<td>Group table, bulletin, hub (steps 316–318)</td>
+<td>—</td>
+<td>S12, S05, S06</td>
+<td>Same.</td>
+</tr>
+</tbody></table>
+<p>A season goes on like rows 7–28: the desk, the round, the match, the news, the desk. At the year&#39;s end the
+original shows the remaining results, winners and a new stage on the desk (E031 C54–C56, M244-G1E-06 steps
+14–19): goal2 shows them on S14, S12 and S05 in the same order. [confirmed: T156-R1 steps 0–321; E031 C54–C56;
+M244-G1E-06 steps 14–19]</p>
+<p><strong>Multi-manager play.</strong> With more than one manager, S04 repeats for each, and the desk gains <em>next player</em>,
+which hands the desk to the next manager. [confirmed: E031 C16–C16b] The design keeps it: 1 to 6 managers, hot
+seat, as the original. [owner decision 5, #526]</p>
+<p><strong>The bot</strong> (idle play, plan G-M5) is left out of this design; where it goes is decided later. [owner decision 6,
+#526]</p>
+<h2 id="2-every-screen">2. Every screen</h2>
+<p>Each screen lists its purpose, what it shows, its actions and keys, and the original screens it replaces (all of
+them are in <a href="#5-the-mapping-of-every-original-screen">section 5</a>). A key in <strong>bold</strong> is the original&#39;s own. Enter
+does the highlighted choice; the right end of the bottom bar says what that is now, as the original&#39;s hint line
+does (&quot;◄┘-move player&quot;, &quot;Hit ◄┘ to watch match&quot;).</p>
+<h3 id="s01-import-your-data">S01 Import your data</h3>
+<ul>
+<li><strong>Purpose</strong>: on the first start only, take the player&#39;s data files into goal2&#39;s data folder. <strong>goal2 adds
+it</strong> [designed: owner, 2026-11-02, T153].</li>
+<li><strong>Shows</strong>: the files needed, what each is for, and for each the result of its check (found and verified,
+missing, wrong). What is wrong is said in plain words. The files include the original&#39;s GOAL.HLP, the help
+text that F1 shows (S22). [designed: owner, 2026-11-03, #526; the import itself changes in T153&#39;s code]</li>
+<li><strong>Actions</strong>: <em>Choose folder…</em> (Enter), <em>Quit</em> (Esc).</li>
+<li><strong>Replaces</strong>: no original screen. The DOS prompt before the game (<code>dos-shell</code>) is not a game screen and is
+dropped.</li>
+</ul>
+<figure><a href="images/s01-import.png" target="_blank" rel="noopener"><img src="images/s01-import.png" loading="lazy" alt="S01 Import your data"></a><figcaption>S01 Import your data <a href="images/s01-import.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s02-start">S02 Start</h3>
+<ul>
+<li><strong>Purpose</strong>: the title&#39;s question, <em>load a saved game?</em>, with the obvious answer first.</li>
+<li><strong>Shows</strong>: <em>Continue</em> with the last save&#39;s country, manager, next match and time saved; the title&#39;s choices;
+the list of saved games with country, year and stage, next match and time.</li>
+<li><strong>Actions</strong>: <em>Continue</em> (Enter; owner decision 4); <strong>Y</strong> load the highlighted save; <strong>N</strong> new game; ↑↓ choose a
+save; Esc quit. A save that cannot be opened says why on this screen, with <strong>Y</strong> try again and <strong>N</strong> back.</li>
+<li><strong>Replaces</strong>: <code>title-load-prompt</code>, the load name (<code>m244-load-name</code>, <code>t156-243-load-name</code>) and
+<code>file-not-found-prompt</code>. [confirmed: T156-R1 steps 0, 242–244; E031 C11–C12; E015-r0008 state 10]</li>
+<li><strong>Departs</strong> [designed: owner decisions 4 and 8, #526]: the title asks Y/N and then for a file name, pre-filled
+with the one save (step 243); goal2 offers <em>Continue</em> and lists the saves by the free names they were saved
+under. With no save, the screen offers only <em>New game</em>.</li>
+</ul>
+<figure><a href="images/s02-start.png" target="_blank" rel="noopener"><img src="images/s02-start.png" loading="lazy" alt="S02 Start"></a><figcaption>S02 Start <a href="images/s02-start.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s03-new-game-how-many-managers">S03 New game: how many managers</h3>
+<ul>
+<li><strong>Purpose</strong>: the number of local managers, 1 to 6.</li>
+<li><strong>Shows</strong>: the six numbers, the highlighted one chosen; one optional field, the starting year; then a busy line
+while the game is prepared. Managers play in turn (hot seat).</li>
+<li><strong>Actions</strong>: <strong>←→</strong> number, <strong>Enter</strong> accept, Tab to the year field, Esc back to S02.</li>
+<li><strong>Departs</strong> [designed: owner decision 9, #526]: the original takes the year from the PC clock without asking
+(NG-9). goal2 does the same by default, and the one optional field lets the player change it. Today&#39;s 1990/1992
+list goes.</li>
+<li><strong>Replaces</strong>: <code>title-player-count</code>, <code>t156-002-hang-on-a-tick</code>. [confirmed: T156-R1 steps 1–3; E031 C12]</li>
+</ul>
+<figure><a href="images/s03-new-game.png" target="_blank" rel="noopener"><img src="images/s03-new-game.png" loading="lazy" alt="S03 New game"></a><figcaption>S03 New game <a href="images/s03-new-game.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s04-country-and-managers-name">S04 Country and manager&#39;s name</h3>
+<ul>
+<li><strong>Purpose</strong>: choose the country, then type the manager&#39;s name.</li>
+<li><strong>Shows</strong>: the country card as in the original: status, manager, world and continental ranking now and top,
+formation, skill, the level of difficulty, the team&#39;s skills and performance bars, team tactics and player
+defaults, characteristics with their words, average caps and age; the country list in groups of 16; the
+name line (14 characters at most) once a country is chosen.</li>
+<li><strong>Actions</strong>: <strong>↑↓</strong> country, <strong>←→</strong> next group of 16, <strong>Ins</strong> world or continental ranking, <strong>Space</strong> the
+country&#39;s players (the S08 card, read only), <strong>Enter</strong> choose, then <strong>Enter</strong> accept the name,
+<strong>Esc</strong> abort the name / back.</li>
+<li><strong>Replaces</strong>: <code>country-select</code>, <code>country-select-name-entry</code>, <code>t156-005-country-holland</code>,
+<code>t156-006-name-entry</code>, <code>t156-010-name-typed</code>. [confirmed: T156-R1 steps 3–11; E031 C13–C15b]</li>
+</ul>
+<figure><a href="images/s04-country.png" target="_blank" rel="noopener"><img src="images/s04-country.png" loading="lazy" alt="S04 Country and name"></a><figcaption>S04 Country and name <a href="images/s04-country.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s05-bulletin">S05 Bulletin</h3>
+<ul>
+<li><strong>Purpose</strong>: the news: a new manager, the groups, after each round, at the end of a stage.</li>
+<li><strong>Shows</strong>: the Soccer Bulletin&#39;s three panels, page <em>n of m</em>.</li>
+<li><strong>Actions</strong>: <strong>Enter</strong> (any key) next page.</li>
+<li><strong>Replaces</strong>: <code>bulletin</code>, <code>t156-011-bulletin-welcome</code>, <code>t156-012-bulletin-groups</code>,
+<code>t156-200-bulletin-after-match</code>, <code>t156-317-bulletin-round2</code>, <code>m244-elimination-bulletin</code>.
+[confirmed: T156-R1 steps 11–12, 200, 317; M244-G1E-06 step 18]</li>
+</ul>
+<figure><a href="images/s05-bulletin.png" target="_blank" rel="noopener"><img src="images/s05-bulletin.png" loading="lazy" alt="S05 Bulletin"></a><figcaption>S05 Bulletin <a href="images/s05-bulletin.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s06-managers-desk">S06 Manager&#39;s desk</h3>
+<ul>
+<li><strong>Purpose</strong>: the hub. Everything starts and ends here.</li>
+<li><strong>Shows</strong>: the manager (name, rating); the team and its rankings; the next opponents, their rankings and the
+kind of match (friendly away, qualifying home…); the managers; the six options; the twenty players with
+role codes, the eleven above the bench. Every action is on this page: nothing that the original&#39;s hub offers
+is behind another screen.</li>
+<li><strong>Actions</strong>: <strong>↑↓</strong> option, <strong>Enter</strong> open it; <strong>Space</strong> select squad; <strong>T</strong> team tactics; <strong>F1</strong> help,
+<strong>F3</strong> load a saved goal, <strong>F4</strong> load a saved summary, <strong>F7</strong> save, <strong>F10</strong> quit; <em>next player</em> with more
+than one manager.</li>
+<li><strong>Cursor</strong>: starts on <em>team info</em>, as the original&#39;s (T156-R1 step 13). <em>play next game</em> is the last option;
+your own match is watched by default, and the desk has no watch control, because the original has none.
+[confirmed: T156-R1 steps 13, 36–42; owner decision 1, #526: today&#39;s <em>Watch match</em> button hid how to play]</li>
+<li><strong>Replaces</strong>: <code>manager-menu</code>, <code>t156-013-hub</code>, <code>t156-201-hub-after-round1</code>, <code>t156-244-loaded-hub</code>,
+<code>t156-318-hub-round2</code>, <code>m244-holland-menu</code>, <code>m244-finals-stage-hub</code>. [confirmed: T156-R1 steps 13, 201,
+244, 318; M244-G1A-02 steps 2–11; E031 C17–C26]</li>
+<li><strong>Dropped</strong>: F5 print screen, which the system&#39;s own screenshot replaces.</li>
+</ul>
+<figure><a href="images/s06-hub.png" target="_blank" rel="noopener"><img src="images/s06-hub.png" loading="lazy" alt="S06 Manager&#39;s desk"></a><figcaption>S06 Manager&#39;s desk <a href="images/s06-hub.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s07-team-info">S07 Team info</h3>
+<ul>
+<li><strong>Purpose</strong>: check out all the competitors.</li>
+<li><strong>Shows</strong>: any country&#39;s card (the S04 card) and the country list, the next opponent marked.</li>
+<li><strong>Actions</strong>: <strong>arrows</strong> country, <strong>Ins</strong> ranking, <strong>Space</strong> that country&#39;s players (the S08 card, read
+only), <strong>T</strong> its tactics, <strong>Enter</strong> its fixtures, <strong>Esc</strong> desk.</li>
+<li><strong>Replaces</strong>: <code>m244-team-info-2030</code>, <code>m244-team-info-players-2030</code>. [confirmed: M244-G4C-05 steps 2–6]</li>
+</ul>
+<figure><a href="images/s07-team-info.png" target="_blank" rel="noopener"><img src="images/s07-team-info.png" loading="lazy" alt="S07 Team info"></a><figcaption>S07 Team info <a href="images/s07-team-info.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s08-squad-and-pool">S08 Squad and pool</h3>
+<ul>
+<li><strong>Purpose</strong>: who is in the twenty, in what position.</li>
+<li><strong>Shows</strong>: the player card (name, age, caps, goals, height, foot, performance, position and club position,
+cards, readiness; twelve skills, his tactics, five characteristics with their words); the twenty or the
+pool on the right. Once a pool player is picked, the Enter hint reads <em>put here</em>, as in the original
+(T156-R1 step 17).</li>
+<li><strong>Actions</strong>: <strong>↑↓</strong> player, <strong>←→</strong> squad / pool, <strong>Enter</strong> move player (Enter on a pool player,
+← back, Enter on the player he replaces), <strong>Ins</strong> the assistant&#39;s recommended 20, <strong>R</strong> next position
+(Shift+R back), <strong>C</strong> club position, <strong>T</strong> his tactics, <strong>F2</strong> new name, <strong>Esc</strong> desk.</li>
+<li><strong>Replaces</strong>: <code>m244-squad</code>, <code>m244-squad-next</code>, <code>m244-pool</code>, <code>m244-pool-next</code>, <code>m244-position-next</code>,
+<code>m244-position-club</code>, <code>t156-014-squad</code>, <code>t156-016-pool</code>, <code>t156-017-pool-put-here</code>, <code>t156-029-pool-pick-done</code>,
+<code>t156-202-card-recovered</code>, <code>t156-320-card-recovered-round2</code>. [confirmed: T156-R1 steps 14–29, 202, 320;
+M244-G1A-02 steps 3–9; M244-G1A-04 steps 4–6; E031 C27–C31; Shift+R: designed, owner, #423]</li>
+</ul>
+<figure><a href="images/s08-squad.png" target="_blank" rel="noopener"><img src="images/s08-squad.png" loading="lazy" alt="S08 Squad and pool"></a><figcaption>S08 Squad and pool <a href="images/s08-squad.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s09-player-tactics">S09 Player tactics</h3>
+<ul>
+<li><strong>Purpose</strong>: one player&#39;s own tactics: position, possession, passing, tackling, mark.</li>
+<li><strong>Shows</strong>: the five lines and their values, <strong>P</strong> on a line set for this player; his skills and
+characteristics beside them.</li>
+<li><strong>Actions</strong>: <strong>arrows</strong> line, <strong>Enter</strong> alter, <strong>Esc</strong> back to the card. Reached by <strong>T</strong> from
+S08 and from the bench S19.</li>
+<li><strong>Replaces</strong>: <code>m244-individual-tactics</code>, <code>m244-position-tactic-toggle</code>, <code>mark-protect-zone</code>,
+<code>mark-named-opponent</code>, <code>squad-substitution-tactic</code>, <code>t156-030-player-tactics</code>. [confirmed: T156-R1 step 30;
+M244-G1A-04 steps 7–12; E015-r0007 states 150, 165–166; E031 C33–C33d]</li>
+</ul>
+<figure><a href="images/s09-player-tactics.png" target="_blank" rel="noopener"><img src="images/s09-player-tactics.png" loading="lazy" alt="S09 Player tactics"></a><figcaption>S09 Player tactics <a href="images/s09-player-tactics.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s10-team-tactics">S10 Team tactics</h3>
+<ul>
+<li><strong>Purpose</strong>: the team&#39;s eight lines: defence system, protection, offside, then the player defaults.</li>
+<li><strong>Shows</strong>: each line, its value now and the other option; the formation; the characteristics.</li>
+<li><strong>Actions</strong>: <strong>↑↓</strong> line, <strong>Enter</strong> change, <strong>Esc</strong> desk.</li>
+<li><strong>Replaces</strong>: <code>team-tactics</code>, <code>m244-team-tactics</code>, <code>t156-033-team-tactics</code>, <code>t156-034-team-tactic-changed</code>.
+[confirmed: T156-R1 steps 33–35; M244-G1A-02 step 11; E031 C07]</li>
+</ul>
+<figure><a href="images/s10-team-tactics.png" target="_blank" rel="noopener"><img src="images/s10-team-tactics.png" loading="lazy" alt="S10 Team tactics"></a><figcaption>S10 Team tactics <a href="images/s10-team-tactics.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s11-fixtures">S11 Fixtures</h3>
+<ul>
+<li><strong>Purpose</strong>: the coming round, and which other matches to watch.</li>
+<li><strong>Shows</strong>: each fixture with its kind, <strong>✓</strong> on the matches to watch, and for the highlighted row what Enter
+will do (watch match, auto result; cancel or rearrange on your own friendly).</li>
+<li><strong>Actions</strong>: <strong>↑↓</strong> scroll, <strong>Enter</strong> the named action, <strong>Esc</strong> desk.</li>
+<li><strong>Replaces</strong>: <code>fixtures-watch</code>, <code>fixtures-auto</code>, <code>m244-fixtures</code>, <code>m244-fixtures-watch</code>,
+<code>t156-224-fixture-list</code>. [confirmed: T156-R1 step 224; M244-G1A-03 steps 4–5; E031 C17–C18]</li>
+</ul>
+<figure><a href="images/s11-fixtures.png" target="_blank" rel="noopener"><img src="images/s11-fixtures.png" loading="lazy" alt="S11 Fixtures"></a><figcaption>S11 Fixtures <a href="images/s11-fixtures.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s12-tournament">S12 Tournament</h3>
+<ul>
+<li><strong>Purpose</strong>: the groups, their tables and matches, the finals and the bracket.</li>
+<li><strong>Shows</strong>: the display (Qualifying, Finals, Championship) and the continent, as tabs; the group table
+(P W D L F A T) beside the group&#39;s matches; on Finals the top scorers; on Championship the bracket.</li>
+<li><strong>Actions</strong>: <strong>↑↓</strong> group, <strong>Space</strong> continent, <strong>←→</strong> display, <strong>Ins</strong> Championship results (where the
+original prints it), <strong>Esc</strong> desk. Read only.</li>
+<li><strong>Replaces</strong>: <code>m244-tournament-group-f</code>, <code>m244-tournament-group-g</code>, <code>m244-world-finals-bracket</code>,
+<code>m244-world-qualifying-a</code>, <code>m244-world-qualifying-b</code>, <code>m244-final-qualifying-table</code>,
+<code>t156-227-tournament-europe</code>, <code>t156-228-tournament-americas</code>, <code>t156-229-tournament-finals</code>,
+<code>t156-230-tournament-championship</code>, <code>t156-316-group-table</code>. [confirmed: T156-R1 steps 227–231, 316;
+M244-G1A-03 steps 8–9; M244-G4C-05 steps 9–11; M244-G1E-06 step 14]</li>
+</ul>
+<figure><a href="images/s12-tournament.png" target="_blank" rel="noopener"><img src="images/s12-tournament.png" loading="lazy" alt="S12 Tournament"></a><figcaption>S12 Tournament <a href="images/s12-tournament.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s13-history">S13 History</h3>
+<ul>
+<li><strong>Purpose</strong>: how the country has done over the seasons.</li>
+<li><strong>Shows</strong>: runs of wins and defeats home, away and all, now and top; successes; results by season with
+the best place; top scorers and caps; the biggest wins and defeats.</li>
+<li><strong>Actions</strong>: <strong>Esc</strong> desk. Read only.</li>
+<li><strong>Replaces</strong>: <code>m244-history</code>. [confirmed: M244-G1A-03 step 12]</li>
+</ul>
+<figure><a href="images/s13-history.png" target="_blank" rel="noopener"><img src="images/s13-history.png" loading="lazy" alt="S13 History"></a><figcaption>S13 History <a href="images/s13-history.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s14-round-results">S14 Round results</h3>
+<ul>
+<li><strong>Purpose</strong>: the round&#39;s other results, arriving one by one, before and after your match.</li>
+<li><strong>Shows</strong>: each result with its kind; your match, still to play, at the end.</li>
+<li><strong>Actions</strong>: <strong>Space</strong> pause, <strong>←→</strong> speed, <strong>Enter</strong> (hit any key) to your match.</li>
+<li><strong>Replaces</strong>: <code>round-playing</code>, <code>round-results</code>, <code>t156-041-round1-results</code>,
+<code>t156-262-round2-results-rolling</code>, <code>t156-263-round2-results</code>. [confirmed: T156-R1 steps 41, 262–263;
+E015-r0007 states 27, 52]</li>
+</ul>
+<figure><a href="images/s14-round.png" target="_blank" rel="noopener"><img src="images/s14-round.png" loading="lazy" alt="S14 Round results"></a><figcaption>S14 Round results <a href="images/s14-round.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s15-match-menu">S15 Match menu</h3>
+<ul>
+<li><strong>Purpose</strong>: before kick-off, at half time, at full time and before extra time: compare the sides, change
+yours, then play.</li>
+<li><strong>Shows</strong>: the score, the kind of match, the location, the time (HALF TIME, FULL TIME, EXTRA TIME); both
+formations and elevens; the actions, with <em>play</em> highlighted first as in the original (step 42): each side&#39;s
+team tactics and players, tournament, match stats, and
+<strong>play</strong> (before and during) or <strong>exit</strong> (after the final whistle); automatic action replay ON/OFF.</li>
+<li><strong>Actions</strong>: <strong>arrows</strong> choose, <strong>Enter</strong> open; <strong>Ins</strong> action replay on/off. <em>play</em> names what follows:
+&quot;choose your captain, then kick-off&quot; before the match, &quot;second half&quot; at half time. [designed: #523, the owner
+did not know that kick-off waits for a captain]</li>
+<li><strong>The watch question.</strong> When the original asks <em>watch this match? (Y/N)</em> (some fixtures; it never came for
+Holland&#39;s two matches in T156-R1), goal2 asks it over this menu with the same <strong>Y</strong>/<strong>N</strong>.
+[confirmed: E031 C35–C37; E015-r0007 state 28; T156-R1 steps 42, 264]</li>
+<li><strong>Replaces</strong>: <code>match-menu</code>, <code>match-menu-halftime</code>, <code>match-menu-fulltime</code>, <code>match-watch-prompt</code>,
+<code>t156-042-match-menu</code>, <code>t156-048-menu-after-taker</code>, <code>t156-193-fulltime-menu</code>, <code>t156-264-round2-match-menu</code>,
+<code>t156-246-goal-replay-menu</code>, <code>m244-knockout-halftime</code>, <code>m244-extra-time-menu</code>, <code>m244-extra-time-halftime</code>.
+[confirmed: T156-R1 steps 42, 47–49, 193–198, 246, 264; M244-G4C-07 steps 40–50]</li>
+</ul>
+<figure><a href="images/s15-match-menu.png" target="_blank" rel="noopener"><img src="images/s15-match-menu.png" loading="lazy" alt="S15 Match menu"></a><figcaption>S15 Match menu <a href="images/s15-match-menu.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s16-choose-a-player-captain-taker-penalty-order">S16 Choose a player: captain, taker, penalty order</h3>
+<ul>
+<li><strong>Purpose</strong>: the stops where the original waits for one of your players: the captain before kick-off, the
+corner or goal-kick taker during play, the penalty order before a shoot-out.</li>
+<li><strong>Shows</strong>: a headline that says what the match waits for (&quot;Choose your captain to kick off&quot;); the
+highlighted player&#39;s card; the eleven, the highlight starting on the computer&#39;s pick as in the original
+(T156-R1 step 43).</li>
+<li><strong>Actions</strong>: <strong>↑↓</strong> player, <strong>Enter</strong> choose (&quot;Captain: kick off&quot;), <strong>C</strong> computer select; no key:
+the computer&#39;s pick stands after the original&#39;s wait (6–12 s for a taker in T156-R1). For the penalty
+order, <strong>Esc</strong> undoes a pick.</li>
+<li><strong>Why the headline</strong>: the owner&#39;s playtest could not start the match because a captain was needed and
+nothing said so (#523). [designed: T157]</li>
+<li><strong>Replaces</strong>: <code>captain-select</code>, <code>t156-043-captain</code>, <code>t156-044-captain-chosen</code>, <code>t156-265-round2-captain</code>,
+<code>t156-046-goal-kick-taker</code>, <code>t156-056-corner-taker</code>, <code>m244-shootout-order</code>, <code>m244-shootout-five-chosen</code>.
+[confirmed: T156-R1 steps 43–47, 56–58, 151–152, 265–266; M244-G4C-07 step 56; M244-G4C-08 step 5;
+E031 C38–C38b; reviewed F030]</li>
+</ul>
+<figure><a href="images/s16-captain.png" target="_blank" rel="noopener"><img src="images/s16-captain.png" loading="lazy" alt="S16 Choose your captain"></a><figcaption>S16 Choose your captain <a href="images/s16-captain.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s17-pitch">S17 Pitch</h3>
+<ul>
+<li><strong>Purpose</strong>: watch the match and intervene.</li>
+<li><strong>Shows</strong>: the score, the minute, the kind of match and the last two events; the pitch with each player&#39;s
+role code (home red, away white, as the original draws them) and the ball; the commentary beside it.</li>
+<li><strong>Actions</strong>: <strong>↑↓</strong> display (marks), <strong>←→</strong> speed, <strong>R</strong> result (quick result; it still stops at half time,
+injuries, extra time and the shoot-out), <strong>Space</strong> commentary (enlarges it), <strong>F9</strong> sound, <strong>Esc</strong> / <strong>Enter</strong>
+bench. A replay shows <em>REPLAY</em> where <em>R result</em> is.</li>
+<li><strong>Replaces</strong>: <code>match-live</code>, <code>match-commentary</code>, <code>injury-event</code>, <code>t156-045-kick-off</code>,
+<code>t156-058-taker-timed-out</code>, <code>t156-066-injury-and-booking</code>, <code>t156-178-replay-playing</code>, <code>t156-247-goal-replay</code>,
+<code>t156-254-goal-replay-goal</code>, <code>t156-267-quick-hang-on</code>, <code>m244-shootout-first-goal</code>.
+[confirmed: T156-R1 steps 45–192, 247–255, 267; E031 C39–C40, C08; M244-G4C-08 step 19]</li>
+<li><strong>Departs</strong> [designed: owner decision 2, #526]: the commentary is always beside the pitch rather than only
+after Space (on a DOS 640×400 screen they could not both fit); the pitch is part of the window, not a second
+window.</li>
+</ul>
+<figure><a href="images/s17-pitch.png" target="_blank" rel="noopener"><img src="images/s17-pitch.png" loading="lazy" alt="S17 Pitch"></a><figcaption>S17 Pitch <a href="images/s17-pitch.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s18-match-stop">S18 Match stop</h3>
+<ul>
+<li><strong>Purpose</strong>: the questions and notices that stop the match: a goal (<em>action replay?</em>, <em>save this goal?</em>,
+its file name), <em>SUBSTITUTION OPPORTUNITY</em> when your player is injured, the other side&#39;s substitution, the
+penalty shoot-out.</li>
+<li><strong>Shows</strong>: a box over the pitch with the event, the score and minute, the question and its answers.</li>
+<li><strong>Actions</strong>: <strong>Y</strong> / <strong>N</strong> for a question; any key for a notice (the substitution opportunity&#39;s key opens
+the match menu, as in the original); the file name as in S21.</li>
+<li><strong>Replaces</strong>: <code>t156-067-substitution-opportunity</code>, <code>t156-149-opponent-substitution</code>,
+<code>t156-175-replay-prompt</code>, <code>t156-176-save-goal-prompt</code>, <code>t156-177-goal-file-name</code>,
+<code>t156-274-quick-substitution-opportunity</code>, <code>e031-shootout-start</code>, <code>m244-shootout-prompt</code>.
+[confirmed: T156-R1 steps 67–68, 149–150, 175–178, 274–275; E031 g1 step 3874; M244-G4C-07 step 55]</li>
+</ul>
+<figure><a href="images/s18-match-stop.png" target="_blank" rel="noopener"><img src="images/s18-match-stop.png" loading="lazy" alt="S18 Match stop"></a><figcaption>S18 Match stop <a href="images/s18-match-stop.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s19-bench">S19 Bench</h3>
+<ul>
+<li><strong>Purpose</strong>: substitutions, during a match and at its breaks.</li>
+<li><strong>Shows</strong>: the card of the highlighted player; the mode, as the original names it (&quot;make substitutions
+now&quot;, or &quot;substitution requested&quot; during play); substitutions left; the eleven and the bench.</li>
+<li><strong>Actions</strong>: <strong>↑↓</strong> player, <strong>Enter</strong> take off / put on (in either order; the hint names which), or
+request / cancel a substitution in request mode; <strong>R</strong>, <strong>C</strong> positions; <strong>T</strong> his tactics (S09); <strong>Esc</strong>
+match menu. A refused substitution says why and waits for a key.</li>
+<li><strong>Replaces</strong>: <code>squad-substitution-take-off</code>, <code>squad-substitution-put-on</code>, <code>squad-substitution-illegal</code>,
+<code>t156-074-bench-requested</code>, <code>t156-080-bench-request-cancelled</code>, <code>t156-124-halftime-bench</code>,
+<code>t156-132-substitution-made</code>, <code>t156-279-quick-bench</code>, <code>t156-301-quick-substitution-made</code>.
+[confirmed: T156-R1 steps 74–81, 124–133, 279–301; E031 C41–C41k; E015-r0007 states 76, 82, 176]</li>
+</ul>
+<figure><a href="images/s19-bench.png" target="_blank" rel="noopener"><img src="images/s19-bench.png" loading="lazy" alt="S19 Bench"></a><figcaption>S19 Bench <a href="images/s19-bench.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s20-match-board">S20 Match board</h3>
+<ul>
+<li><strong>Purpose</strong>: the statistics at half time and full time, and a saved match summary.</li>
+<li><strong>Shows</strong>: the score and half-time score, scorers and minutes, man of the match; corners, free kicks,
+penalties, shots, on target, saves, fouls, bookings, red cards, possession, territory. After a quick result
+a QUICK RESULT banner stands in place of the statistics, as in the original.</li>
+<li><strong>Actions</strong>: <strong>Enter</strong> (hit any key) continue, <strong>Esc</strong> bench. After a watched match, <em>exit</em> asks
+<em>save the match summary?</em> (<strong>Y</strong>/<strong>N</strong>) and a name of the player&#39;s choosing (S21&#39;s box).</li>
+<li><strong>Replaces</strong>: <code>t156-119-halftime-board</code>, <code>t156-192-fulltime-board</code>, <code>t156-270-quick-halftime</code>,
+<code>t156-310-quick-fulltime</code>, <code>match-summary-save-prompt</code>, <code>match-summary</code>, <code>t156-198-summary-prompt</code>,
+<code>t156-199-summary-file-name</code>. [confirmed: T156-R1 steps 118–119, 191–199, 270, 310–313; E015-r0007 states
+51, 207; E031 C24–C24b, C51]</li>
+</ul>
+<figure><a href="images/s20-board.png" target="_blank" rel="noopener"><img src="images/s20-board.png" loading="lazy" alt="S20 Match board"></a><figcaption>S20 Match board <a href="images/s20-board.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s21-save-quit-load-a-goal-or-a-summary">S21 Save, quit, load a goal or a summary</h3>
+<ul>
+<li><strong>Purpose</strong>: the name box and the yes/no questions of saving and quitting.</li>
+<li><strong>Shows</strong>: over the current screen, the question and the proposed name (the last name used).</li>
+<li><strong>Actions</strong>: <strong>F7</strong> save: type or accept the name, <strong>Enter</strong> save, <strong>Esc</strong> cancel. <strong>F10</strong> quit: <em>Are you
+sure you want to quit?</em> <strong>Y</strong>/<strong>N</strong>, then <em>Do you want to save this game?</em> <strong>Y</strong>/<strong>N</strong>. <strong>F3</strong> / <strong>F4</strong>: the
+saved goals or summaries, listed by name; <strong>Enter</strong> opens one (S15, then S17 or S20).</li>
+<li><strong>Departs</strong> [designed: owner decision 8, #526]: free names, shown in the lists, instead of the original&#39;s 8.3
+file names (SAVED.GL, G-1.HIL, S-1.SUM), which were a DOS limit.</li>
+<li><strong>Replaces</strong>: <code>save-game-name-entry</code>, <code>save-game-prompt</code>, <code>quit-confirm</code>, <code>t156-233-save-name-prompt</code>,
+<code>t156-237-save-name-typed</code>, <code>t156-239-quit-confirm</code>, <code>t156-240-quit-save-prompt</code>,
+<code>t156-245-load-goal-prompt</code>. [confirmed: T156-R1 steps 233–241, 245–246; E031 C23–C26b; reviewed F030]</li>
+</ul>
+<figure><a href="images/s21-save-quit.png" target="_blank" rel="noopener"><img src="images/s21-save-quit.png" loading="lazy" alt="S21 Save"></a><figcaption>S21 Save <a href="images/s21-save-quit.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h3 id="s22-help">S22 Help</h3>
+<ul>
+<li><strong>Purpose</strong>: the original&#39;s help, as its F1 opens it.</li>
+<li><strong>Shows</strong>: the original&#39;s own help text, from the GOAL.HLP imported on the first start (S01), in the mockups&#39;
+font. No capture of the original&#39;s help viewer exists yet, so the viewer&#39;s pages and keys in the mockup are
+illustrative until one is made. [designed: owner, 2026-11-03, #526]</li>
+<li><strong>Actions</strong>: <strong>F1</strong> opens it, <strong>Esc</strong> closes it.</li>
+<li><strong>Replaces</strong>: no captured screen. [confirmed: E031 C04–C04c; evidence gap: help viewer capture]</li>
+</ul>
+<figure><a href="images/s22-help.png" target="_blank" rel="noopener"><img src="images/s22-help.png" loading="lazy" alt="S22 Help"></a><figcaption>S22 Help <a href="images/s22-help.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h2 id="3-rules-for-the-whole-ui">3. Rules for the whole UI</h2>
+<p><strong>The rule.</strong> Follow the original exactly. Depart only where a DOS limit forced the original&#39;s way, or where the
+owner hit a problem in the playtest. Every departure is marked <code>[designed]</code> with its reason. Everything below, and
+every screen in section 2, applies it. [designed: owner, 2026-11-03, <a href="https://github.com/diegoami/goal2/issues/526#issuecomment-6590816260">owner decisions, 2026-11-03, #526</a>]</p>
+<p><strong>Navigation.</strong> [confirmed: T156-R1 steps 0–321]</p>
+<ul>
+<li>One screen at a time, as in the original. The manager&#39;s desk (S06) is the landing page and home: every action
+of the original&#39;s hub is on it, <em>play next game</em> included, and every management screen returns to it with
+Esc. There is no side bar of destinations, and no action hides behind another screen. [owner decision 1]</li>
+<li>The order of screens is the original&#39;s (section 1). goal2 adds only S01, the first-start import, because no
+original file ships with goal2 [designed: owner, 2026-11-02, T153; CLAUDE.md rule 14].</li>
+<li>Each screen has a title bar: the GOAL2 corner and the screen&#39;s name, as the original&#39;s logo corner and screen
+titles; the competition&#39;s banner where the original shows it (the desk, the tournament, the round).</li>
+</ul>
+<p><strong>The Enter hint.</strong> The right end of the bottom bar says what Enter does on the highlighted choice now, as the
+original&#39;s hint line does (&quot;Hit ◄┘ to select option&quot;, &quot;◄┘-move player&quot;, &quot;Hit ◄┘ to watch match&quot;). The cursor
+starts where the original&#39;s does: <em>team info</em> on the desk, <em>play</em> on the match menu, the computer&#39;s pick on the
+captain card. The hint is drawn as the original&#39;s highlight bar, light grey with black text. [confirmed: T156-R1
+steps 13, 17, 42, 43, 224]</p>
+<p><strong>Stops.</strong> [designed: #523, the owner did not know that the match waited for a captain]</p>
+<ul>
+<li>Whenever the game waits for the player, the screen says what it waits for and which key answers it. A stop
+with a timeout (taker, captain, summary) says what happens with no key.</li>
+<li>No stop is silent and no stop hides in another window.</li>
+</ul>
+<p><strong>The match.</strong></p>
+<ul>
+<li>Your own matches are watched by default, as in the original; no watch control is added. [owner decision 1]</li>
+<li>It is watched in the main window (S17), with the commentary always beside the pitch. [designed: owner
+decision 2] The questions and notices are boxes over the pitch (S18); half time and full time are the board
+(S20) and then the match menu (S15).</li>
+<li>Watch or quick result is the original&#39;s choice: the watch question where the original asks it (S15), and
+<strong>R</strong> on the pitch for a quick result. No other button. [confirmed: E031 C35, C08; T156-R1 step 267; owner
+decision 3]</li>
+<li>Speed, display and commentary keep the original&#39;s keys.</li>
+</ul>
+<p><strong>The look.</strong> The original&#39;s palette and a blocky font, on a modern layout. [designed: owner, 2026-11-03, #526:
+&quot;try to mimic the color scheme of goal and try to have more of a retro feeling, maybe a blocky font is enough and
+we can keep the rest&quot;]</p>
+<ul>
+<li><p><strong>Layout</strong> stays modern: the screens, boxes, flow and key bar of section 2.</p>
+</li>
+<li><p><strong>Colours</strong> are the original&#39;s own sixteen-colour palette, read from the captures by
+<a href="https://github.com/diegoami/goal2/blob/e50e517478d3d01b7bb96bc17566d800216d6c32/docs/design/ui-2026-11/palette.py">palette.py</a>. Each colour keeps the meaning it has in the original:</p>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Colour</th>
+<th>Read from (image, area x0, y0, x1, y1)</th>
+<th>What the area shows</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ground</td>
+<td><code>#000000</code></td>
+<td>t156-013-hub.png (0, 0, 640, 400)</td>
+<td>the whole hub screen</td>
+</tr>
+<tr>
+<td>text, bright</td>
+<td><code>#ffffff</code></td>
+<td>t156-013-hub.png (20, 110, 100, 128)</td>
+<td>the manager&#39;s name &#39;K Ees&#39;</td>
+</tr>
+<tr>
+<td>text, normal</td>
+<td><code>#aaaaaa</code></td>
+<td>t156-224-fixture-list.png (430, 146, 520, 161)</td>
+<td>&#39;qualifying&#39; in the fixture list</td>
+</tr>
+<tr>
+<td>frame lines</td>
+<td><code>#aaaaaa</code></td>
+<td>t156-013-hub.png (505, 20, 509, 390)</td>
+<td>the frame of the hub&#39;s squad strip</td>
+</tr>
+<tr>
+<td>frame lines, dark grey</td>
+<td><code>#555555</code></td>
+<td>t156-013-hub.png (0, 95, 10, 400)</td>
+<td>the frames on the hub&#39;s left</td>
+</tr>
+<tr>
+<td>headings, cyan</td>
+<td><code>#00aaaa</code></td>
+<td>t156-224-fixture-list.png (140, 80, 240, 95)</td>
+<td>&#39;and results&#39; under the fixtures title</td>
+</tr>
+<tr>
+<td>card headings, red</td>
+<td><code>#aa0000</code></td>
+<td>t156-014-squad.png (8, 160, 60, 174)</td>
+<td>&#39;skills&#39; on the squad card</td>
+</tr>
+<tr>
+<td>card labels, brown</td>
+<td><code>#aa5500</code></td>
+<td>t156-014-squad.png (8, 177, 70, 190)</td>
+<td>&#39;keeping&#39; on the squad card</td>
+</tr>
+<tr>
+<td>key hints, magenta</td>
+<td><code>#aa00aa</code></td>
+<td>t156-013-hub.png (205, 270, 300, 305)</td>
+<td>&#39;Use ↑↓ to find option&#39; on the hub</td>
+</tr>
+<tr>
+<td>highlight bar</td>
+<td><code>#aaaaaa</code></td>
+<td>t156-013-hub.png (362, 103, 442, 127)</td>
+<td>the highlighted &#39;team info&#39; option</td>
+</tr>
+<tr>
+<td>values, yellow</td>
+<td><code>#ffff55</code></td>
+<td>t156-224-fixture-list.png (104, 130, 530, 370)</td>
+<td>the team names of the fixture list</td>
+</tr>
+<tr>
+<td>title banner, light red</td>
+<td><code>#ff5555</code></td>
+<td>t156-013-hub.png (100, 5, 440, 90)</td>
+<td>the &#39;European Championship&#39; banner</td>
+</tr>
+<tr>
+<td>goalkeeper</td>
+<td><code>#00aa00</code></td>
+<td>t156-013-hub.png (510, 32, 520, 46)</td>
+<td>V Breuklen&#39;s initial in the squad strip</td>
+</tr>
+<tr>
+<td>defence</td>
+<td><code>#ff5555</code></td>
+<td>t156-013-hub.png (510, 48, 520, 62)</td>
+<td>Koeman&#39;s initial</td>
+</tr>
+<tr>
+<td>midfield</td>
+<td><code>#00aaaa</code></td>
+<td>t156-013-hub.png (510, 96, 520, 110)</td>
+<td>Wouters&#39;s initial</td>
+</tr>
+<tr>
+<td>attack</td>
+<td><code>#ffff55</code></td>
+<td>t156-013-hub.png (510, 192, 520, 206)</td>
+<td>Van Basten&#39;s initial</td>
+</tr>
+<tr>
+<td>bar, filled</td>
+<td><code>#aaaaaa</code></td>
+<td>t156-014-squad.png (80, 177, 270, 190)</td>
+<td>the keeping bar</td>
+</tr>
+<tr>
+<td>bar, empty</td>
+<td><code>#aa00aa</code></td>
+<td>t156-014-squad.png (120, 241, 270, 254)</td>
+<td>the marking bar&#39;s empty part</td>
+</tr>
+<tr>
+<td>pitch lines</td>
+<td><code>#aaaaaa</code></td>
+<td>t156-045-kick-off.png (18, 100, 22, 350)</td>
+<td>the left touchline</td>
+</tr>
+<tr>
+<td>pitch surround</td>
+<td><code>#00aa00</code></td>
+<td>t156-045-kick-off.png (0, 80, 640, 100)</td>
+<td>the band above the pitch</td>
+</tr>
+<tr>
+<td>home side</td>
+<td><code>#ff5555</code></td>
+<td>t156-045-kick-off.png (362, 222, 380, 240)</td>
+<td>a Norway player&#39;s letter at kick-off</td>
+</tr>
+<tr>
+<td>away side</td>
+<td><code>#ffffff</code></td>
+<td>t156-045-kick-off.png (170, 222, 188, 240)</td>
+<td>a Holland player&#39;s letter at kick-off</td>
+</tr>
+</tbody></table>
+<p>[confirmed: <code>python3 docs/design/ui-2026-11/palette.py</code> on the captures named in the table]</p>
+</li>
+<li><p>Role codes are coloured by line, as in the original: green goalkeeper, red defence, cyan midfield, yellow
+attack. [confirmed: goal2-archaeology F002 R011; docs/vision-266/role-codes; the table above]</p>
+</li>
+<li><p>On the pitch, the home side is light red and the away side white, as in the original. [confirmed: T156-R1
+step 45]</p>
+</li>
+<li><p><strong>Font</strong>: &quot;PxPlus IBM VGA 8x16&quot; by VileR (The Ultimate Oldschool PC Font Pack v2.2, int10h.org), a blocky
+VGA-style font under CC BY-SA 4.0. It is vendored in <a href="https://github.com/diegoami/goal2/blob/e50e517478d3d01b7bb96bc17566d800216d6c32/docs/design/ui-2026-11/mockups/fonts/PROVENANCE.md">mockups/fonts/</a> with its
+licence and provenance. It is not the original game&#39;s font, and no byte of it comes from GOAL.EXE (CLAUDE.md
+rule 14).</p>
+</li>
+<li><p><strong>Text size</strong>: designed at 1440×900. Text is 16 px, the font&#39;s own 8×16 cell, and headings and names are
+32 px, twice the cell; larger titles are 48 or 64 px. Only whole multiples are used, so the blocks stay
+sharp. At other window sizes the page scales as a whole and keeps its layout, as today&#39;s fixed pages do
+(T101).</p>
+</li>
+<li><p>Names, numbers and role codes are never abbreviated beyond the original&#39;s own forms.</p>
+</li>
+<li><p>Every colour pairs with text or a symbol, so nothing depends on colour alone.</p>
+</li>
+</ul>
+<p><strong>The keyboard.</strong></p>
+<ul>
+<li>Every original key works where the original has it: arrows, Enter, Esc, Space, Ins, Y/N, C, R, T, F1–F4,
+F7, F9, F10, Shift+R (#423).</li>
+<li>goal2 adds only Enter on <em>Continue</em> (S02, owner decision 4) and Tab to the optional starting year (S03, owner
+decision 9). No added key changes an original key&#39;s meaning.</li>
+<li>Every key of a screen is on its bottom bar, as the original&#39;s bottom line lists them.</li>
+<li>The mouse does what the keys do: every option, row and button can be clicked. [designed: owner, 2026-11-03,
+#526]</li>
+</ul>
+<h2 id="4-what-todays-window-keeps-changes-and-drops">4. What today&#39;s window keeps, changes and drops</h2>
+<p>Today&#39;s window is the default route a player gets from the portable build: the import dialog, the Launch
+window, then the core route&#39;s main window (<code>goal2/desktop/core_window.py</code>), with the pitch in a separate pygame
+window. [confirmed: goal2/desktop/<strong>main</strong>.py:79–134; goal2/desktop/window.py:556–561]</p>
+<table>
+<thead>
+<tr>
+<th>Today&#39;s screen</th>
+<th>Keeps</th>
+<th>Changes</th>
+<th>Drops</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Import dialog (<code>data_setup.py</code>)</td>
+<td>the check and the copy, the plain-words errors</td>
+<td>becomes S01, with each file&#39;s check on screen</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Launch: <em>Return to your country</em> (<code>launch.py</code>)</td>
+<td>the saved career summary, Resume, retry</td>
+<td>becomes S02: <em>Continue</em>, the saves as a list, the title&#39;s Y/N</td>
+<td>the path field (&quot;Open another save&quot;)</td>
+</tr>
+<tr>
+<td>Launch: <em>Choose your country</em></td>
+<td>the 128 countries, the card</td>
+<td>becomes S04: groups of 16, Ins, Space players, the name on the same screen</td>
+<td>the 1990/1992 start-year list, replaced by S03&#39;s optional year field (owner decision 9)</td>
+</tr>
+<tr>
+<td>Launch: <em>Review before starting</em></td>
+<td>the manager name (14 characters)</td>
+<td>the name moves into S04</td>
+<td>the review page</td>
+</tr>
+<tr>
+<td>Launch: bulletins</td>
+<td>the three-column bulletin</td>
+<td>becomes S05</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Main window: top bar</td>
+<td>country, manager, year and stage, next match</td>
+<td>as in section 3</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Main window: side bar (Country, Team, Pool, Fixtures &amp; match, Save; Ctrl+1–5) and <em>SHOW MATCH (F8)</em></td>
+<td>—</td>
+<td>the desk&#39;s six options take its place</td>
+<td>the side bar, Ctrl+1–5, F8</td>
+</tr>
+<tr>
+<td>Main window: status line</td>
+<td>—</td>
+<td>each screen says what it waits for itself</td>
+<td>the status line</td>
+</tr>
+<tr>
+<td>Country (the desk)</td>
+<td>the desk&#39;s panels and its six options; history</td>
+<td>becomes S06, the landing page with all six actions on it (<em>play next game</em> included) and the cursor on <em>team info</em>; history becomes S13</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Team: card, own tactics, team tactics</td>
+<td>the card, R / Shift+R / C, T, F2</td>
+<td>becomes S08, S09, S10</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Pool: card, compare, suggest</td>
+<td>the pool card; the exchange</td>
+<td>joins S08 (←→ squad / pool), the exchange shown before it is made</td>
+<td><em>Compare</em> as a separate view; <em>Suggest</em> becomes Ins (the assistant&#39;s 20)</td>
+</tr>
+<tr>
+<td>Fixtures &amp; match: fixture list, tournament</td>
+<td>the boards</td>
+<td>become S11 and S12, reached from the desk</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Round pages (<em>Next &gt; (Enter)</em>)</td>
+<td>the order of the pages</td>
+<td>become S14, S20, S12, S05</td>
+<td>the generic page titles</td>
+</tr>
+<tr>
+<td>Captain view with <em>Watch this match</em> toggle</td>
+<td>the eleven, the suggested captain, Enter, C</td>
+<td>becomes S16, which says the match waits for it; C bound</td>
+<td>the Watch toggle: own matches are watched, the original&#39;s watch question and R remain (owner decisions 1, 3)</td>
+</tr>
+<tr>
+<td>Pre-match team (bench, pre-match)</td>
+<td>the swap</td>
+<td>joins S15&#39;s <em>players</em> and S19</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Pitch window (pygame)</td>
+<td>its keys</td>
+<td>moves into the main window as S17</td>
+<td>the second window, its fixed caption</td>
+</tr>
+<tr>
+<td>Substitution notice, action replay, takers, shoot-out order</td>
+<td>the questions and their keys</td>
+<td>become S18 and S16</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Half time / bench</td>
+<td>substitutions left, <em>make substitutions now</em></td>
+<td>becomes S19 and S20</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Match summary</td>
+<td>the board, the save question</td>
+<td>becomes S20 with S21&#39;s name box; N bound</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Save page (path, Save F7)</td>
+<td>F7</td>
+<td>becomes S21&#39;s name box, with F10 quit</td>
+<td>the path field</td>
+</tr>
+</tbody></table>
+<h2 id="5-the-mapping-of-every-original-screen">5. The mapping of every original screen</h2>
+<p>Every classified screen of the <a href="https://github.com/diegoami/goal2/blob/e50e517478d3d01b7bb96bc17566d800216d6c32/docs/original-game/screen-inventory.md">screen inventory</a> and every original
+image embedded in the chapters is in one row: the new screen that replaces it, or <em>dropped</em> with the reason.
+<code>check_mapping.py</code> checks this table. [designed: T157]</p>
+<!-- mapping:start -->
+<table>
+<thead>
+<tr>
+<th>New screen</th>
+<th>Original screens it replaces</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>S01</td>
+<td>—</td>
+<td>goal2 adds it: the first-start import (T153)</td>
+</tr>
+<tr>
+<td>S02</td>
+<td><code>title-load-prompt</code>, <code>m244-load-name</code>, <code>t156-243-load-name</code>, <code>file-not-found-prompt</code></td>
+<td>title, load, error</td>
+</tr>
+<tr>
+<td>S03</td>
+<td><code>title-player-count</code>, <code>t156-002-hang-on-a-tick</code></td>
+<td>managers, busy</td>
+</tr>
+<tr>
+<td>S04</td>
+<td><code>country-select</code>, <code>country-select-name-entry</code>, <code>t156-005-country-holland</code>, <code>t156-006-name-entry</code>, <code>t156-010-name-typed</code></td>
+<td>country, name</td>
+</tr>
+<tr>
+<td>S05</td>
+<td><code>bulletin</code>, <code>t156-011-bulletin-welcome</code>, <code>t156-012-bulletin-groups</code>, <code>t156-200-bulletin-after-match</code>, <code>t156-317-bulletin-round2</code>, <code>m244-elimination-bulletin</code></td>
+<td>news</td>
+</tr>
+<tr>
+<td>S06</td>
+<td><code>manager-menu</code>, <code>t156-013-hub</code>, <code>t156-201-hub-after-round1</code>, <code>t156-244-loaded-hub</code>, <code>t156-318-hub-round2</code>, <code>m244-holland-menu</code>, <code>m244-finals-stage-hub</code></td>
+<td>hub</td>
+</tr>
+<tr>
+<td>S07</td>
+<td><code>m244-team-info-2030</code>, <code>m244-team-info-players-2030</code></td>
+<td>competitors</td>
+</tr>
+<tr>
+<td>S08</td>
+<td><code>m244-squad</code>, <code>m244-squad-next</code>, <code>m244-pool</code>, <code>m244-pool-next</code>, <code>m244-position-next</code>, <code>m244-position-club</code>, <code>t156-014-squad</code>, <code>t156-016-pool</code>, <code>t156-017-pool-put-here</code>, <code>t156-029-pool-pick-done</code>, <code>t156-202-card-recovered</code>, <code>t156-320-card-recovered-round2</code></td>
+<td>squad, pool</td>
+</tr>
+<tr>
+<td>S09</td>
+<td><code>m244-individual-tactics</code>, <code>m244-position-tactic-toggle</code>, <code>mark-protect-zone</code>, <code>mark-named-opponent</code>, <code>squad-substitution-tactic</code>, <code>t156-030-player-tactics</code></td>
+<td>player tactics</td>
+</tr>
+<tr>
+<td>S10</td>
+<td><code>team-tactics</code>, <code>m244-team-tactics</code>, <code>t156-033-team-tactics</code>, <code>t156-034-team-tactic-changed</code></td>
+<td>team tactics</td>
+</tr>
+<tr>
+<td>S11</td>
+<td><code>fixtures-watch</code>, <code>fixtures-auto</code>, <code>m244-fixtures</code>, <code>m244-fixtures-watch</code>, <code>t156-224-fixture-list</code></td>
+<td>fixtures</td>
+</tr>
+<tr>
+<td>S12</td>
+<td><code>m244-tournament-group-f</code>, <code>m244-tournament-group-g</code>, <code>m244-world-finals-bracket</code>, <code>m244-world-qualifying-a</code>, <code>m244-world-qualifying-b</code>, <code>m244-final-qualifying-table</code>, <code>t156-227-tournament-europe</code>, <code>t156-228-tournament-americas</code>, <code>t156-229-tournament-finals</code>, <code>t156-230-tournament-championship</code>, <code>t156-316-group-table</code></td>
+<td>tournament</td>
+</tr>
+<tr>
+<td>S13</td>
+<td><code>m244-history</code></td>
+<td>history</td>
+</tr>
+<tr>
+<td>S14</td>
+<td><code>round-playing</code>, <code>round-results</code>, <code>t156-041-round1-results</code>, <code>t156-262-round2-results-rolling</code>, <code>t156-263-round2-results</code></td>
+<td>round</td>
+</tr>
+<tr>
+<td>S15</td>
+<td><code>match-menu</code>, <code>match-menu-halftime</code>, <code>match-menu-fulltime</code>, <code>match-watch-prompt</code>, <code>t156-042-match-menu</code>, <code>t156-048-menu-after-taker</code>, <code>t156-193-fulltime-menu</code>, <code>t156-264-round2-match-menu</code>, <code>t156-246-goal-replay-menu</code>, <code>m244-knockout-halftime</code>, <code>m244-extra-time-menu</code>, <code>m244-extra-time-halftime</code></td>
+<td>match menu</td>
+</tr>
+<tr>
+<td>S16</td>
+<td><code>captain-select</code>, <code>t156-043-captain</code>, <code>t156-044-captain-chosen</code>, <code>t156-265-round2-captain</code>, <code>t156-046-goal-kick-taker</code>, <code>t156-056-corner-taker</code>, <code>m244-shootout-order</code>, <code>m244-shootout-five-chosen</code></td>
+<td>captain, takers, order</td>
+</tr>
+<tr>
+<td>S17</td>
+<td><code>match-live</code>, <code>match-commentary</code>, <code>injury-event</code>, <code>t156-045-kick-off</code>, <code>t156-058-taker-timed-out</code>, <code>t156-066-injury-and-booking</code>, <code>t156-178-replay-playing</code>, <code>t156-247-goal-replay</code>, <code>t156-254-goal-replay-goal</code>, <code>t156-267-quick-hang-on</code>, <code>m244-shootout-first-goal</code></td>
+<td>pitch</td>
+</tr>
+<tr>
+<td>S18</td>
+<td><code>t156-067-substitution-opportunity</code>, <code>t156-149-opponent-substitution</code>, <code>t156-175-replay-prompt</code>, <code>t156-176-save-goal-prompt</code>, <code>t156-177-goal-file-name</code>, <code>t156-274-quick-substitution-opportunity</code>, <code>e031-shootout-start</code>, <code>m244-shootout-prompt</code></td>
+<td>stops</td>
+</tr>
+<tr>
+<td>S19</td>
+<td><code>squad-substitution-take-off</code>, <code>squad-substitution-put-on</code>, <code>squad-substitution-illegal</code>, <code>t156-074-bench-requested</code>, <code>t156-080-bench-request-cancelled</code>, <code>t156-124-halftime-bench</code>, <code>t156-132-substitution-made</code>, <code>t156-279-quick-bench</code>, <code>t156-301-quick-substitution-made</code></td>
+<td>bench</td>
+</tr>
+<tr>
+<td>S20</td>
+<td><code>t156-119-halftime-board</code>, <code>t156-192-fulltime-board</code>, <code>t156-270-quick-halftime</code>, <code>t156-310-quick-fulltime</code>, <code>match-summary-save-prompt</code>, <code>match-summary</code>, <code>t156-198-summary-prompt</code>, <code>t156-199-summary-file-name</code></td>
+<td>boards, summary</td>
+</tr>
+<tr>
+<td>S21</td>
+<td><code>save-game-name-entry</code>, <code>save-game-prompt</code>, <code>quit-confirm</code>, <code>t156-233-save-name-prompt</code>, <code>t156-237-save-name-typed</code>, <code>t156-239-quit-confirm</code>, <code>t156-240-quit-save-prompt</code>, <code>t156-245-load-goal-prompt</code></td>
+<td>save, quit, load goal</td>
+</tr>
+<tr>
+<td>S22</td>
+<td>—</td>
+<td>goal2 adds it in place of the original&#39;s help viewer, of which no capture exists</td>
+</tr>
+<tr>
+<td>dropped</td>
+<td><code>dos-shell</code></td>
+<td>The emulator&#39;s DOS prompt before GOAL2 starts: not a game screen; goal2 starts on S01 or S02</td>
+</tr>
+</tbody></table>
+<!-- mapping:end --><h2 id="6-decisions-owner-2026-11-03">6. Decisions (owner, 2026-11-03)</h2>
+<p>The owner answered the design&#39;s nine questions on #526 (<a href="https://github.com/diegoami/goal2/issues/526#issuecomment-6590816260">owner decisions, 2026-11-03, #526</a>); this design applies them.</p>
+<ol>
+<li><strong>The desk</strong> is the original&#39;s landing page with every action visible, <em>play next game</em> included; own matches
+are watched by default; no watch control the original lacks; the cursor starts where the original&#39;s does.</li>
+<li><strong>The pitch</strong> is in the main window, with the commentary always beside it.</li>
+<li><strong>Watch or quick result</strong> as the original: its question where it asks one, R on the pitch, no extra button.</li>
+<li><strong>Load:</strong> <em>Continue</em> plus a list of saves, in place of typing a file name.</li>
+<li><strong>Managers:</strong> 1 to 6, hot seat, as the original.</li>
+<li><strong>Autopilot:</strong> decided later; left out of this design.</li>
+<li><strong>The look:</strong> modern and readable, with the original&#39;s layout, colour meanings and role codes. Revised the
+same day (below).</li>
+<li><strong>Save names:</strong> free names, shown in the save list, not the 8.3 names.</li>
+<li><strong>The start year:</strong> the PC clock&#39;s year by default, as the original (NG-9), changeable in one optional field.</li>
+</ol>
+<p><strong>Approval, 2026-11-03</strong> (the owner, on #526: &quot;let us keep the design&quot;), with three changes this design applies:</p>
+<ol start="10">
+<li><strong>Mouse support</strong> stays, as the owner&#39;s decision.</li>
+<li><strong>GOAL.HLP</strong> joins the first-start import (S01), and F1 shows the original&#39;s help from it (S22). The change to
+the import is made in T153&#39;s code, in a separate PR.</li>
+<li><strong>The look:</strong> the original&#39;s colour scheme and a retro feel. The mockups use the original&#39;s palette, read from
+the captures, and a blocky VGA-style font (PxPlus IBM VGA 8x16, CC BY-SA 4.0). The layout and everything else
+stay (<a href="#3-rules-for-the-whole-ui">the look</a>).</li>
+</ol>
+<p><strong>Owner decisions, 2026-11-03</strong> (on T162&#39;s questions, #536: &quot;do as proposed&quot;):</p>
+<ol start="13">
+<li><strong>S22&#39;s text box</strong> fills most of the screen, not the mockup&#39;s nine lines: the original&#39;s help is a long text.
+Made in T163.</li>
+<li><strong>Adding GOAL.HLP later</strong>: the desk (S06) gets a <em>re-import data</em> entry, which opens S01 over the imported
+folder. Made in T164. Until then, F1&#39;s message names the re-import command.</li>
+</ol>
+<p><strong>Owner decisions, 2026-11-03</strong> (on gaps that T163 and T165 found):</p>
+<ol start="15">
+<li><strong>S05 waits for the original&#39;s news.</strong> Until Track B ports it (U2, #509), a new career goes from S04 to the
+home screen. goal2 writes no bulletin of its own.</li>
+<li><strong>Ins (the assistant&#39;s 20) says <em>coming later</em></strong> until the original&#39;s assistant (<code>0791:DC7E</code>) is ported in
+Track B&#39;s U3. There is no Unicorn and no stand-in rule meanwhile.</li>
+</ol>
+<p><strong>Owner decisions, 2026-11-03</strong> (on the main session&#39;s gap audit, #509):</p>
+<ol start="17">
+<li><strong>The ZIP keeps today&#39;s window as its default until the Python route plays a whole season (T170).</strong> T169
+adds the new window beside it, for the playtest. No build plays less than the one before it.</li>
+<li><strong>Four of today&#39;s extras stay</strong>, though the original lacks them. Each is marked <code>[designed]</code> where it departs:<ul>
+<li><strong>Pool search and filter on S08:</strong> by name, accent-insensitive, and by position.</li>
+<li><strong>A standalone friendly</strong> between any two countries, outside a career, from S02.</li>
+<li><strong>Renaming the manager</strong> after the career started, from the desk.</li>
+<li><strong>A new career from inside a game</strong>, from the desk, with the unsaved-progress question first.</li>
+</ul>
+</li>
+</ol>
+
+</article></main>
+<footer class="wrap"><p>Based on the linked project reference at source <code>e50e517478d3</code>. The illustrations keep their stated version and context.</p><a href="../../">Back to the project portfolio</a></footer></body></html>

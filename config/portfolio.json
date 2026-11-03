@@ -367,7 +367,9 @@
         "strategy-game",
         "reimplementation",
         "csharp"
-      ]
+      ],
+      "liveUrl": "https://diegoami.github.io/home/guides/imperial-conquest-2/",
+      "liveLabel": "Read manual · v0.6.2"
     },
     "imperial-conquest-2-research": {
       "status": "unclassified",
@@ -466,7 +468,7 @@
     },
     "oravitsa": {
       "status": "demo",
-      "summary": "A cosy 2D forest exploration prototype with foraging, wildlife and a painted world.",
+      "summary": "A forest exploration and foraging prototype with wildlife, paths and discoveries.",
       "curated": true,
       "featured": false,
       "language": "GDScript",
@@ -475,6 +477,13 @@
         "godot",
         "exploration",
         "prototype"
+      ],
+      "liveUrl": "https://diegoami.github.io/oravitsa/",
+      "extraLinks": [
+        {
+          "label": "Illustrated guide",
+          "url": "https://diegoami.github.io/home/guides/oravitsa/"
+        }
       ]
     },
     "pgn-postmortem": {
@@ -603,7 +612,9 @@
         "football",
         "reimplementation",
         "python"
-      ]
+      ],
+      "liveUrl": "https://diegoami.github.io/home/guides/goal2/",
+      "liveLabel": "View illustrated design"
     },
     "malpaco": {
       "status": "wip",
@@ -623,7 +634,7 @@
     },
     "cerea-vice": {
       "status": "demo",
-      "summary": "A driving and navigation prototype set in Cerea, Italy, with a second fictional harbor district.",
+      "summary": "Learn real streets by driving a taxi, reading signs and using a paper atlas.",
       "repositoryUrl": "https://github.com/diegoami/cerea-vice",
       "language": "TypeScript",
       "section": "games",
@@ -634,6 +645,13 @@
         "driving",
         "navigation",
         "prototype"
+      ],
+      "liveUrl": "https://diegoami.github.io/cerea-vice/",
+      "extraLinks": [
+        {
+          "label": "Illustrated guide",
+          "url": "https://diegoami.github.io/home/guides/cerea-vice/"
+        }
       ]
     },
     "Quota tracker": {

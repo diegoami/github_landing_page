@@ -166,3 +166,17 @@ Serve the repository root from GitHub Pages (Settings → Pages → branch `main
 `/root`). `.nojekyll` is present so files are served as-is.
 
 The portfolio is published at [diegoami.github.io/home](https://diegoami.github.io/home/).
+
+## Illustrated project destinations
+
+The first four illustrated destinations live under `guides/`: Cerea Vice and
+Oravitsa player guides, Goal2's screen design, and Imperial Conquest 2's
+versioned v0.6.2 manual. Cards use explicit action labels so a design or manual
+is not presented as a playable application. The other project links are unchanged.
+
+Edit `guides/<project>/guide.md` and the shared `guides/manifest.json`, then run
+`node tools/render-project-guides.mjs` (Node/npm required). It uses the pinned
+build-only `marked@18.0.14` renderer. Commit the generated HTML and the curated
+illustrations with their source references. Pages continues to serve static
+files with no server or runtime dependency. Check image loading, contents links
+and narrow-screen layout when updating a guide; keep design/version labels honest.

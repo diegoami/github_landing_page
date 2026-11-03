@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Imperial Conquest 2 — illustrated manual — diegoami</title><meta name="description" content="Installation, strategic turns, battles, diplomacy and saves for the documented v0.6.2 native build."><link rel="stylesheet" href="../guide.css"></head>
+<body><header class="hero"><div class="wrap"><a class="back" href="../../">← All projects</a><p class="eyebrow">Versioned manual · v0.6.2</p><h1>Imperial Conquest 2 — illustrated manual</h1><p class="lead">Installation, strategic turns, battles, diplomacy and saves for the documented v0.6.2 native build.</p><div class="actions"><a href="https://github.com/diegoami/imperial_conquest_2/blob/36ab15ec80beabd16bea0f64bab54adf16e34e32/docs/investigations/v062-user-manual.md">Source reference</a><a href="https://github.com/diegoami/imperial_conquest_2">Project</a></div><aside class="notice">This manual and its screenshots document v0.6.2. Later builds can have different screens and controls.</aside></div></header>
+<main class="wrap"><nav class="contents" aria-label="On this page"><details><summary>Contents · 12 sections</summary><ol><li class="level-2"><a href="#getting-started">Getting started</a></li><li class="level-2"><a href="#starting-a-game">Starting a game</a></li><li class="level-2"><a href="#the-game-screen">The game screen</a></li><li class="level-2"><a href="#playing-a-turn">Playing a turn</a></li><li class="level-2"><a href="#orders-reference">Orders reference</a></li><li class="level-2"><a href="#battles">Battles</a></li><li class="level-2"><a href="#diplomacy">Diplomacy</a></li><li class="level-2"><a href="#rules-quick-reference">Rules quick reference</a></li><li class="level-2"><a href="#winning-and-losing">Winning and losing</a></li><li class="level-2"><a href="#saving-loading-settings-and-diagnostics">Saving, loading, settings and diagnostics</a></li><li class="level-2"><a href="#mouse-and-keyboard-reference">Mouse and keyboard reference</a></li><li class="level-2"><a href="#known-limitations-in-v062">Known limitations in v0.6.2</a></li></ol></details></nav><article class="prose"><p>2026-10-20 · tested on tag <code>v0.6.2</code> (commit <code>4253d8a</code>) · <a href="https://github.com/diegoami/imperial_conquest_2/issues/1280">#1280</a></p>
+<p>How to install, start and play Imperial Conquest 2 v0.6.2 (&quot;Readable battles and local diagnostics&quot;), written from a real play session of the tagged build. The usability test is in <a href="https://github.com/diegoami/imperial_conquest_2/blob/36ab15ec80beabd16bea0f64bab54adf16e34e32/docs/investigations/v062-usability-test.md">v062-usability-test.md</a>.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>v0.6.2 runs from source: you need the .NET 10 SDK and Godot 4.7.2 <strong>.NET edition</strong> (the standard Godot build cannot run C#). No files from the original 1996 game are needed; the game reads the shipped data under <code>data/</code>.</p>
+<ol>
+<li>Install the .NET 10 SDK.</li>
+<li>Download Godot 4.7.2 .NET: <code>Godot_v4.7.2-stable_mono_win64.zip</code> on Windows, <code>Godot_v4.7.2-stable_mono_linux_x86_64.zip</code> on Linux. Unzip it anywhere. On Windows use the <code>_console.exe</code>, which prints errors to the terminal.</li>
+<li>Get the release: <code>git checkout v0.6.2</code>.</li>
+<li>Build both projects from the repository root (the Godot project is not part of <code>IC2.sln</code>, so build it separately, and again after every pull):<ol>
+<li><code>dotnet build IC2.sln</code></li>
+<li><code>dotnet build godot/IC2.MapViewer.csproj</code></li>
+</ol>
+</li>
+<li>First run only, import the assets: <code>godot --headless --path godot --import</code></li>
+<li>Start the game: <code>godot --path godot</code> (on Windows, the full path to the <code>_console.exe</code>).</li>
+</ol>
+<p>Alternatively, open <code>godot/project.godot</code> in the Godot editor and press <strong>Play</strong> (F5); the editor compiles the C# itself.</p>
+<p><strong>Packaged build.</strong> <code>pwsh scripts/package.ps1</code> exports a self-contained Windows build to <code>rendered\export\ic2\</code>; start <code>game\IC2.MapViewer.exe</code> there. It needs neither Godot nor .NET on the playing machine, but building it needs the Godot 4.7.2 .NET export templates.</p>
+<p><strong>Terminal version.</strong> The same engine plays in a console: <code>dotnet run --project src/IC2.Cli -- --scenario classical-mediterranean --seat rome</code>. Type <code>help</code> for its commands. It is useful for long or scripted games.</p>
+<h2 id="starting-a-game">Starting a game</h2>
+<p>The main menu has <strong>New Game</strong>, <strong>Load</strong>, <strong>Settings</strong> and <strong>Quit</strong> (Quit exits at once, without asking). A new game takes two screens.</p>
+<p><strong>1. Choose a ruleset.</strong> Click a card, then <strong>Continue</strong>. Each card is tied to one scenario, the Mediterranean in 270 BC with 16 nations.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Classical Faithful (default)</th>
+<th>Improved</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Goal</td>
+<td>Total conquest: hold every city on the map</td>
+<td>Domination: hold every city of every nation you are at war with</td>
+</tr>
+<tr>
+<td>A beaten army or fleet</td>
+<td>Is destroyed</td>
+<td>Survives at reduced strength and scatters</td>
+</tr>
+<tr>
+<td>Human vs AI</td>
+<td>The original&#39;s unequal seat rules</td>
+<td>The same rules for every seat</td>
+</tr>
+<tr>
+<td>Money</td>
+<td>Each army and fleet has its own purse</td>
+<td>One central treasury</td>
+</tr>
+<tr>
+<td>Recruiting into debt</td>
+<td>Allowed</td>
+<td>Refused</td>
+</tr>
+<tr>
+<td>Original bugs</td>
+<td>Two known bugs reproduced</td>
+<td>Fixed</td>
+</tr>
+</tbody></table>
+<p><strong>2. Choose your nation and the AI.</strong> Pick a nation under <strong>Play as</strong>: Rome, Carthage, Seleucid, Ptolemaic, Macedonia, Numidia, Gaul, Greece, Celtiberia, Illyria, Dacia, Bithynia, Galatia, Armenia, Media or Thracia. Every other nation is played by the computer. Three sliders set the AI personality for all of them:</p>
+<ul>
+<li><strong>Aggression</strong>: how much stronger the AI must be before it attacks.</li>
+<li><strong>Expansion drive</strong>: has no effect under Classical Faithful in v0.6.2.</li>
+<li><strong>Loyalty to alliances</strong>: recorded but not used in v0.6.2.</li>
+</ul>
+<p>Press <strong>Start Game</strong>. There is no choice of seed, difficulty or game length, and only one human player per new game.</p>
+<figure><a href="images/new-game.png" target="_blank" rel="noopener"><img src="images/new-game.png" loading="lazy" alt="The New Game ruleset chooser"></a><figcaption>The New Game ruleset chooser <a href="images/new-game.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h2 id="the-game-screen">The game screen</h2>
+<p>The strategic screen is the map with everything you need around it. Below, Rome&#39;s army-1 is selected in central Italy.</p>
+<figure><a href="images/strategic-screen.png" target="_blank" rel="noopener"><img src="images/strategic-screen.png" loading="lazy" alt="The strategic screen with an army selected"></a><figcaption>The strategic screen with an army selected <a href="images/strategic-screen.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Where</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Menu bar</td>
+<td>Top line</td>
+<td>File, Game, Strategy, Nations, Area map, Unit map, Help.</td>
+</tr>
+<tr>
+<td>Main toolbar</td>
+<td>Under the menus</td>
+<td>Open, Save, <strong>End turn</strong> (hourglass), then the six Strategy screens: News, International relations, Taxation, Balance sheet, Recruit unit, Build fleet. Hover an icon for its name.</td>
+</tr>
+<tr>
+<td>Nation swatches</td>
+<td>Right of the toolbar</td>
+<td>One coloured square per nation, plus <strong>All</strong>. Picks the nation the side panel and minimap describe. Purple is Rome.</td>
+</tr>
+<tr>
+<td>Order strip</td>
+<td>Second toolbar row, only while something of yours is selected</td>
+<td>The orders for that army (7), fleet (6) or city (Fortify), and <strong>Cancel selection</strong>. The map moves down a little when it appears.</td>
+</tr>
+<tr>
+<td>Top bar</td>
+<td>Above the map</td>
+<td>Date and turn (&quot;Week 3, 270 BC (turn 1)&quot;), the nation you play, and save messages. While units move after End turn it shows <strong>Skip</strong> and <strong>Fast</strong>.</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>Centre</td>
+<td>Cities are framed squares in the owner&#39;s colour with a glyph; armies are smaller squares. No names are shown on the map.</td>
+</tr>
+<tr>
+<td>» / «</td>
+<td>Thin bar right of the map</td>
+<td>Hides or shows the side column (also <strong>F12</strong>).</td>
+</tr>
+<tr>
+<td>Side-panel icons</td>
+<td>Right column, top</td>
+<td>Twelve buttons: Show cities, capital, armies, fleets, all; mercenaries by type (light/heavy infantry, archers, light/heavy cavalry, all); Find a city. They highlight on the <strong>minimap</strong>, not the main map.</td>
+</tr>
+<tr>
+<td>Minimap</td>
+<td>Under the icons</td>
+<td>The whole world; the yellow box is your view. Click it to jump there.</td>
+</tr>
+<tr>
+<td>Context panel</td>
+<td>Right column, bottom</td>
+<td>Details of what you clicked: nation overview, city, army or fleet. Information only; orders are in the menus and the order strip.</td>
+</tr>
+<tr>
+<td>Status lines</td>
+<td>Under the map</td>
+<td>The outcome of your last order and of the computer&#39;s turns (&quot;army-1 moved from (120,53) to (119,50), spending 3 of 8 moves.&quot;). Refusals appear here too.</td>
+</tr>
+<tr>
+<td>News panel</td>
+<td>Bottom, when opened</td>
+<td>Strategy → News. Close it with <strong>Dismiss</strong>.</td>
+</tr>
+</tbody></table>
+<h2 id="playing-a-turn">Playing a turn</h2>
+<p>A turn is two weeks. You give orders to your armies, fleets and cities in any order, then press <strong>End turn</strong>; the computer then plays every other nation, and you start the next turn.</p>
+<p><strong>Find your forces.</strong> Zoom in first: markers are only about 5 px wide at the opening zoom. Roll the mouse wheel over the area you want and drag with the left button to pan. <strong>Area map → Find a city</strong> (or the magnifier icon) centres the map on any city chosen by nation. <strong>Show armies</strong> marks your armies on the minimap.</p>
+<p><strong>Select.</strong> Left-click one of your markers. The context panel shows its details and the order strip shows what it can do. Right-clicking a city shows the mercenaries on offer there, without changing your selection.</p>
+<p><strong>Move.</strong> With an army selected, left-click any land tile. The army walks there in a straight line, paying the terrain&#39;s cost in moves:</p>
+<table>
+<thead>
+<tr>
+<th>Terrain</th>
+<th>Plain</th>
+<th>Desert</th>
+<th>Forest</th>
+<th>Mountains</th>
+<th>River</th>
+<th>Calm sea</th>
+<th>Rough sea</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Moves per tile</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>4</td>
+<td>1</td>
+<td>3</td>
+</tr>
+</tbody></table>
+<p>It stops short if it runs out of moves, or at any marker in its path, and stays selected while it has moves left. An army has 5–10 moves a turn: fewer when it is large, one fewer when its supply is below 10%. Fleets sail the same way on sea tiles.</p>
+<blockquote>
+<p>Careful: a left-click on empty ground always means &quot;move&quot;. If you miss a marker you meant to select, the army you had selected marches there at once, and there is no undo. Clear the selection with <strong>Esc</strong> or <strong>Shift+X</strong> before clicking somewhere new.</p>
+</blockquote>
+<p><strong>Attack.</strong> Move next to the target (including diagonally) with at least one move left, then left-click it:</p>
+<ul>
+<li>army on an enemy army: a field battle (see Battles);</li>
+<li>army on an enemy city: a siege;</li>
+<li>fleet on an enemy fleet: a sea battle.</li>
+</ul>
+<p>If you are not at war with the target, the game asks &quot;Are you sure you want to attack… ?&quot;, and <strong>Yes</strong> declares war.</p>
+<p><strong>Embark and land.</strong> Click a selected army onto your own empty fleet next to it to board; select the fleet, sail, and click a land tile next to it to land.</p>
+<p><strong>End the turn.</strong> Press the hourglass or <strong>Game → End turn</strong>. If an army or fleet needs supplies, repairs or pay, an <strong>End turn ?</strong> box lists the problems: <strong>Make more moves</strong> returns to the map, <strong>End turn</strong> carries on. Then the computer&#39;s moves play on the map (<strong>Skip</strong> or <strong>Fast</strong> in the top bar), and reports open one at a time: battles you fought, other nations&#39; battles, peace offers and diplomatic notices. Close each one to reach your next turn.</p>
+<h2 id="orders-reference">Orders reference</h2>
+<p>Every order takes effect the moment you confirm it; Cancel in a dialog does not undo an order already given in it. If nothing suitable is selected, the game says &quot;Select one of your armies/fleets/cities first.&quot;</p>
+<p><strong>Strategy menu (nation-wide)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>News</td>
+<td>Opens the news log at the bottom of the screen.</td>
+</tr>
+<tr>
+<td>International relations</td>
+<td>Declare war, make peace, ally or trade with each nation (see Diplomacy).</td>
+</tr>
+<tr>
+<td>Taxation</td>
+<td>Slider from 0% to 40%; shows the income now and at the new rate. Higher tax costs unity (see Rules).</td>
+</tr>
+<tr>
+<td>Balance sheet</td>
+<td>Revenue (taxes, tribute, trade), spending (administration, fleets, recruits, regulars, mercenaries), treasury (&quot;Balance&quot;) and debt limit.</td>
+</tr>
+<tr>
+<td>Recruit unit</td>
+<td>Pick a city and a unit type, set the troops (from a fifth of a full battalion up to a full one, in steps of 100) and press <strong>Recruit unit</strong>. Training takes weeks; a finished unit shows &quot;ready&quot;. Select it and press <strong>Mobilize</strong> to send it to a nearby army or form a new army beside the city. <strong>Disband</strong> cancels a slot (the money is lost). Only the capital, or a town with fortification of at least 75%, can take new recruits.</td>
+</tr>
+<tr>
+<td>Build fleet</td>
+<td>10 to 100 ships at 10 talents each; the game picks the port (&quot;The fleet will be built at Pisae&quot;). Upkeep is 3 talents per ship per quarter; each ship carries 500 troops.</td>
+</tr>
+</tbody></table>
+<figure><a href="images/recruit.png" target="_blank" rel="noopener"><img src="images/recruit.png" loading="lazy" alt="Army recruits: Rome&#39;s training slots"></a><figcaption>Army recruits: Rome&#39;s training slots <a href="images/recruit.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<p><strong>Army orders (Unit map → Army, or the order strip)</strong></p>
+<table>
+<thead>
+<tr>
+<th>Order</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Supply army</td>
+<td>Take supply (10 t or 100 t at a time) from a city or fleet within one tile: free from your own, 1 talent per 5 t from a friendly foreign city. Also moves money between the army purse and the treasury or a fleet (purse cap 1,000).</td>
+</tr>
+<tr>
+<td>Recruit mercenaries</td>
+<td>Hire a mercenary unit offered at the city next to the army. Paid from the army&#39;s purse each quarter; unpaid mercenaries desert. Not possible above 20 units.</td>
+</tr>
+<tr>
+<td>Transfer unit</td>
+<td>Swap units, supply and money with your army on the next tile (the game picks the partner).</td>
+</tr>
+<tr>
+<td>Split army</td>
+<td>Move some units, supply and money into a new army on free land beside it (needs 2+ units).</td>
+</tr>
+<tr>
+<td>Join armies</td>
+<td>Merge with your army on the next tile.</td>
+</tr>
+<tr>
+<td>Change units</td>
+<td>Rename, split, join or disband individual units.</td>
+</tr>
+<tr>
+<td>Disband army</td>
+<td>Dissolve the army (asks first).</td>
+</tr>
+</tbody></table>
+<p><strong>Fleet orders (Unit map → Fleet)</strong>: Supply fleet; Repair fleet (only at one of your cities, uses its moves); Transfer ships; Split fleet; Join fleets; Scuttle fleet (asks first). None of the split, transfer or scuttle orders work while the fleet carries an army.</p>
+<p><strong>City orders (Unit map → City)</strong>: Fortify city adds fortification points, up to 10 a week; the cost is the population in thousands times the points. Not possible under siege.</p>
+<h2 id="battles">Battles</h2>
+<p>Sieges and sea battles resolve instantly. A field battle (army against army) with your nation on either side opens the tactical battle board, including when the computer attacks you.</p>
+<p><strong>Sieges.</strong> Your army&#39;s strength is set against the city&#39;s defence (loyalty, fortification and population); archers count triple. A <strong>Battle Result</strong> window gives both totals, casualties and the city&#39;s loyalty, fortification and population before and after. A failed siege still wears the city down: our first attack on Felsina fell short 20,720 to 34,050 but cut its fortification from 68% to 65%. Battle Result closes only with its <strong>Close</strong> button, not Esc.</p>
+<p><strong>The tactical battle.</strong> A 14 × 12 board. The defender places first, then the attacker; then the sides take turns (half-rounds), and melee is resolved at the end of the moving side&#39;s half-round.</p>
+<figure><a href="images/tactical-battle.png" target="_blank" rel="noopener"><img src="images/tactical-battle.png" loading="lazy" alt="The tactical board: Rome (purple) against Gaul (red)"></a><figcaption>The tactical board: Rome (purple) against Gaul (red) <a href="images/tactical-battle.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<ol>
+<li><strong>Place.</strong> Click one of your units, then an empty cell in your zone: the attacker&#39;s first three rows or the defender&#39;s last three. Press the hourglass when done.</li>
+<li><strong>Move.</strong> Click a unit, then a cell. Wait for each move to finish before clicking again: clicks during the animation are ignored.</li>
+<li><strong>Melee.</strong> Click an enemy with your unit selected to set it as the target; the fight happens at the end of your half-round.</li>
+<li><strong>Shoot.</strong> Right-click an enemy within range: light infantry and light cavalry reach 1 cell, archers 2. Heavy infantry and heavy cavalry cannot shoot.</li>
+<li><strong>End the half-round</strong> with the hourglass.</li>
+</ol>
+<p>The right-hand panel shows the selected unit (troops, quality, morale, moves, shots) and the current exchange, for example &quot;ROME #0 1st Foot Battalion SHOOTS AT GAUL #21 Spanish — TROOP LOSSES 34&quot;. In the outline colours, cyan marks the unit acting, orange its target and gold your selection.</p>
+<p>Toolbar, left to right: Unit moves, Friendly units, Enemy units, Cancel selection, <strong>End turn</strong> (half-round), Change pauses, <strong>Computer general</strong> (the computer fights your side; click the side panel to take back control), <strong>Surrender</strong>. Save and Save As sit above the panel.</p>
+<p>The board cannot be closed: a battle ends when one side is routed or surrenders. A unit routs when its troops fall below a twenty-fifth of a battalion or its morale reaches 19.</p>
+<p><strong>Battle ended.</strong> The report compares each side by unit type at the start and end, then lists casualties, routed units, unity changes, captured talents and supplies, and the loser&#39;s fate. Under Classical Faithful the beaten army is removed. In our test the computer general won a fight at 1 to 2 odds: 21,801 Romans destroyed a Gaulish army of 43,263, finishing with 5,937 men.</p>
+<figure><a href="images/battle-ended.png" target="_blank" rel="noopener"><img src="images/battle-ended.png" loading="lazy" alt="Battle ended report"></a><figcaption>Battle ended report <a href="images/battle-ended.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<h2 id="diplomacy">Diplomacy</h2>
+<p><strong>Strategy → International relations</strong> lists every nation with your current relation (Peace, Trade, Alliance, War, or a cooldown) and four buttons. A greyed button is not available for that nation.</p>
+<figure><a href="images/diplomacy.png" target="_blank" rel="noopener"><img src="images/diplomacy.png" loading="lazy" alt="International relations at the start of a Roman game"></a><figcaption>International relations at the start of a Roman game <a href="images/diplomacy.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Available when</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Declare War</td>
+<td>Not already at war</td>
+<td>Immediate, <strong>no confirmation</strong>. War spreads one step: declaring on Thracia also put Rome at war with Thracia&#39;s ally Dacia.</td>
+</tr>
+<tr>
+<td>Make Peace</td>
+<td>At war, trading or allied</td>
+<td>Proposes peace (ends a trade or alliance). The nation may refuse.</td>
+</tr>
+<tr>
+<td>Ally</td>
+<td>Not at war, not already allied</td>
+<td>Proposes an alliance. The AI allies only against a common enemy.</td>
+</tr>
+<tr>
+<td>Trade</td>
+<td>Not at war, not already trading</td>
+<td>Proposes trade. A nation trades with at most 3 partners.</td>
+</tr>
+</tbody></table>
+<p>Answers appear only in the status lines under the map, for example &quot;&#39;Carthage&#39; already trades with 3 nations&quot; or &quot;&#39;Gaul&#39; does not want to make peace at this time&quot;. Breaking a deal leaves a cooldown before relations can improve again (8 points after a broken trade, 24 after a broken alliance, 18 after a war), which thaws by about one point a season. Attacking a nation you are at peace with declares war automatically.</p>
+<p>After a battle the loser may offer peace: an <strong>Offer of peace</strong> window with Yes and No. An unanswered offer lapses at your next End turn. A trade or alliance offered to you shows as &quot;Pending offer from …&quot; with <strong>Accept Offer</strong> in this dialog.</p>
+<h2 id="rules-quick-reference">Rules quick reference</h2>
+<p><strong>Calendar.</strong> Each turn advances the week by 2 (weeks 1, 3, 5, 7, 9, 11), so there are 6 turns a season and 24 a year. The game starts in Week 1, Spring 270 BC and ends in 250 BC. Money is billed once a season (&quot;per quarter&quot;).</p>
+<p><strong>Units</strong> (the same in both rulesets; recruit cost and upkeep are talents per 200 troops):</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Board moves</th>
+<th>Full battalion</th>
+<th>Shots</th>
+<th>Range</th>
+<th>Recruit cost</th>
+<th>Upkeep / quarter</th>
+<th>Battle weight</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Light infantry</td>
+<td>4</td>
+<td>15,000</td>
+<td>7</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>20</td>
+</tr>
+<tr>
+<td>Heavy infantry</td>
+<td>2</td>
+<td>6,000</td>
+<td>0</td>
+<td>–</td>
+<td>20</td>
+<td>2</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Archers</td>
+<td>4</td>
+<td>3,500</td>
+<td>25</td>
+<td>2</td>
+<td>4</td>
+<td>1</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Light cavalry</td>
+<td>6</td>
+<td>7,000</td>
+<td>9</td>
+<td>1</td>
+<td>15</td>
+<td>3</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Heavy cavalry</td>
+<td>5</td>
+<td>2,500</td>
+<td>0</td>
+<td>–</td>
+<td>30</td>
+<td>4</td>
+<td>120</td>
+</tr>
+</tbody></table>
+<p>An army holds at most 20 units and 100,000 troops. Heavy units barely suffer from missiles; light infantry and archers suffer most.</p>
+<p><strong>Economy.</strong> Tax income = tax base × rate, with the rate from 0% to 40%. Each season the treasury pays regular units and ships (3 talents per ship); mercenaries are paid from their army&#39;s own purse. Unity changes each season by 25 − tax/2 − mobilization/5, within 300 to 990, so taxes above about 50 − mobilization/2.5 make it fall. Very low unity, or debt below the limit, can cost you your throne. The treasury may go down to −20,000.</p>
+<p><strong>Supply.</strong> An army can carry 1 ton per 100 troops and eats supply every turn (more in winter). Refill with Supply army next to your own city (free) or a friendly city (1 talent per 5 t). Below 10% supply, the army loses a move.</p>
+<p><strong>Fleets.</strong> Ships cost 10 talents, 10 to 100 per order, and carry 500 troops each. Storms damage fleets; a fleet whose condition drops below 40 sinks, so repair it in port.</p>
+<h2 id="winning-and-losing">Winning and losing</h2>
+<p>You win by holding every one of the map&#39;s 334 cities (Classical Faithful), or every city of every nation you are at war with (Improved). Your reign ends early in any of these ways:</p>
+<ul>
+<li><strong>Time runs out</strong> in 250 BC, twenty years after the start.</li>
+<li><strong>Your nation is conquered</strong>: you lose your last city.</li>
+<li><strong>You are overthrown for unpopularity</strong> when unity collapses.</li>
+<li><strong>You are deposed for not paying the army.</strong></li>
+</ul>
+<p>When your game ends, the <strong>End of Game</strong> window says why (&quot;Your nation has been conquerred by Greece&quot; keeps the original&#39;s spelling), how many years you ruled, and your population, cities and treasury at the start and at the end. <strong>Main menu</strong> leaves; <strong>View map</strong> lets you look on, but no further orders are accepted.</p>
+<p>A nation is not safe if you only sit tight. In a full test game where Rome gave no orders, both Roman armies were gone within two years. Rome kept 19–24 cities for a decade while 30,000 talents piled up unspent, then fell to 12 cities by 256 BC, briefly recovered to 18, and was conquered by Greece in Spring 253 BC.</p>
+<h2 id="saving-loading-settings-and-diagnostics">Saving, loading, settings and diagnostics</h2>
+<p><strong>Save.</strong> The disk icon or <strong>File → Save</strong> writes to the file you loaded or last saved; a new game&#39;s first save is named <code>classical-mediterranean-turn-&lt;N&gt;.json</code>. <strong>Save As</strong> lets you pick a name ending in <code>.json</code>. The top bar confirms &quot;Saved to …&quot;. There is <strong>no autosave</strong>, and leaving a game (File → New, Open or Close, or closing the window) does not offer to save, so save before you leave. You can also save in the middle of a tactical battle with its own Save buttons.</p>
+<p><strong>Where files go</strong> (the folder is named after the project, &quot;Imperial Conquest 2 Map Viewer&quot;):</p>
+<table>
+<thead>
+<tr>
+<th>System</th>
+<th>Folder</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Windows</td>
+<td><code>%APPDATA%\Godot\app_userdata\Imperial Conquest 2 Map Viewer\</code></td>
+</tr>
+<tr>
+<td>Linux</td>
+<td><code>~/.local/share/godot/app_userdata/Imperial Conquest 2 Map Viewer/</code></td>
+</tr>
+</tbody></table>
+<p>Saves are in <code>saves/</code>, logs in <code>logs/</code>.</p>
+<p><strong>Load.</strong> Main menu → <strong>Load</strong> (or File → Open) lists the saves in the <code>saves</code> folder, newest first, as &quot;file — scenario, turn N&quot;; press <strong>Continue</strong> on one. <strong>Browse…</strong> opens any <code>.json</code> save, or a <code>.sav</code> from the original game (imported under Classical Faithful; it is never overwritten).</p>
+<p><strong>Settings</strong> (main menu). They last until you quit and are not stored:</p>
+<ul>
+<li><strong>Asset pack</strong>: <code>authored</code> (default) or <code>placeholder</code> art; applies to the next game you start or load.</li>
+<li><strong>Sound</strong>: on or off.</li>
+<li><strong>Battle pauses</strong>: how long the tactical board waits after a shot (0–3 s, default 1) and after an attack (0–3 s, default 2). Lower them to speed up battles, especially with the computer general. The battle&#39;s own <strong>Change pauses</strong> button sets the same values.</li>
+</ul>
+<p><strong>Diagnostics.</strong> The game keeps a local journal of what happened: screens, commands, saves, battles and errors. It is in <code>logs/diagnostics/journal-*.jsonl</code> (five files of up to 1 MB each), with Godot&#39;s own log in <code>logs/godot.log</code>. Nothing is sent anywhere. If the game freezes or crashes, copy the whole <code>logs</code> folder <strong>before</strong> restarting it and attach it to your bug report.</p>
+<h2 id="mouse-and-keyboard-reference">Mouse and keyboard reference</h2>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Strategic map</th>
+<th>Tactical board</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Left click own marker</td>
+<td>Select it</td>
+<td>Select the unit</td>
+</tr>
+<tr>
+<td>Left click empty tile</td>
+<td>Move the selected army or fleet there</td>
+<td>Place (setup) or move the selected unit</td>
+</tr>
+<tr>
+<td>Left click adjacent enemy</td>
+<td>Attack or besiege</td>
+<td>Set it as the melee target</td>
+</tr>
+<tr>
+<td>Right click</td>
+<td>City: mercenaries on offer; army or fleet: its unit list</td>
+<td>Enemy: shoot at it; own unit: clear its target</td>
+</tr>
+<tr>
+<td>Mouse wheel</td>
+<td>Zoom in or out at the cursor</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Left drag</td>
+<td>Pan the map</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Click the minimap</td>
+<td>Jump there</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Esc</td>
+<td>Clear the selection; skip the movement replay; close most dialogs or answer No</td>
+<td>– (the board has no Esc)</td>
+</tr>
+<tr>
+<td>Shift+X</td>
+<td>Cancel selection</td>
+<td>–</td>
+</tr>
+<tr>
+<td>F12</td>
+<td>Hide or show the side column</td>
+<td>–</td>
+</tr>
+<tr>
+<td>Page Up / Page Down</td>
+<td>Taxation ±5%; Recruit unit ±1,000 troops; Build fleet ±10 ships</td>
+<td>–</td>
+</tr>
+</tbody></table>
+<p>The Battle Result window does not close with Esc; use its Close button. Help → Show hints turns all tooltips on or off.</p>
+<h2 id="known-limitations-in-v062">Known limitations in v0.6.2</h2>
+<ul>
+<li>One human player per new game. Hotseat play works only from a save that already has several human nations (made with the CLI).</li>
+<li>No choice of scenario, map, seed, difficulty or game length; the two smaller scenarios are reachable only from the CLI.</li>
+<li>Two of the three AI sliders have no effect under Classical Faithful; the Improved ruleset&#39;s 150-turn score limit is not checked.</li>
+<li>Field battles involving you are always fought on the tactical board; there is no &quot;resolve instantly&quot; option.</li>
+<li>Join and Transfer use the neighbouring army the game picks; you cannot choose.</li>
+<li>No names or tooltips on the map, no autosave, and settings are forgotten when you quit.</li>
+<li>Some original spellings are kept on purpose: &quot;conquerred&quot;, &quot;suuplies&quot;, &quot;End turn ?&quot;.</li>
+<li>The graphics hang reported before this release (issue #1261) is not confirmed fixed; v0.6.2 adds the diagnostics journal to catch it.</li>
+<li><a href="https://github.com/diegoami/imperial_conquest_2/blob/36ab15ec80beabd16bea0f64bab54adf16e34e32/docs/investigations/v062-usability-test.md">v062-usability-test.md</a> lists the problems found while playing.</li>
+</ul>
+
+</article></main>
+<footer class="wrap"><p>Based on the linked project reference at source <code>36ab15ec80be</code>. The illustrations keep their stated version and context.</p><a href="../../">Back to the project portfolio</a></footer></body></html>
