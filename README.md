@@ -60,7 +60,7 @@ generated inventory. Find a repository by its exact, case-sensitive name:
   "curated": true,
   "featured": true,
   "tags": ["card-game", "scopa", "browser-game"],
-  "liveUrl": "https://scopetta.netlify.app/",
+  "liveUrl": "https://diegoami.github.io/Scopetta/",
   "downloadUrl": "https://github.com/diegoami/Scopetta/releases/latest"
 }
 ```
