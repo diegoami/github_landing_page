@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generatedAt": "2026-11-03T15:38:08.158Z",
+    "generatedAt": "2026-11-03T15:45:24.560Z",
     "owner": "diegoami",
     "totalRepos": 290,
     "counts": {
-      "public": 55,
-      "private": 41,
+      "public": 56,
+      "private": 40,
       "archived": 194,
       "forks": 79,
       "recommendMakePublic": 7,
-      "published": 71,
-      "curated": 43,
+      "published": 72,
+      "curated": 44,
       "legacy": 21
     },
     "sections": [
@@ -2015,6 +2015,42 @@
         "repo": "https://github.com/diegoami/lynxupercluster_thumbnailgenerator",
         "pages": null,
         "homepage": null
+      },
+      "visibility": "public",
+      "legacy": false,
+      "hidden": false
+    },
+    {
+      "name": "malpaco",
+      "url": "https://github.com/diegoami/malpaco",
+      "githubPrivate": false,
+      "githubArchived": false,
+      "isFork": false,
+      "description": "An original island-conquest game inspired by Isle Wars Pro, in TypeScript",
+      "homepage": "https://diegoami.github.io/malpaco/",
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 0,
+      "pushedAt": "2026-11-03T15:14:43Z",
+      "defaultBranch": "main",
+      "hasPages": true,
+      "owner": "diegoami",
+      "displaySection": "games",
+      "section": "games",
+      "subsection": "Arcade & Simulations",
+      "tags": [
+        "game",
+        "typescript"
+      ],
+      "featured": false,
+      "curated": true,
+      "summary": "An original island-conquest game inspired by Isle Wars Pro, in TypeScript",
+      "reason": "Public, original, non-archived project.",
+      "pagesUrl": "https://diegoami.github.io/malpaco/",
+      "links": {
+        "repo": "https://github.com/diegoami/malpaco",
+        "pages": "https://diegoami.github.io/malpaco/",
+        "homepage": "https://diegoami.github.io/malpaco/"
       },
       "visibility": "public",
       "legacy": false,
