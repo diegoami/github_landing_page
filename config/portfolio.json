@@ -617,7 +617,9 @@
       "tags": [
         "strategy-game",
         "typescript"
-      ]
+      ],
+      "liveUrl": "https://diegoami.github.io/malpaco/",
+      "downloadUrl": "https://github.com/diegoami/malpaco/releases/latest"
     },
     "cerea-vice": {
       "status": "demo",
