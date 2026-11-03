@@ -313,8 +313,8 @@
       "summary": "A geography map quiz: test how well you know places around the world.",
       "curated": true,
       "featured": true,
-      "liveUrl": "https://geoclick.netlify.app/",
-      "downloadUrl": "https://github.com/diegoami/geoclick-releases/releases/latest",
+      "liveUrl": "https://diegoami.github.io/Geoclick2027/",
+      "downloadUrl": "https://github.com/diegoami/Geoclick2027/releases/latest",
       "visible": true,
       "tags": [
         "geography",
