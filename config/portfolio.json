@@ -6,13 +6,19 @@
       "summary": "Baloncelli: a balloon-popping arcade game for the browser and Android.",
       "curated": true,
       "featured": false,
-      "liveUrl": "https://baloncelli.netlify.app/",
+      "liveUrl": "https://diegoami.github.io/balloons-JS/",
       "downloadUrl": "https://github.com/diegoami/balloons-JS/releases/latest",
       "visible": true,
       "tags": [
         "arcade",
         "browser-game",
         "android"
+      ],
+      "extraLinks": [
+        {
+          "label": "Shared scores on Netlify",
+          "url": "https://baloncelli.netlify.app/"
+        }
       ]
     },
     "balloons-js-releases": {
@@ -46,13 +52,6 @@
     "briscola-JS": {
       "status": "unclassified",
       "summary": "A simple web application allowing to play Briscola online",
-      "curated": true,
-      "featured": false,
-      "visible": false
-    },
-    "championship-simulator-JS": {
-      "status": "unclassified",
-      "summary": "A simple web application simulating a round-robin championship",
       "curated": true,
       "featured": false,
       "visible": false
@@ -258,7 +257,7 @@
       "summary": "Play two-player Briscola in your browser, a web port of the original Discola game.",
       "curated": true,
       "featured": false,
-      "liveUrl": "https://discola.netlify.app/",
+      "liveUrl": "https://diegoami.github.io/discola-web/",
       "downloadUrl": "https://github.com/diegoami/discola-web/releases/latest",
       "visible": true,
       "tags": [
@@ -523,7 +522,7 @@
       "summary": "Play Italian Scopa in your browser.",
       "curated": true,
       "featured": true,
-      "liveUrl": "https://scopetta.netlify.app/",
+      "liveUrl": "https://diegoami.github.io/Scopetta/",
       "downloadUrl": "https://github.com/diegoami/Scopetta/releases/latest",
       "visible": true,
       "tags": [
@@ -563,7 +562,7 @@
       "summary": "Play two-player Tressette in your browser with a choice of card decks.",
       "curated": true,
       "featured": false,
-      "liveUrl": "https://tresettette.netlify.app/",
+      "liveUrl": "https://diegoami.github.io/Tressette/",
       "downloadUrl": "https://github.com/diegoami/Tressette/releases/latest",
       "visible": true,
       "tags": [
