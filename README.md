@@ -4,9 +4,9 @@ A static portfolio of my open-source projects, published with GitHub Pages.
 
 - **Public page** — [`index.html`](index.html): projects grouped into **Mature
   projects**, **Libraries & tools**, **Work in progress**, **Demos**,
-  **Documentation & learning** and **Unclassified**, with subject
-  headings in WIP and demo groups and a collapsed **project index**. Mature
-  projects, Libraries & tools and Documentation & learning each use one grid without subdivisions. Only explicitly
+  **Prototyping...**, **Documentation & learning** and **Unclassified**, with
+  subject headings in the WIP and Prototyping groups and a collapsed **project
+  index**. The other groups use one grid without subdivisions. Only explicitly
   selected projects are listed. Featured cards stay within their status group.
 - **Beta releases** — [`releases.html`](releases.html): a tester-friendly page
   listing public `*-releases` repositories with links to their GitHub downloads
@@ -70,6 +70,7 @@ Valid statuses:
 - `mature` — established and ready to use; maintenance continues.
 - `wip` — work in progress.
 - `demo` — a prototype, experiment or demonstration.
+- `prototyping` — a game prototype or engine rebuild in progress.
 - `tools` — a reusable library or practical utility.
 - `documentation` — study guides, exercises and reference material.
 - `unclassified` — status not yet chosen (the default).
@@ -127,6 +128,12 @@ entry with an explicit `repositoryUrl`, a `summary`, and a `status`. For example
 
 `language` and `section` optionally override the generated language and subject
 ID (subject IDs come from `data/repositories.json`, such as `games` or `devtools`).
+Two subjects are hand-maintained in `assets/portfolio.mjs` and set with
+`section` in this file: `learning` (**Learning**) and `angband` (**Angband**).
+Work in progress and Prototyping... show their subjects as subheadings; the
+other groups are one grid, so a project needs no `section` outside them. In a
+group with subheadings, a project without one — `"section": ""` — is listed as
+a plain card above them.
 Supplemental projects default to curated cards, no highlighting, no tags and the
 Other subject. They merge with the generated entry once the inventory includes
 them. To describe a project without a public repository, use `standalone: true`

@@ -4,9 +4,18 @@ export const CATEGORIES = [
   { id: "tools", title: "Libraries & tools", blurb: "Reusable libraries and practical utilities." },
   { id: "wip", title: "Work in progress", blurb: "Projects still being built and improved." },
   { id: "demo", title: "Demos", blurb: "Prototypes, experiments and demonstrations." },
+  { id: "prototyping", title: "Prototyping...", blurb: "Game prototypes and engine rebuilds in progress." },
   { id: "documentation", title: "Documentation & learning", blurb: "Study guides, practice exercises and reference material." },
   { id: "unclassified", title: "Unclassified", blurb: "Projects whose status has not been assigned yet." },
 ];
+
+// Subject headings for the subcategories the hand-maintained configuration
+// adds. The generated inventory carries the other subjects in its own section
+// list, which wins over this one.
+export const SECTION_TITLES = {
+  learning: "Learning",
+  angband: "Angband",
+};
 
 export function applyPortfolio(repositories, config) {
   const object = (value) => value !== null && typeof value === "object" && !Array.isArray(value);

@@ -1,4 +1,4 @@
-import { CATEGORIES, applyPortfolio } from "./portfolio.mjs?v=20261025-learning";
+import { CATEGORIES, SECTION_TITLES, applyPortfolio } from "./portfolio.mjs?v=20261107-subjects";
 
 (() => {
   "use strict";
@@ -135,7 +135,8 @@ import { CATEGORIES, applyPortfolio } from "./portfolio.mjs?v=20261025-learning"
 
   function sectionTitle(meta, id) {
     const s = (meta.sections || []).find((x) => x.id === id);
-    return s ? s.title : id;
+    if (s) return s.title;
+    return SECTION_TITLES[id] || id;
   }
 
   // Full index of all public, non-archived repos (incl. legacy), grouped by status.
@@ -181,10 +182,14 @@ import { CATEGORIES, applyPortfolio } from "./portfolio.mjs?v=20261025-learning"
       if (!repos.length && (!state.status || state.query || state.tag || state.lang)) continue;
       // Keep featured projects in their status category, including during searches.
       const ordered = [...repos.filter((r) => r.featured), ...repos.filter((r) => !r.featured)];
-      const themes = [...new Set(ordered.map((r) => r.section))];
-      const inner = ["mature", "tools", "documentation"].includes(category.id)
+      const themes = [...new Set(ordered.map((r) => r.section))].filter(Boolean);
+      // A group lists the projects without a subject first, then one subheading
+      // per subject. Groups without subheadings keep a single grid.
+      const plain = ordered.filter((r) => !r.section);
+      const inner = ["mature", "tools", "documentation", "demo"].includes(category.id)
         ? `<div class="grid">${ordered.map(card).join("")}</div>`
-        : themes.map((id) => `<div class="subsection"><h3>${esc(sectionTitle(meta, id))}</h3><div class="grid">${ordered.filter((r) => r.section === id).map(card).join("")}</div></div>`).join("");
+        : `${plain.length ? `<div class="grid">${plain.map(card).join("")}</div>` : ""}` +
+          themes.map((id) => `<div class="subsection"><h3>${esc(sectionTitle(meta, id))}</h3><div class="grid">${ordered.filter((r) => r.section === id).map(card).join("")}</div></div>`).join("");
       html += `<section class="section status-section status-${category.id}" id="sec-${category.id}">
         <div class="section-head">
           <h2>${category.title} <span class="count">${repos.length}</span></h2>

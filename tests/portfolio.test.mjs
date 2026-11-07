@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 import vm from "node:vm";
-import { CATEGORIES, applyPortfolio } from "../assets/portfolio.mjs";
+import { CATEGORIES, SECTION_TITLES, applyPortfolio } from "../assets/portfolio.mjs";
 
 const readJSON = async (path) => JSON.parse(await readFile(new URL(path, import.meta.url), "utf8"));
 const inventory = await readJSON("../data/repositories.json");
@@ -73,7 +73,7 @@ async function renderSite(portfolio, responseOK = true) {
     getElementById: (id) => elements.get(id) || (elements.get("app").innerHTML.includes(`id="${id}"`) ? {} : null),
   };
   const context = vm.createContext({
-    document, window: {}, CATEGORIES, applyPortfolio,
+    document, window: {}, CATEGORIES, SECTION_TITLES, applyPortfolio,
     fetch: async (url) => ({ ok: url.includes("repositories") || responseOK, status: 404,
       json: async () => url.includes("repositories") ? inventory : portfolio }),
   });
@@ -165,4 +165,39 @@ test("standalone tools have no fabricated repository links and extra links appea
   assert.ok(!card.includes('href=""'));
   assert.ok(!card.includes(">Repository</a>"));
   assert.equal(site.html().split(">My chess games</a>").length - 1, 2);
+});
+
+test("hand-maintained subjects title the subcategories of a status group", async () => {
+  const site = await renderSite(config);
+  const sectionOf = (status) => site.html().match(new RegExp(`id="sec-${status}"[\\s\\S]*?</section>`))[0];
+  const group = (status, title) =>
+    sectionOf(status).split("<h3>").slice(1).find((g) => g.startsWith(`${title}</h3>`));
+  const learning = group("wip", "Learning");
+  assert.ok(learning, "Learning subcategory heading");
+  assert.ok(learning.includes('data-name="knowclick"'));
+  assert.ok(learning.includes('data-name="LangClick2027"'));
+  const angband = group("prototyping", "Angband");
+  assert.ok(angband, "Angband subcategory heading");
+  for (const name of ["better-borg-c", "borg-rs", "mandos", "neo-angband-borg-mod-tracker", "neo-angband-tracker"]) {
+    assert.ok(angband.includes(`data-name="${name}"`), name);
+  }
+  assert.ok(!sectionOf("wip").includes('data-name="mandos"'), "Angband left Work in progress");
+});
+
+test("a status group without subcategories lists its projects in one grid", async () => {
+  const site = await renderSite(config);
+  const demos = site.html().match(/id="sec-demo"[\s\S]*?<\/section>/)[0];
+  assert.ok(!demos.includes("<h3>"), "no subcategory heading in Demos");
+  assert.ok(demos.includes('data-name="boar_life"'));
+  assert.ok(demos.includes('data-name="voice-teacher"'));
+});
+
+test("a group with a subcategory lists the projects without one first", async () => {
+  const site = await renderSite(config);
+  const prototyping = site.html().match(/id="sec-prototyping"[\s\S]*?<\/section>/)[0];
+  const [plain] = prototyping.split("<h3>");
+  for (const name of ["cerea-vice", "onenil", "oravitsa", "totengine"]) {
+    assert.ok(plain.includes(`data-name="${name}"`), name);
+  }
+  assert.ok(!plain.includes('data-name="mandos"'), "the Angband projects sit under their own heading");
 });

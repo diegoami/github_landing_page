@@ -6,9 +6,9 @@
       "summary": "Baloncelli: a balloon-popping arcade game for the browser and Android.",
       "curated": true,
       "featured": false,
+      "visible": true,
       "liveUrl": "https://baloncelli.netlify.app/",
       "downloadUrl": "https://github.com/diegoami/balloons-JS/releases/latest",
-      "visible": true,
       "tags": [
         "arcade",
         "browser-game",
@@ -32,10 +32,10 @@
     "boar_life": {
       "status": "demo",
       "summary": "Explore a low-poly forest as a wild boar, encounter wildlife and raise a family. A Godot game prototype.",
+      "language": "GDScript",
       "curated": true,
       "featured": false,
       "visible": true,
-      "language": "GDScript",
       "tags": [
         "godot",
         "exploration",
@@ -91,14 +91,14 @@
       "curated": true,
       "featured": true,
       "visible": true,
+      "liveUrl": "https://diegoami.github.io/ck_wiki/",
+      "liveLabel": "Read example chronicle",
       "tags": [
         "ck3",
         "save-parser",
         "wiki",
         "python"
-      ],
-      "liveUrl": "https://diegoami.github.io/ck_wiki/",
-      "liveLabel": "Read example chronicle"
+      ]
     },
     "ck3-scripts": {
       "status": "unclassified",
@@ -258,9 +258,9 @@
       "summary": "Play two-player Briscola in your browser, a web port of the original Discola game.",
       "curated": true,
       "featured": false,
+      "visible": true,
       "liveUrl": "https://discola.netlify.app/",
       "downloadUrl": "https://github.com/diegoami/discola-web/releases/latest",
-      "visible": true,
       "tags": [
         "card-game",
         "briscola",
@@ -314,9 +314,9 @@
       "summary": "A geography map quiz: test how well you know places around the world.",
       "curated": true,
       "featured": true,
+      "visible": true,
       "liveUrl": "https://geoclick.netlify.app/",
       "downloadUrl": "https://github.com/diegoami/geoclick-releases/releases/latest",
-      "visible": true,
       "tags": [
         "geography",
         "quiz",
@@ -437,8 +437,8 @@
       "summary": "Collects technology news and groups coverage of the same story across different outlets.",
       "curated": true,
       "featured": true,
-      "liveUrl": "https://diegoami.github.io/newscollection2027/",
       "visible": true,
+      "liveUrl": "https://diegoami.github.io/newscollection2027/",
       "tags": [
         "news",
         "scraping",
@@ -473,11 +473,12 @@
       ]
     },
     "oravitsa": {
-      "status": "demo",
+      "status": "prototyping",
       "summary": "A cosy 2D forest exploration prototype with foraging, wildlife and a painted world.",
+      "language": "GDScript",
+      "section": "",
       "curated": true,
       "featured": false,
-      "language": "GDScript",
       "visible": true,
       "tags": [
         "godot",
@@ -523,9 +524,9 @@
       "summary": "Play Italian Scopa in your browser.",
       "curated": true,
       "featured": true,
+      "visible": true,
       "liveUrl": "https://scopetta.netlify.app/",
       "downloadUrl": "https://github.com/diegoami/Scopetta/releases/latest",
-      "visible": true,
       "tags": [
         "card-game",
         "scopa",
@@ -563,9 +564,9 @@
       "summary": "Play two-player Tressette in your browser with a choice of card decks.",
       "curated": true,
       "featured": false,
+      "visible": true,
       "liveUrl": "https://tresettette.netlify.app/",
       "downloadUrl": "https://github.com/diegoami/Tressette/releases/latest",
-      "visible": true,
       "tags": [
         "card-game",
         "tressette",
@@ -628,11 +629,11 @@
       ]
     },
     "cerea-vice": {
-      "status": "demo",
+      "status": "prototyping",
       "summary": "A driving and navigation prototype set in Cerea, Italy, with a second fictional harbor district.",
       "repositoryUrl": "https://github.com/diegoami/cerea-vice",
       "language": "TypeScript",
-      "section": "games",
+      "section": "",
       "curated": true,
       "featured": false,
       "visible": true,
@@ -643,20 +644,20 @@
       ]
     },
     "Quota tracker": {
-      "standalone": true,
       "status": "tools",
-      "visible": true,
-      "curated": true,
-      "featured": false,
       "summary": "Monitor AI-provider usage, remaining subscription quotas and reset times in one place.",
       "language": "Python",
       "section": "devtools",
+      "curated": true,
+      "featured": false,
+      "visible": true,
       "tags": [
         "developer-tools",
         "ai",
         "usage-tracking",
         "python"
-      ]
+      ],
+      "standalone": true
     },
     "voice-teacher": {
       "status": "demo",
@@ -672,6 +673,144 @@
         "voice",
         "prototype",
         "python"
+      ]
+    },
+    "knowclick": {
+      "status": "wip",
+      "summary": "Technical knowledge by memory and practice: certifications such as CKAD, CKA and Azure, languages such as Rust and PowerShell, and libraries such as Neo4j and Kafka, in pluggable subject packs.",
+      "repositoryUrl": "https://github.com/diegoami/knowclick",
+      "language": "TypeScript",
+      "section": "learning",
+      "curated": true,
+      "featured": false,
+      "visible": true,
+      "liveUrl": "https://diegoami.github.io/knowclick/",
+      "tags": [
+        "quiz",
+        "study-guide",
+        "practice-exercises",
+        "typescript"
+      ]
+    },
+    "LangClick2027": {
+      "status": "wip",
+      "summary": "Language learning by memory: grammar and vocabulary in pluggable language packs, starting with Ukrainian.",
+      "repositoryUrl": "https://github.com/diegoami/LangClick2027",
+      "language": "TypeScript",
+      "section": "learning",
+      "curated": true,
+      "featured": false,
+      "visible": true,
+      "liveUrl": "https://diegoami.github.io/LangClick2027/",
+      "tags": [
+        "language-learning",
+        "vocabulary",
+        "quiz",
+        "typescript"
+      ]
+    },
+    "neo-angband-tracker": {
+      "status": "prototyping",
+      "summary": "A faithful but moddable port of Angband, playable almost anywhere, and the tracker for defects in the original C Borg, the game and the Neo engine.",
+      "repositoryUrl": "https://github.com/diegoami/neo-angband-tracker",
+      "language": "TypeScript",
+      "section": "angband",
+      "curated": true,
+      "featured": false,
+      "visible": true,
+      "liveUrl": "https://diegoami.github.io/neo-angband-tracker/",
+      "tags": [
+        "angband",
+        "roguelike"
+      ]
+    },
+    "better-borg-c": {
+      "status": "prototyping",
+      "summary": "A native C Angband/Borg consumer that adopts, integrates and tests verified bug fixes in a playable C derivative.",
+      "repositoryUrl": "https://github.com/diegoami/better-borg-c",
+      "language": "C",
+      "section": "angband",
+      "curated": true,
+      "featured": false,
+      "visible": true,
+      "tags": [
+        "angband",
+        "roguelike"
+      ]
+    },
+    "borg-rs": {
+      "status": "prototyping",
+      "summary": "A faithful Rust port of the Angband Borg, verified by a byte-identical keypress stream against the C Borg for the same seed.",
+      "repositoryUrl": "https://github.com/diegoami/borg-rs",
+      "language": "Rust",
+      "section": "angband",
+      "curated": true,
+      "featured": false,
+      "visible": true,
+      "tags": [
+        "angband",
+        "roguelike"
+      ]
+    },
+    "neo-angband-borg-mod-tracker": {
+      "status": "prototyping",
+      "summary": "The Borg for Neo Angband as a mod rather than in core: a repair fork that owns upstream port-defect trackers, reproductions and isolated proposals.",
+      "repositoryUrl": "https://github.com/diegoami/neo-angband-borg-mod-tracker",
+      "language": "TypeScript",
+      "section": "angband",
+      "curated": true,
+      "featured": false,
+      "visible": true,
+      "tags": [
+        "angband",
+        "roguelike"
+      ]
+    },
+    "mandos": {
+      "status": "prototyping",
+      "summary": "A bug-fix consumer for the Neo Angband Borg: it adopts verified port and engine corrections and translates applicable C fixes into its TypeScript derivative.",
+      "repositoryUrl": "https://github.com/diegoami/mandos",
+      "language": "TypeScript",
+      "section": "angband",
+      "curated": true,
+      "featured": false,
+      "visible": true,
+      "tags": [
+        "angband",
+        "roguelike"
+      ]
+    },
+    "totengine": {
+      "status": "prototyping",
+      "summary": "A from-scratch engine that recreates Civilization II: Test of Time: it reads the original data files, plays its scenarios, and is checked against the original game as an oracle.",
+      "repositoryUrl": "https://github.com/diegoami/totengine",
+      "language": "Rust",
+      "section": "",
+      "curated": true,
+      "featured": false,
+      "visible": true,
+      "downloadUrl": "https://github.com/diegoami/totengine/releases/latest",
+      "tags": [
+        "civ2",
+        "game-engine",
+        "prototype",
+        "rust"
+      ]
+    },
+    "onenil": {
+      "status": "prototyping",
+      "summary": "A faithful rebuild of One-Nil (Wizard, 1995/96), the football club manager, in Rust and checked against the original through a Python harness.",
+      "repositoryUrl": "https://github.com/diegoami/onenil",
+      "language": "Rust",
+      "section": "",
+      "curated": true,
+      "featured": false,
+      "visible": true,
+      "tags": [
+        "onenil",
+        "game-engine",
+        "prototype",
+        "rust"
       ]
     }
   }
